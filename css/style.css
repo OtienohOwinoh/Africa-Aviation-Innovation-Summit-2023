@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+} 
+
+/* NAVBAR */
+
+p {
+    font-family: "Roboto Condensed";
+}
+
+.header {
+
+    /* background-color: black; */
+}
+.navbar-brand {
+
+    margin-left: 30px;
+    color: black;
+}
+
+.nav-item {
+
+    margin-right: 7px;
+}
+
+.nav-link {
+    color: black;
+}
+
+
+
+.kq-section {
+    float:left;
+    width: 100%;
+    padding: 50px;
+}
+
+
+#register  {
+
+    color: red;
+    font-weight: 600;
+}
+
+/* NAVBAR  */
+
+/* LANDING PAGE */
+
+#agenda-section {
+    background-color: #DDDDDD;
+}
+
+.landing-page {
+
+    background-image: url(/images/Website\ banner\ 3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#main-header {
+
+    text-align: center;
+    font-size: 4rem;
+    padding: 50px;
+    color: white;
+    font-weight: 300;
+}
+
+#summit-theme {
+
+    text-align: center;
+    color: white;
+}
+
+#sponsors-container {
+
+    color: white;
+    padding: 20px 30px;
+}
+
+#event-date {
+
+    
+}
+
+#register-button {
+
+    margin:30px 20px;
+    background-color: rgb(237, 28, 36);
+    
+}
+
+#register-button a{
+
+    color: white;
+    text-decoration: none;
+}
+
+#horizontal-1{
+    display: block;
+    margin: 0 auto;
+    color: #bc9c22;
+    height: 2px;
+    background-color: #bc9c22;
+}
+
+#powerful {
+
+border-right: 2px solid #bc9c22;
+
+}
+
+#event-date{
+
+    border-right: 2px solid #bc9c22;
+
+}
+
+#conference-theme {
+
+    color: rgb(237, 28, 36);
+   
+    
+    
+}
+
+.conference-decription {
+
+    
+    
+}
+
+.conference-icons {
+
+    
+    float: left;
+    margin-right: 25px;
+    background-color: #bc9c22;
+    border-radius: 50%;
+    
+}
+
+.theme-points {
+
+    /* float: right; */
+    margin: 25px;
+    
+}
+
+.theme-container {
+
+    margin: 20px;
+
+}
+
+#hr {
+    color: #bc9c22;
+    
+    
+}
+/* LANDING PAGE */
+
+/* AGENDA */
+
+.agenda {
+    color: rgb(237, 28, 36);
+   
+
+}
+
+
+.agenda-text {
+
+    clear: both;
+}
+
+#view-agenda a {
+
+    color: white;
+    text-decoration: none;
+}
+
+/* AGENDA */
+
+/* FEATURED SPEAKERS */
+
+.featured-speakers {
+
+    color: rgb(237, 28, 36);
+    
+
+
+
+}
+
+
+
+.featured-bio {
+ 
+    clear: both;
+
+}
+
+#featured-title {
+
+    float: left;
+    /* border: 1px solid red; */
+}
+
+#industry-experts {
+    float: right;
+    color: #BC9C22;
+    position: relative;
+    /* border: 1px solid red; */
+    margin-top: 10px;
+
+}
+
+
+#industry-experts::before {
+    content:"";
+    height: 1px;
+    background: #BC9C22;
+    width: 45vw;
+    position: absolute;
+    right: calc(100% + 15px);
+    top: 13px;
+
+
+}
+
+#profile-button {
+
+   display: block;
+   margin: 0 auto;
+}
+
+#profile-button a{
+
+color: white;
+text-decoration: none;
+}
+
+.speaker-title {
+
+    color: #D30C2B;
+}
+
+.speaker-position {
+
+    font-size: 1rem;
+}
+
+
+/* FEATURED SPEAKERS */
+
+/* VENUE SECTION  */
+
+#venue-section {
+
+    background-color: #DDDDDD;
+    padding: 30px;
+}
+
+
+.venue {
+
+    /* padding: 20px 20px 0px 0px; */
+    color: rgb(237, 28, 36);
+}
+
+.venue-description{
+
+    /* padding: 10px 20px; */
+}
+
+#plane-black {
+
+    float: right;
+    /* border: 1px solid red ; */
+}
+
+#hr-2 {
+
+    width: calc(100% - 50px);
+    float: left;
+    margin: 10px 0px ;
+}
+
+/* VENUE SECTION  */
+
+#contact-section {
+
+    background-color: #BC9C22;
+}
+
+/* CONTACT SECTION */
+
+.contact {
+
+    color: white;
+}
+
+.contact-person {
+
+    color: #D30C2B;
+    margin-top: 50px;
+    
+}
+
+.contact-desc {
+
+    color: white;
+    font-weight: 100;
+}
+
+#footer-address {
+
+    margin-top: 120px;
+}
+
+.address{
+
+    font-weight: 200;
+}
+
+#add-icon {
+    color: white;
+}
+/* CONTACT SECTION */
+
+
+/* FOOTER SECTION */
+
+#footer-section {
+    background-color: #BC9C22;
+}
+
+.quote {
+
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: -50px;
+}
+
+
+/* FOOTER SECTION */
+
+#hr-1 {
+
+    width: calc(100% - 50px);
+    float: left;
+}
+
+#plane-black-1 {
+
+    width: 50px;
+    float: right ;
+    margin: 6px 0;
+}
