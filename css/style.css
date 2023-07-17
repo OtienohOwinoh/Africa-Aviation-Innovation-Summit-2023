@@ -368,3 +368,29 @@ text-decoration: none;
     background-color: #E4C779;
     padding: 20px;
 }
+
+.our-sponsors {
+
+    color: white;
+}
+
+.leading-experts{
+
+    float: right;
+    color: white;
+    position: relative;
+    /* border: 1px solid red; */
+    margin-top: -40px;
+
+}
+
+.leading-experts::before {
+
+    content:"";
+    height: 1px;
+    background: black;
+    width: 55vw;
+    position: absolute;
+    right: calc(100% + 15px);
+    top: 13px;
+}
