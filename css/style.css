@@ -359,3 +359,12 @@ text-decoration: none;
     float: right ;
     margin: 6px 0;
 }
+
+
+.event-sponsors{
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+    background-color: #E4C779;
+    padding: 20px;
+}
