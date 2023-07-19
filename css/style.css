@@ -92,7 +92,7 @@ p {
     padding: 20px 30px;
 }
 
-.event-date {
+.event-dates {
 
 
     display: flex;
@@ -160,11 +160,12 @@ border-right: 2px solid #bc9c22;
 
 }
 
-#event-date{
+.landingpage-event-date{
 
     display: flex;
     justify-content: center;
     border-right: 2px solid #bc9c22;
+    color: white;
 
     
   
