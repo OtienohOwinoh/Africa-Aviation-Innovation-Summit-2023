@@ -1,11 +1,22 @@
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     
 } 
 
+h1,h2,h3,h4,h5 {
+
+    font-family: "Poppins", sans-serif;
+}
 /* NAVBAR */
 
+#nav-bar {
+
+    position: fixed;
+    width: 100%;
+    
+}
 p {
     font-family: "Roboto Condensed";
 }
@@ -18,6 +29,7 @@ p {
 
     margin-left: 30px;
     color: black;
+    cursor: pointer;
 }
 
 .nav-item {
@@ -50,6 +62,7 @@ p {
 
 #agenda-section {
     background-color: #DDDDDD;
+    margin-bottom: 25px;
 }
 
 .landing-page {
@@ -62,9 +75,9 @@ p {
 
     text-align: center;
     font-size: 4rem;
-    padding: 50px;
+    padding: 100px 0px 40px 0px;
     color: white;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 #summit-theme {
@@ -79,15 +92,22 @@ p {
     padding: 20px 30px;
 }
 
-#event-date {
+.event-date {
 
-    
+
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    margin: 35px 10px;
+    font-size: 1rem;
 }
 
 #register-button {
 
-    margin:30px 20px;
+    margin:20px 0px;
     background-color: rgb(237, 28, 36);
+    font-size: 1.5rem;
     
 }
 
@@ -97,6 +117,35 @@ p {
     text-decoration: none;
 }
 
+.event-timer {
+    display: flex;
+   justify-content: center;
+
+    
+   
+}
+
+.event-timer div {
+
+    flex-basis: 100px;
+    color: white;
+    margin-bottom: 25px;
+   
+    
+}
+
+.event-timer p {
+
+    font-size: 50px;
+    margin-bottom: -14px;
+    
+}
+
+#space {
+   
+    
+    padding: 20px;
+}
 #horizontal-1{
     display: block;
     margin: 0 auto;
@@ -111,10 +160,12 @@ border-right: 2px solid #bc9c22;
 
 }
 
-#event-date{
+.event-date{
 
-    border-right: 2px solid #bc9c22;
-
+    display: flex;
+    justify-content: center;
+    
+  
 }
 
 #conference-theme {
@@ -371,13 +422,13 @@ text-decoration: none;
 
 .our-sponsors {
 
-    color: white;
+    color: #D30C2B;
 }
 
 .leading-experts{
 
     float: right;
-    color: white;
+    color: #D30C2B;
     position: relative;
     /* border: 1px solid red; */
     margin-top: -40px;
@@ -405,4 +456,56 @@ text-decoration: none;
 .card1 h5 {
   color: #333;
 }
+
+
+/* SPONSORS CAROUSEL */
+
+@keyframes slide {
+
+    from{
+        transform: translateX(0);
+    }
+    to{ transform: translateX(-100%)};
+}
+
+.sponsors-carousel{
+
+    padding: 30px 25px;
+    background-color: #E4C779;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    margin-top: 20px;
+}
+
+
+
+
+.sponsors-carousel:hover .sponsors-slide {
+    animation-play-state: paused;
+}
+
+
+
+.sponsors-slide {
+
+   
+    animation: 35S slide infinite linear;
+    display: inline-block;
+
+
+}
+
+
+.sponsors-slide img {
+
+    height: 150px;
+    margin: 0 40px;
+    border: 1px solid wheat;
+    border-radius: 10px;
+}
+
+
+
+/* SPONSORS CAROUSEL */
 
