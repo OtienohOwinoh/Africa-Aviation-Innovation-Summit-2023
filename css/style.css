@@ -160,10 +160,12 @@ border-right: 2px solid #bc9c22;
 
 }
 
-.event-date{
+#event-date{
 
     display: flex;
     justify-content: center;
+    border-right: 2px solid #bc9c22;
+
     
   
 }
