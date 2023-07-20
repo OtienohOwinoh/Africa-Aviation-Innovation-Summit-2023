@@ -306,6 +306,11 @@ text-decoration: none;
     font-size: 1rem;
 }
 
+#profile-image {
+
+    border: 1px solid white;
+    border-radius: 10px;
+}
 
 /* FEATURED SPEAKERS */
 
@@ -504,8 +509,6 @@ text-decoration: none;
 
     height: 150px;
     margin: 0 40px;
-    border: 1px solid wheat;
-    border-radius: 10px;
 }
 
 
