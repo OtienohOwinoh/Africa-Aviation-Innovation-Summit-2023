@@ -67,11 +67,15 @@
         <div class="kq-section">
             <div class="container">
 
-                <h2>
+                <h2 class="open-registration">
                     Registration is now open!
                 </h2>
+
+               <hr id="hr-1">
+
+               <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
         
-                <p>
+                <p class="open-registration-p">
                     You're just a click away from "Re-imagining aviation in a post covid world" at Africa Aviation Innovation Summit. We can't wait to learn, 
                     collaborate and celebrate with you for a safe in-person gathering from August 1st to 3rd in Nairobi, Kenya.
         
@@ -79,11 +83,11 @@
         
                 <p>
                     There is no fee for the summit. Attendees pay for subsidised accommodation and air tickets. Kindly enter your details below to be informed once the information is available.
-                     If you have any questions, see our contact information here
+                     If you have any questions, see our contact information <a href="">  here </a>
                 </p>
 
-                <div class="row">
-                    <div class="col-xs-12 col-sm-4 col-md-6">
+                <div class="row" id="registration-boxes">
+                    <div class="col-xs-12 col-sm-4 col-md-6" id="individual-registration">
                         <h3>Individual Registration</h3>
                         <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque reiciendis, inventore, 
                             cupiditate odio temporibus rem sint modi soluta sunt omnis autem, 
@@ -96,7 +100,8 @@
                             </div>
                     </div>
 
-                    <div class="col-xs-12 col-sm-4 col-md-6">
+                    
+                    <div class="col-xs-12 col-sm-4 col-md-6" id="group-registration">
 
                         <h3> Group Registration</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam in, repellendus 
@@ -118,15 +123,151 @@
 
         <!-- Individual Registration Form -->
 
-        <div class="row g-3">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        <div class="kq-section">
+            <div class="container">
+
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="first-name"> First Name</label>
+                        <input type="text" class="form-control" placeholder="Enter Your First name" aria-label="First name" required>
+                      
+                    </div>
+                    <div class="col-md-6">
+                        <label for="first-name"> Last Name</label>
+                        <input type="text" class="form-control" placeholder="Enter Your Last name" aria-label="Last name" required>
+                      
+                    </div>
+                    <div class="col-md-6">
+                     
+                        <label for="inputEmail4" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="another@example.com" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="phoneNumber" class="form-label">Phone Number</label>
+                        <input type="number" class="form-control" id="phonenumber" placeholder="Enter your phone number" required>
+                      </div>
+
+                    <div class="col-md-6">
+                      <label for="organisation" class="form-label">Organisation</label>
+                      <input type="text" class="form-control" id="organisation" placeholder="Enter name of your organisation" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputRole" class="form-label">Role/Title</label>
+                      <input type="text" class="form-control" id="inputCity" placeholder="Enter your role/title in the organisation">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputState" class="form-label">Country</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Country</option>
+                        <option>Kenya</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">Country</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>Do You Want to Reserve a Booth?</option>
+                          <option>Yes</option>
+                          <option>No</option>
+                        </select>
+                      </div>
+                
+                      </div>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </div>
+                        
+                    </div>
+                    
+                  </form>
+                
             </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-            </div>
-          </div>
+        </div>
+
+            
+
+        
          <!-- Individual Registration Form -->
+
+         <!-- GROUP REGISTRATION -->
+
+         <div class="kq-section">
+            <div class="container">
+
+                <h3>Group Registration Form</h3>
+                <form class="row g-3">
+
+                    <div class="col-md-6">
+                        <label for="first-name"> Registrant Name</label>
+                        <input type="text" class="form-control" placeholder="Enter Your Full Name" aria-label="name" required>
+                     </div>
+
+                     <div class="col-md-6">
+                     
+                        <label for="inputEmail4" class="form-label">Registrant Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="another@example.com" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="phoneNumber" class="form-label">Registrant Phone Number</label>
+                        <input type="number" class="form-control" id="phonenumber" placeholder="Enter your phone number" required>
+                      </div>
+
+                      <div class="col-md-4">
+                        <label for="organisation" class="form-label">Organisation/Company</label>
+                        <input type="text" class="form-control" id="organisation" placeholder="Enter name of your organisation" required>
+                      </div>
+
+                      <div class="col-md-4">
+                        <label for="inputState" class="form-label">Country</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>Country</option>
+                          <option>Kenya</option>
+                        </select>
+
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">Reserve a booth?</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>Do You Want to Reserve a Booth?</option>
+                          <option>Yes</option>
+                          <option>No</option>
+                        </select>
+                      </div>
+
+
+                        <div class="col-md-3">
+                            <label for="phoneNumber" class="form-label">Number of Attendees</label>
+                            <input type="number" class="form-control" id="phonenumber" placeholder="No. of Attendees" required>
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">List the name, phone number, and email of the attendees you want to register</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+
+
+                      </div>
+
+                      <div class="text-center">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </div>
+                        
+                    </div>
+
+
+                </form>
+            </div>
+
+
+
+          <!-- GROUP REGISTRATION -->
+
         
 
 

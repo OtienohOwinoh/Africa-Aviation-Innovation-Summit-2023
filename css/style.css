@@ -584,8 +584,42 @@ blockquote span{
 }
 
 
+/* REGISTRATION */
 
-/* SPONSORS CAROUSEL */
+.open-registration {
+
+    color: #D30C2B;
+    margin: 40px 0px 0px 0px;
+
+}
+
+.open-registration-p {
+    clear: both;
+    font-weight: 500;
+}
 
 
-  /* SPEAKERS CAROUSEL */
+
+
+#individual-registration {
+
+  
+    
+}
+
+#individual-registration h3 {
+
+    padding: 20px 0px;
+    color: #D30C2B;
+}
+
+#group-registration h3 {
+
+    padding: 20px 0px;
+    color: #D30C2B;
+}
+
+
+/* REGISTRATION */
+
+
