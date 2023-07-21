@@ -619,6 +619,22 @@ blockquote span{
     color: #D30C2B;
 }
 
+#placeholders ::placeholder{
+
+    color: #bc9c22;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+#registration-header {
+
+    text-align: center;
+    padding: 20px;
+    color: #BC9C22;
+    
+}
+
+
 
 /* REGISTRATION */
 
