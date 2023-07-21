@@ -584,14 +584,66 @@ blockquote span{
 }
 
 
+/* REGISTRATION */
 
-/* SPONSORS CAROUSEL */
+.open-registration {
 
+    color: #D30C2B;
+    margin: 40px 0px 0px 0px;
 
-  /* SPEAKERS CAROUSEL */
+}
 
-
-  /* agenda1 */
-  #agenda1{
+.open-registration-p {
     clear: both;
-  }
+    font-weight: 500;
+}
+
+
+#group-registration{
+
+    color: #D30C2B;
+}
+
+
+
+#ind-registration{
+
+    padding: 30px 0px 0px 0px;
+    color: #D30C2B;
+}
+
+#group-registration h3 {
+
+    padding: 20px 0px;
+    color: #bc9c22;
+}
+
+#placeholders ::placeholder{
+
+    color: #bc9c22;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+#registration-header {
+
+    text-align: center;
+    padding: 20px 0px;
+    color: #BC9C22;
+    
+}
+
+
+#ind-registration{
+    color: #D30C2B;
+}
+
+#placeholders ::selection{
+    color: red;
+}
+
+
+/* REGISTRATION */
+
+
+
