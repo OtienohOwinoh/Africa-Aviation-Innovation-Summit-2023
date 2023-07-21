@@ -599,24 +599,23 @@ blockquote span{
 }
 
 
+#group-registration{
 
-
-#individual-registration {
-
-  
-    
+    color: #D30C2B;
 }
 
-#individual-registration h3 {
 
-    padding: 20px 0px;
+
+#ind-registration{
+
+    padding: 30px 0px 0px 0px;
     color: #D30C2B;
 }
 
 #group-registration h3 {
 
     padding: 20px 0px;
-    color: #D30C2B;
+    color: #bc9c22;
 }
 
 #placeholders ::placeholder{
@@ -629,11 +628,19 @@ blockquote span{
 #registration-header {
 
     text-align: center;
-    padding: 20px;
+    padding: 20px 0px;
     color: #BC9C22;
     
 }
 
+
+#ind-registration{
+    color: #D30C2B;
+}
+
+#placeholders ::selection{
+    color: red;
+}
 
 
 /* REGISTRATION */
