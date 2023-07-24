@@ -103,7 +103,7 @@
                                 method="POST">
 
                                     <div class="col-md-6">
-                                        <label for="first-name"> Full Names</label>
+                                        <label for="fullName"> Full Names</label>
                                         <input name="Name" type="text" class="form-control" placeholder="Enter Your full names" aria-label="First name" required>
                                       
                                     </div>
@@ -115,23 +115,25 @@
                                     </div>
 
                                     <div class="col-md-6">
-                                        <label for="first-name"> Organisation/Company</label>
+                                        <label for="company"> Organisation/Company</label>
                                         <input name="Company" type="text" class="form-control" placeholder="Enter the name of your Organisation/Company" aria-label="Last name" required>
                                       
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="first-name"> Phone Number</label>
+                                        <label for="phone-number"> Phone Number</label>
                                         <input name="Contacts" type="number" class="form-control" placeholder="Enter Your Phone Number" aria-label="Last name" required>
                                       
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="first-name"> Country</label>
-                                        <input name="Country" type="text" class="form-control" placeholder="Enter Your Country" aria-label="Last name" required>
-                                      
+                                        <label for="country"> Country</label>
+                                        <select class="form-select" id="country">
+                                        <span class="error-message" id="countryError"></span>
+
+                                        </select>  
                                     </div>
 
                                     <div class="col-md-6">
-                                        <label for="first-name"> Reserve a Booth(Yes/No)</label>
+                                        <label for="boothReserve"> Reserve a Booth(Yes/No)</label>
                                         <input name="Booth-Reservation" type="text" class="form-control" placeholder="Enter 'Yes' to Reserve and 'No' for otherwise" aria-label="Last name" required>
                                       
                                     </div>
