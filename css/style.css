@@ -52,7 +52,7 @@ p {
 
 #register  {
 
-    color: red;
+    color: rgb(237, 28, 36);
     font-weight: 600;
 }
 
@@ -157,6 +157,12 @@ p {
 #powerful {
 
 border-right: 2px solid #bc9c22;
+
+}
+
+#capetown {
+
+    border-left: 2px solid #bc9c22;
 
 }
 
@@ -298,7 +304,7 @@ text-decoration: none;
 
 .speaker-title {
 
-    color: #D30C2B;
+    color: rgb(237, 28, 36);
 }
 
 .speaker-position {
@@ -363,7 +369,7 @@ text-decoration: none;
 
 .contact-person {
 
-    color: #D30C2B;
+    color: rgb(237, 28, 36);
     margin-top: 50px;
     
 }
@@ -437,13 +443,13 @@ text-decoration: none;
 
 .our-sponsors {
 
-    color: #D30C2B;
+    color: rgb(237, 28, 36);
 }
 
 .leading-experts{
 
     float: right;
-    color: #D30C2B;
+    color: rgb(237, 28, 36);
     position: relative;
     /* border: 1px solid red; */
     margin-top: -40px;
@@ -479,9 +485,9 @@ blockquote{
   margin:30px auto;
   font-family:Open Sans;
   font-style:italic;
-  color: #e21616 ;
+  color: rgb(237, 28, 36) ;
   padding:1.2em 30px 1.2em 75px;
-  border-left:8px solid #e21616 ;
+  border-left:8px solid rgb(237, 28, 36) ;
   line-height:1.6;
   position: relative;
   background:#EDEDED;
@@ -490,7 +496,7 @@ blockquote{
 blockquote::before{
   font-family:Arial;
   content: "\201C";
-  color:#e21616 ;
+  color:rgb(237, 28, 36) ;
   font-size:4em;
   position: absolute;
   left: 10px;
@@ -512,7 +518,7 @@ blockquote span{
 .profile-button {
     background-color: black;
     color: white;
-    border: 2px solid red;
+    border: 2px solid rgb(237, 28, 36);
     border-radius: 15px;
     padding: 4px 20px;
     font-size: 16px;
@@ -526,7 +532,7 @@ blockquote span{
   }
   
   .arrow {
-    color: red;
+    color: rgb(237, 28, 36);
     position: absolute;
     right: 10px;
     top: 50%;
@@ -588,7 +594,7 @@ blockquote span{
 
 .open-registration {
 
-    color: #D30C2B;
+    color: rgb(237, 28, 36);
     margin: 40px 0px 0px 0px;
 
 }
@@ -601,7 +607,7 @@ blockquote span{
 
 #group-registration{
 
-    color: #D30C2B;
+    color: rgb(237, 28, 36);
 }
 
 
@@ -609,7 +615,7 @@ blockquote span{
 #ind-registration{
 
     padding: 30px 0px 0px 0px;
-    color: #D30C2B;
+    color: rgb(237, 28, 36);
 }
 
 #group-registration h3 {
@@ -635,11 +641,11 @@ blockquote span{
 
 
 #ind-registration{
-    color: #D30C2B;
+    color: rgb(237, 28, 36);
 }
 
 #placeholders ::selection{
-    color: red;
+    color: rgb(237, 28, 36);
 }
 
 
@@ -672,7 +678,7 @@ th {
 }
 
 .error-message {
-  color: red;
+  color: rgb(237, 28, 36);
   margin-top: 5px;
   font-size: 14px;
 }
