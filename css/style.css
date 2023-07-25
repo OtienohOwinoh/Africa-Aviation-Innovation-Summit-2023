@@ -684,3 +684,17 @@ th {
     font-size: 20px;
 }
 
+#addedIndividuals{
+
+    margin: 20px 0px;
+    color: #BC9C22;
+    font-size: 25px;
+}
+
+#dataEntryForm ::placeholder{
+
+
+    color: #BC9C22;
+    font-size: 12px;
+    font-weight: 200;
+}

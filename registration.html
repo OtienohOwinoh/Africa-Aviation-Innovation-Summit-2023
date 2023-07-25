@@ -124,6 +124,7 @@
                                         <input name="Contacts" type="number" class="form-control" placeholder="Enter Your Phone Number" aria-label="Last name" required>
                                       
                                     </div>
+
                                     <div class="col-md-6">
                                         <label for="country"> Country</label>
                                         <select class="form-select" id="country">
@@ -190,6 +191,7 @@
                                  <div class="col-md-6">
                                     <label for="email" > Email</label>
                                     <input type="email" id="email" class="form-control" placeholder="another@example.com"  aria-label="email" required>
+                                    <span class="error-message" id="emailError"></span>
                                  </div>
 
 
@@ -205,14 +207,25 @@
                                     <span class="error-message" id="organizationError"></span>
                                   </div>
 
-                                  <div class="col-md-6">
+
+                                
+
+                                  <!-- <div class="col-md-6">
                                     <label for="country" class="form-label">Country</label>
                                     <select id="country" class="form-select">
                                     <span class="error-message" id="countryError"></span>
                                      
                                     </select>
 
-                                </div>
+                                </div> -->
+
+                                      <div class="col-md-6">
+                                        <label for="country"> Country</label>
+                                        <select class="form-select" id="country">
+                                        <span class="error-message" id="countryError"></span>
+
+                                        </select>  
+                                    </div>
 
                                 <div class="col-md-6">
                                     <label for="reserveBooth" class="form-label">Reserve a booth?</label>
@@ -288,7 +301,7 @@
   <div class="notification" id="successNotification"></div>
 
   <div id="output">
-    <h2>Added Individuals</h2>
+    <h2 id="addedIndividuals">Added Individuals</h2>
     <table>
       <thead>
         <tr>
@@ -298,7 +311,7 @@
           <th>Organization</th>
           <th>Phone Number</th>
           <th>Email</th>
-          <!-- <th>Reserve Booth</th> -->
+          <th>Reserve Booth</th>
         </tr>
       </thead>
       <tbody id="dataList"></tbody>
@@ -421,7 +434,7 @@
                 </div>
             </div>
 
-            <div class="kq-section">
+            <!-- <div class="kq-section">
                 <div class="container">
                     <div class="col-xs-12 col-sm-4 col-md-12">
 
@@ -484,7 +497,7 @@
                         
                     </div>
                 </div>
-            </div>
+            </div> -->
 <!-- ... Your previous HTML code ... -->
 
 
