@@ -103,7 +103,7 @@
                                 method="POST">
 
                                     <div class="col-md-6">
-                                        <label for="first-name"> Full Names</label>
+                                        <label for="fullName"> Full Names</label>
                                         <input name="Name" type="text" class="form-control" placeholder="Enter Your full names" aria-label="First name" required>
                                       
                                     </div>
@@ -115,23 +115,26 @@
                                     </div>
 
                                     <div class="col-md-6">
-                                        <label for="first-name"> Organisation/Company</label>
+                                        <label for="company"> Organisation/Company</label>
                                         <input name="Company" type="text" class="form-control" placeholder="Enter the name of your Organisation/Company" aria-label="Last name" required>
                                       
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="first-name"> Phone Number</label>
+                                        <label for="phone-number"> Phone Number</label>
                                         <input name="Contacts" type="number" class="form-control" placeholder="Enter Your Phone Number" aria-label="Last name" required>
-                                      
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="first-name"> Country</label>
-                                        <input name="Country" type="text" class="form-control" placeholder="Enter Your Country" aria-label="Last name" required>
                                       
                                     </div>
 
                                     <div class="col-md-6">
-                                        <label for="first-name"> Reserve a Booth(Yes/No)</label>
+                                        <label for="country"> Country</label>
+                                        <select class="form-select" id="country">
+                                        <span class="error-message" id="countryError"></span>
+
+                                        </select>  
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="boothReserve"> Reserve a Booth(Yes/No)</label>
                                         <input name="Booth-Reservation" type="text" class="form-control" placeholder="Enter 'Yes' to Reserve and 'No' for otherwise" aria-label="Last name" required>
                                       
                                     </div>
@@ -171,45 +174,115 @@
                             <h3 id="registration-header"> Group Registration Form</h3>
                             <form class="row g-3" id="dataEntryForm">
 
-                                <div class="col-md-6">
+                                <!-- <div class="col-md-6">
+
                                     <label for="name">Name:</label>
                                     <input type="text" id="name" required>
                                     <span class="error-message" id="nameError"></span>
 
-                                </div>
+                                </div> -->
 
                                 <div class="col-md-6">
+                                    <label for="name"> Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter Your Full Name" aria-label="name" required>
+                                    <span class="error-message" id="nameError"></span>
+                                 </div>
+
+                                 <div class="col-md-6">
+                                    <label for="email" > Email</label>
+                                    <input type="email" id="email" class="form-control" placeholder="another@example.com"  aria-label="email" required>
+                                    <span class="error-message" id="emailError"></span>
+                                 </div>
+
+
+                                 <div class="col-md-6">
+                                    <label for="phoneNumber" class="form-label">Phone Number</label>
+                                    <input type="number" class="form-control" id="phoneNumber" placeholder="Enter your phone number" required>
+                                    <span class="error-message" id="phoneNumberError"></span>
+                                  </div>
+
+                                  <div class="col-md-6">
+                                    <label for="organisation" class="form-label">Organisation/Company</label>
+                                    <input type="text" class="form-control" id="organization" placeholder="Enter name of your organisation" required>
+                                    <span class="error-message" id="organizationError"></span>
+                                  </div>
+
+
+                                
+
+                                  <!-- <div class="col-md-6">
+                                    <label for="country" class="form-label">Country</label>
+                                    <select id="country" class="form-select">
+                                    <span class="error-message" id="countryError"></span>
+                                     
+                                    </select>
+
+                                </div> -->
+
+                                      <div class="col-md-6">
+                                        <label for="country"> Country</label>
+                                        <select class="form-select" id="country">
+                                        <span class="error-message" id="countryError"></span>
+
+                                        </select>  
+                                    </div>
+
+                                <div class="col-md-6">
+                                    <label for="reserveBooth" class="form-label">Reserve a booth?</label>
+                                    <select id="reserveBooth" class="form-select">
+                                        <option value="" disabled selected>Select an option</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                      </select>
+                                      <span class="error-message" id="reserveBoothError"></span>
+                                    </select>
+                                  </div>
+
+
+
+                                    
+                                  
+
+
+
+
+
+                                <!-- <div class="col-md-6">
 
                                     <label for="country">Country:</label>
                                     <select id="country" required></select>
                                     <span class="error-message" id="countryError"></span>
 
-                                </div>
+                                </div> -->
 
-                                <div class="col-md-6">
+                               
+
+
+
+                                <!-- <div class="col-md-6">
 
                                     <label for="organization">Organization:</label>
                                     <input type="text" id="organization" required>
                                     <span class="error-message" id="organizationError"></span>
                                     
-                                </div>
-
+                                </div> -->
+<!-- 
                                 <div class="col-md-6">
-                                    <label for="phoneNumber">Phone Number:</label>
+                                    <label for="phoneNumber" class="form-label">Phone Number:</label>
                                     <input type="text" id="phoneNumber" required>
                                     <span class="error-message" id="phoneNumberError"></span>
                                     
-                                </div>
+                                </div> -->
 
-                                <div class="col-md-6">
+                                <!-- <div class="col-md-6">
 
                                     <label for="email">Email:</label>
                                     <input type="email" id="email" required>
                                     <span class="error-message" id="emailError"></span>
                                     
-                                </div>
+                                </div> -->
 
-                                <div class="col-md-6">
+                                <!-- <div class="col-md-6">
 
                                     <label for="reserveBooth">Reserve a Booth:</label>
                                     <select id="reserveBooth" required>
@@ -221,14 +294,14 @@
 
 
                                     
-                                </div>
-                                <button type="button" onclick="submitForm()">Submit</button>
+                                </div> -->
+                                <button type="button" class="btn btn-primary" onclick="submitForm()">Add Individual</button>
                               </form>
 
   <div class="notification" id="successNotification"></div>
 
   <div id="output">
-    <h2>Added Individuals</h2>
+    <h2 id="addedIndividuals">Added Individuals</h2>
     <table>
       <thead>
         <tr>
@@ -244,6 +317,15 @@
       <tbody id="dataList"></tbody>
     </table>
   </div>
+
+  <div class="text-center">
+    <div class="col-12">
+        <button type="submit" class="btn btn-danger" id="group-submit">Submit</button>
+      </div>
+    
+</div>
+
+
 
   <script>
     let entryCount = 1;
@@ -352,7 +434,7 @@
                 </div>
             </div>
 
-            <div class="kq-section">
+            <!-- <div class="kq-section">
                 <div class="container">
                     <div class="col-xs-12 col-sm-4 col-md-12">
 
@@ -415,7 +497,7 @@
                         
                     </div>
                 </div>
-            </div>
+            </div> -->
 <!-- ... Your previous HTML code ... -->
 
 

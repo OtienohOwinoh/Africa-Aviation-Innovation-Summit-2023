@@ -677,3 +677,24 @@ th {
   font-size: 14px;
 }
 
+#group-submit {
+
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#addedIndividuals{
+
+    margin: 20px 0px;
+    color: #BC9C22;
+    font-size: 25px;
+}
+
+#dataEntryForm ::placeholder{
+
+
+    color: #BC9C22;
+    font-size: 12px;
+    font-weight: 200;
+}
