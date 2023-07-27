@@ -229,6 +229,9 @@ border-right: 2px solid #bc9c22;
 
 }
 
+.venue1 {
+    margin: 20px;
+}
 
 .agenda-text {
 
@@ -704,3 +707,84 @@ th {
     font-size: 12px;
     font-weight: 200;
 }
+
+/* Portfolio Section */
+.s-portfolio {
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .s-porfolio__top {
+    margin-bottom: 50px;
+  }
+  
+  .s-porfolio__top h6 {
+    color: #777;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .s-porfolio__top h1 {
+    color: #0c134b;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  .s-portfolio__list {
+    margin: 0 -10px;
+  }
+  
+  .folio-item {
+    margin-bottom: 40px;
+  }
+  
+  .folio-item__thumb img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+  }
+  
+  .folio-item__info {
+    margin-top: 10px;
+  }
+  
+  .folio-item__cat {
+    color: #0c134b;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .folio-item__title {
+    color: #0c134b;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .folio-item__project-link {
+    color: #777;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .folio-item__caption {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .s-porfolio__top h1 {
+      font-size: 24px;
+    }
+  }
+  

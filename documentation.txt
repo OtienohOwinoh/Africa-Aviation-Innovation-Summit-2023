@@ -1,0 +1,20 @@
+BRAND GUIDELINES
+
+COLOURS
+Red  RGB: R : 237 G: 28 B: 36   #ED1C24
+White                           #FFFFFF
+White Fade(background) rgba(235,236,236,255) #ebecec
+Gold PANTONE 471C               #cf701a
+Grey R: 167 G: 169 B: 172       #A7A9AC
+
+
+FONT STYLES
+Lucida Sans Regular
+Lucida Sans Bold Italic
+Lucida Sans Italic
+Interstate Black
+Interstate Regular
+Interstate Light
+
+
+Nunito Sans
