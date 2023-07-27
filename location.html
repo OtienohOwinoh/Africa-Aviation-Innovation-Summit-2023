@@ -77,14 +77,13 @@
 <div class="kq-section">
 
     <div class="container">
-        <h2 class="agenda"> The Location</h2>
+        <h2 class="venue1 "> The Venue</h2>
 <hr id="hr-1">
 <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
 <h6 id="agenda1"> ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-
 </div>
-</div><br>
-</h6>
+</div>
+
 <!-- THE VENUE -->
 <section class="image-description-section">
     <style>
@@ -156,11 +155,8 @@
       
   <div class="kq-section">   
     <div class="container">
-
-
-  <div class="col-xs-12 col-sm-4 col-md-12"><br><br>
-    <h3 class="speaker-title">Cape Town Lorem</h3>
-    <h4 class="speaker-position">Lorem TOURISM BOARD</h4>
+  <div class="col-xs-12 col-sm-4 col-md-12">
+    <h4 class="speaker-title">The Good hotel</h4>
     <hr id="hr-1">
     <br><br>
         <p class="speaker-desc">
@@ -357,8 +353,158 @@
 <!-- THE VENUE -->
 
 
-<body>
-  <div class="kq-section">
+
+<!-- location accomodation -->
+
+<div class="container">
+  <div class="col-xs-12 col-sm-4 col-md-12"><br><br>
+    <h3 class="speaker-title" style="color:#cf701a ;">Accomodation</h3>
+    <h4 class="speaker-position">Lorem TOURISM BOARD</h4>
+    <hr id="hr-1">
+    <br><br>
+        <p class="speaker-desc">
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+            inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+        </p>
+    <br>
+
+  </div>
+        <style>@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+
+          .container .box{
+              position: relative;
+              display: inline-block;
+              margin: 10px;
+              width: calc((100% / 3) - 25px );  height: 250px;
+              background: #262626;
+              overflow: hidden;
+          }
+          .container .box img{
+              position: relative;
+              width: 100%;  height: 100%;
+              transition: 5s;
+          }
+          .container .box:hover img{
+              transform: scale(2);
+          }
+          
+          
+          .container .box::before,.container .box::after{
+              content: '';
+              position: absolute;
+              top: 10px;left: 10px;right: 10px;bottom: 10px;
+              transition: 1s;
+              z-index: 2;
+          }
+          .container .box::before{
+              transform: scale(1,0); 
+              border-left: 1px solid #fff;
+              border-right: 1px solid #fff;
+          }
+          .container .box::after{
+              transform: scale(0,1);
+              border-top: 1px solid #fff;
+              border-bottom: 1px solid #fff;
+          }
+          .container .box:hover::before,.container .box:hover::after{
+              transform: scale(1,1);
+          }
+          
+          
+          .container .box .content{
+              position: absolute;
+              top: 0;  left: 0;
+              width: 100%;  height: 100%;
+              background: rgba(0,0,0,0);
+              display: flex;
+              justify-content: center;   align-items: center;
+              transition: 1s;
+          
+          }
+          .container .box:hover .content{
+              background: rgba(0,0,0,.7);
+          }
+          .container .box .content .wrap{
+              box-sizing: border-box;
+              padding: 20px;
+              color: #fff;
+              z-index: 3;
+          }
+          .container .box .content .wrap h1{
+              position: relative;
+              font-size: 20px;
+              margin-bottom: 10px;
+              transform: translateY(-80px);
+              opacity: 0;
+              transition: 1s;
+          }
+          .container .box:hover .content .wrap h1{
+              transform: translateY(0);
+              opacity: 1;
+          }
+          .container .box .content .wrap p{
+              position: relative;
+              font-size: 15px;
+              transform: translateY(170px);
+              opacity: 0;
+              transition: .5s;
+          }
+          .container .box:hover .content .wrap p{
+              transform: translateY(0px);
+              opacity: 1;
+          }
+          /* Existing CSS styles for image boxes */
+
+          </style>
+  <div class="box">
+      <img src="https://img.freepik.com/free-photo/waiter-carries-plate-with-tasty-snacks_8353-1263.jpg?w=1380&t=st=1690379992~exp=1690380592~hmac=c25750a61aea525702aee05f0fcd39465cedca1394abc3f8a9d255b4bbd0c4d8">
+      <div class="content">
+          <div class="wrap">
+              <h1>Best Hotel S.A</h1>
+              <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
+              </p>
+              <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">View</a><br>
+              <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Navigate</a>
+          </div>
+      </div>
+  </div>
+  <div class="box">
+      <img src="https://img.freepik.com/free-photo/decorated-wedding-hall-with-candles-round-tables-centerpieces_8353-10057.jpg?w=1380&t=st=1690379952~exp=1690380552~hmac=2dcddaa05c0a3488fda95b68ccd0ce7c8051d370e3ed5b39d465bd15cc1e7783">
+      <div class="content">
+          <div class="wrap">
+              <h1>Best Hotel S.A</h1>
+              <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
+              </p>
+              <style>
+                
+              </style>
+              <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">View</a><br>
+              <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Navigate</a>
+            </div>
+      </div>
+  </div>
+  <div class="box">
+      <img src="https://plus.unsplash.com/premium_photo-1661964071015-d97428970584?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1620&q=80">
+      <div class="content">
+          <div class="wrap">
+              <h1>Best Hotel S.A</h1>
+              <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
+              </p>
+              <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">View</a><br>
+              <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Navigate</a>
+          </div>
+      </div>
+  </div>
+
+</div>
+<!-- location accomodation -->
+
+
+<div class="kq-section">
     <div class="container">
         <h2 class="agenda"> Navigation </h2>
 <hr id="hr-1">
