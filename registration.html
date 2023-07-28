@@ -20,6 +20,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
+
     <link rel="icon" type="image/png" sizes="16x16" href="images/AAIS Avatar Resize.png">
     <title>Aviation Summit</title>
     <style>
@@ -176,13 +178,6 @@
                             <h3 id="registration-header"> Group Registration Form</h3>
                             <form class="row g-3" id="dataEntryForm">
 
-                                <!-- <div class="col-md-6">
-
-                                    <label for="name">Name:</label>
-                                    <input type="text" id="name" required>
-                                    <span class="error-message" id="nameError"></span>
-
-                                </div> -->
 
                                 <div class="col-md-6">
                                     <label for="name"> Name</label>
@@ -209,25 +204,56 @@
                                     <span class="error-message" id="organizationError"></span>
                                   </div>
 
-
-                                
-
-                                  <!-- <div class="col-md-6">
-                                    <label for="country" class="form-label">Country</label>
-                                    <select id="country" class="form-select">
+                                <div class="col-md-6">
+                                  <label for="country">Country</label>
+                                  <select class="form-select" id="countries">
                                     <span class="error-message" id="countryError"></span>
-                                     
-                                    </select>
-
-                                </div> -->
-
-                                      <div class="col-md-6">
-                                        <label for="country"> Country</label>
-                                        <select class="form-select" id="country">
-                                        <span class="error-message" id="countryError"></span>
-
-                                        </select>  
-                                    </div>
+                                  </select>  
+                                </div>
+                                
+                                <script>
+                                  // Function to fetch the list of countries from the REST Countries API
+                                  function fetchCountries() {
+                                    const apiUrl = 'https://restcountries.com/v3/all'; // REST Countries API endpoint
+                                
+                                    // Fetch the data from the API
+                                    fetch(apiUrl)
+                                      .then((response) => response.json())
+                                      .then((data) => {
+                                        // Sort the countries alphabetically by name
+                                        data.sort((a, b) => a.name.common.localeCompare(b.name.common));
+                                
+                                        // Get the select element
+                                        const countriesSelect = document.getElementById('countries');
+                                
+                                        // Clear any previous options
+                                        countriesSelect.innerHTML = '';
+                                
+                                        // Add each country as an option in the select element
+                                        data.forEach((country) => {
+                                          const option = document.createElement('option');
+                                          option.text = country.name.common;
+                                          option.value = country.alpha3Code; // Using alpha3Code as the value, but you can use any other country code you prefer
+                                          countriesSelect.appendChild(option);
+                                        });
+                                      })
+                                      .catch((error) => {
+                                        // If there's an error fetching data, display an error message
+                                        const countryError = document.getElementById('countryError');
+                                        countryError.textContent = 'Error loading countries. Please try again later.';
+                                      });
+                                  }
+                                
+                                  // Call the function to populate the countries select when the page loads
+                                  fetchCountries();
+                                
+                                  // If you want to refresh the country list when the user clicks the select element, you can use the following code:
+                                  const countriesSelect = document.getElementById('countries');
+                                  countriesSelect.addEventListener('click', () => {
+                                    fetchCountries();
+                                  });
+                                </script>
+                                
 
                                 <div class="col-md-6">
                                     <label for="reserveBooth" class="form-label">Reserve a booth?</label>
@@ -240,268 +266,144 @@
                                     </select>
                                   </div>
 
-                                  
-
-
-                                    
-                                  
-
-
-
-
-
-                                <!-- <div class="col-md-6">
-
-                                    <label for="country">Country:</label>
-                                    <select id="country" required></select>
-                                    <span class="error-message" id="countryError"></span>
-
-                                </div> -->
-
-                               
-
-
-
-                                <!-- <div class="col-md-6">
-
-                                    <label for="organization">Organization:</label>
-                                    <input type="text" id="organization" required>
-                                    <span class="error-message" id="organizationError"></span>
-                                    
-                                </div> -->
-<!-- 
-                                <div class="col-md-6">
-                                    <label for="phoneNumber" class="form-label">Phone Number:</label>
-                                    <input type="text" id="phoneNumber" required>
-                                    <span class="error-message" id="phoneNumberError"></span>
-                                    
-                                </div> -->
-
-                                <!-- <div class="col-md-6">
-
-                                    <label for="email">Email:</label>
-                                    <input type="email" id="email" required>
-                                    <span class="error-message" id="emailError"></span>
-                                    
-                                </div> -->
-
-                                <!-- <div class="col-md-6">
-
-                                    <label for="reserveBooth">Reserve a Booth:</label>
-                                    <select id="reserveBooth" required>
-                                      <option value="" disabled selected>Select an option</option>
-                                      <option value="Yes">Yes</option>
-                                      <option value="No">No</option>
-                                    </select>
-                                    <span class="error-message" id="reserveBoothError"></span>
-
-
-                                    
-                                </div> -->
                                 <button type="button" class="btn btn-primary" onclick="submitForm()">Add Individual</button>
                               </form>
 
-  <div class="notification" id="successNotification"></div>
+                                      <div class="notification" id="successNotification"></div>
 
-  <div id="output">
-    <h2 id="addedIndividuals">Added Individuals</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>No.</th>
-          <th>Name</th>
-          <th>Country</th>
-          <th>Organization</th>
-          <th>Phone Number</th>
-          <th>Email</th>
-          <th>Reserve Booth</th>
-        </tr>
-      </thead>
-      <tbody id="dataList"></tbody>
-    </table>
-  </div>
+                                      <div id="output">
+                                        <h2 id="addedIndividuals">Added Individuals</h2>
+                                        <table>
+                                          <thead>
+                                            <tr>
+                                              <th>No.</th>
+                                              <th>Name</th>
+                                              <th>Country</th>
+                                              <th>Organization</th>
+                                              <th>Phone Number</th>
+                                              <th>Email</th>
+                                              <th>Reserve Booth</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody id="dataList"></tbody>
+                                        </table>
+                                      </div>
 
-  <div class="text-center">
-    <div class="col-12">
-        <button type="submit" class="btn btn-danger" id="group-submit">Submit</button>
-      </div>
-    
-</div>
+                                      <div class="text-center">
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-danger" id="group-submit">Submit</button>
+                                          </div>
+                                        
+                                    </div>
 
 
 
-  <script>
-    let entryCount = 1;
+                            <script>
+                              let entryCount = 1;
 
-    // Function to fetch the list of countries and populate the dropdown
-    function fetchCountries() {
-      const countryDropdown = document.getElementById("country");
-      fetch("https://restcountries.com/v3.1/all")
-        .then((response) => response.json())
-        .then((data) => {
-          data.sort((a, b) => {
-            // Sort countries alphabetically by name
-            return a.name.common.localeCompare(b.name.common);
-          });
+                              // Function to fetch the list of countries and populate the dropdown
+                              function fetchCountries() {
+                                const countryDropdown = document.getElementById("country");
+                                fetch("https://restcountries.com/v3.1/all")
+                                  .then((response) => response.json())
+                                  .then((data) => {
+                                    data.sort((a, b) => {
+                                      // Sort countries alphabetically by name
+                                      return a.name.common.localeCompare(b.name.common);
+                                    });
 
-          data.forEach((country) => {
-            const option = document.createElement("option");
-            option.value = country.name.common;
-            option.textContent = country.name.common;
-            countryDropdown.appendChild(option);
-          });
-        })
-        .catch((error) => {
-          console.log("Error fetching countries:", error);
-        });
-    }
+                                    data.forEach((country) => {
+                                      const option = document.createElement("option");
+                                      option.value = country.name.common;
+                                      option.textContent = country.name.common;
+                                      countryDropdown.appendChild(option);
+                                    });
+                                  })
+                                  .catch((error) => {
+                                    console.log("Error fetching countries:", error);
+                                  });
+                              }
 
-    // Call the fetchCountries function to populate the dropdown on page load
-    fetchCountries();
+                              // Call the fetchCountries function to populate the dropdown on page load
+                              fetchCountries();
 
-    function submitForm() {
-      if (!document.getElementById("dataEntryForm").checkValidity()) {
-        // Show error messages for required fields
-        showErrorMessage("name");
-        showErrorMessage("country");
-        showErrorMessage("organization");
-        showErrorMessage("phoneNumber");
-        showErrorMessage("email");
-        showErrorMessage("reserveBooth");
-        return;
-      }
+                              function submitForm() {
+                                if (!document.getElementById("dataEntryForm").checkValidity()) {
+                                  // Show error messages for required fields
+                                  showErrorMessage("name");
+                                  showErrorMessage("country");
+                                  showErrorMessage("organization");
+                                  showErrorMessage("phoneNumber");
+                                  showErrorMessage("email");
+                                  showErrorMessage("reserveBooth");
+                                  return;
+                                }
 
-      const name = document.getElementById("name").value;
-      const country = document.getElementById("country").value;
-      const organization = document.getElementById("organization").value;
-      const phoneNumber = document.getElementById("phoneNumber").value;
-      const email = document.getElementById("email").value;
-      const reserveBooth = document.getElementById("reserveBooth").value;
+                                const name = document.getElementById("name").value;
+                                const country = document.getElementById("country").value;
+                                const organization = document.getElementById("organization").value;
+                                const phoneNumber = document.getElementById("phoneNumber").value;
+                                const email = document.getElementById("email").value;
+                                const reserveBooth = document.getElementById("reserveBooth").value;
 
-      const dataEntry = {
-        name: name,
-        country: country,
-        organization: organization,
-        phoneNumber: phoneNumber,
-        email: email,
-        reserveBooth: reserveBooth
-      };
+                                const dataEntry = {
+                                  name: name,
+                                  country: country,
+                                  organization: organization,
+                                  phoneNumber: phoneNumber,
+                                  email: email,
+                                  reserveBooth: reserveBooth
+                                };
 
-      displayData(dataEntry);
-      showSuccessNotification(name);
-      clearForm();
-    }
+                                displayData(dataEntry);
+                                showSuccessNotification(name);
+                                clearForm();
+                              }
 
-    function displayData(data) {
-      const dataList = document.getElementById("dataList");
-      const row = document.createElement("tr");
-      row.innerHTML = `<td>${entryCount}</td>
-                       <td>${data.name}</td>
-                       <td>${data.country}</td>
-                       <td>${data.organization}</td>
-                       <td>${data.phoneNumber}</td>
-                       <td>${data.email}</td>
-                       <td>${data.reserveBooth}</td>`;
+                              function displayData(data) {
+                                const dataList = document.getElementById("dataList");
+                                const row = document.createElement("tr");
+                                row.innerHTML = `<td>${entryCount}</td>
+                                                <td>${data.name}</td>
+                                                <td>${data.country}</td>
+                                                <td>${data.organization}</td>
+                                                <td>${data.phoneNumber}</td>
+                                                <td>${data.email}</td>
+                                                <td>${data.reserveBooth}</td>`;
 
-      dataList.appendChild(row);
-      entryCount++;
-    }
+                                dataList.appendChild(row);
+                                entryCount++;
+                              }
 
-    function showSuccessNotification(name) {
-      const notification = document.getElementById("successNotification");
-      notification.textContent = `${name} successfully added to the group.`;
-      notification.style.display = "block";
-      setTimeout(() => {
-        notification.style.display = "none";
-      }, 7000); // Hide the notification after 3 seconds
-    }
+                              function showSuccessNotification(name) {
+                                const notification = document.getElementById("successNotification");
+                                notification.textContent = `${name} successfully added to the group.`;
+                                notification.style.display = "block";
+                                setTimeout(() => {
+                                  notification.style.display = "none";
+                                }, 7000); // Hide the notification after 3 seconds
+                              }
 
-    function clearForm() {
-      document.getElementById("dataEntryForm").reset();
-    }
+                              function clearForm() {
+                                document.getElementById("dataEntryForm").reset();
+                              }
 
-    function showErrorMessage(fieldName) {
-      const errorElement = document.getElementById(`${fieldName}Error`);
-      const inputElement = document.getElementById(fieldName);
-      if (!inputElement.checkValidity()) {
-        errorElement.textContent = inputElement.validationMessage;
-      } else {
-        errorElement.textContent = "";
-      }
-    }
-  </script>
+                              function showErrorMessage(fieldName) {
+                                const errorElement = document.getElementById(`${fieldName}Error`);
+                                const inputElement = document.getElementById(fieldName);
+                                if (!inputElement.checkValidity()) {
+                                  errorElement.textContent = inputElement.validationMessage;
+                                } else {
+                                  errorElement.textContent = "";
+                                }
+                              }
+                            </script>
 
                              
                         
                     </div>
                 </div>
             </div>
-
-            <!-- <div class="kq-section">
-                <div class="container">
-                    <div class="col-xs-12 col-sm-4 col-md-12">
-
-                        <h3 id="group-registration"> Group Registration</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam in, repellendus 
-                            placeat enim corporis soluta porro officiis cum praesentium adipisci, voluptatem aliquam sit.
-                             Doloremque deserunt laboriosam accusamus molestiae maxime? Laudantium? lorem2</p>
-
-                            <h3 id="registration-header"> Group Registration Form</h3>
-
-                            <form class="row g-3" id="placeholders">
-
-
-                         
-                                <div class="col-md-6">
-                                    <label for="first-name"> Registrant Name</label>
-                                    <input type="text" class="form-control" placeholder="Enter Your Full Name" aria-label="name" required>
-                                 </div>
-
-                                 <div class="col-md-6">
-                                    <label for="inputEmail4"> Registrant Email</label>
-                                    <input type="email" class="form-control" placeholder="another@example.com" id="inputEmail4" aria-label="name" required>
-                                 </div>
-
-                                 <div class="col-md-6">
-                                    <label for="phoneNumber" class="form-label">Registrant Phone Number</label>
-                                    <input type="number" class="form-control" id="phonenumber" placeholder="Enter your phone number" required>
-                                  </div>
-
-                                  <div class="col-md-6">
-                                    <label for="organisation" class="form-label">Organisation/Company</label>
-                                    <input type="text" class="form-control" id="organisation" placeholder="Enter name of your organisation" required>
-                                  </div>
-            
-                    
-
-                                  <div class="col-md-6">
-                                    <label for="inputState" class="form-label">Country</label>
-                                    <select id="inputState" class="form-select">
-                                      <option selected>Country</option>
-                                      <option>Kenya</option>
-                                    </select>
-            
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label for="inputState" class="form-label">Reserve a booth?</label>
-                                    <select id="inputState" class="form-select">
-                                      <option selected id="tr">Do You Want to Reserve a Booth?</option>
-                                      <option>Yes</option>
-                                      <option>No</option>
-                                    </select>
-                                  </div>
-                                 
-
-            
-                            </form>
-
-                             
-                        
-                    </div>
-                </div>
-            </div> -->
-<!-- ... Your previous HTML code ... -->
 
 
 <!-- GROUP REGISTRATION -->
