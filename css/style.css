@@ -882,7 +882,7 @@ th {
  .faq input[type='checkbox']:not(:checked) + label {
   display: block;
   transition: height 0.8s;
-  height: 53px;
+  height: 50px;
   -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
@@ -1203,7 +1203,7 @@ th {
         cursor: pointer;
       }
       .speaker-desc{
-          color: white;
+          color: black;
       }
 
 
