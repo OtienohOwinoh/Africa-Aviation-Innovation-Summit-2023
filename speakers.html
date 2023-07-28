@@ -50,7 +50,7 @@
             <li class="nav-item"><a href="agenda.html" class="nav-link" style="color: rgb(255, 255, 255);">Agenda</a></li>
         <li class="nav-item"><a href="speakers.html" class="nav-link" style="color: rgb(255, 255, 255);">Speakers</a></li>
         <li class="nav-item"  ><a href="location.html"class="nav-link" style="color: rgb(255, 255, 255);">Location</a></li>
-        <button type="button" class="btn btn-danger " id="profile-button"> <a href="register.html"> Register </a> </button>
+        <button type="button" class="btn btn-danger " id="profile-button"> <a href="registration.html"> Register </a> </button>
         <li class="nav-item"  ><a href="#"class="nav-link" style="color: red;"></a></li>
         <li class="nav-item"  ><a href="#"class="nav-link" style="color: red;"></a></li>
         <li class="nav-item"  ><a href="#"class="nav-link" style="color: red;"></a></li>
@@ -74,84 +74,7 @@
 <br><br>
 </div>
 </div>
-  <style media="screen">
-   @font-face {
-     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     src: url(./fonts/Exo2.0-Medium.otf);
-   }
-   .main{
-     width: 100%;
-     height: 200px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     background-color: #ffffff;
-   }
-   .profile-card{
-     position: relative;
-     font-family: sans-serif;
-     width: 220px;
-     height: 220px;
-     background: #fff;
-     padding: 30px;
-     border-radius: 50%;
-     box-shadow: 0 0 22px #3336;
-     transition: .6s;
-     margin: 0 25px;
-   }
-   .profile-card:hover{
-     border-radius: 10px;
-     height: 260px;
-   }
-   .profile-card .img{
-     position: relative;
-     width: 100%;
-     height: 100%;
-     transition: .6s;
-     z-index: 99;
-   }
-   .profile-card:hover .img{
-     transform: translateY(-60px);
-   }
-   .img img{
-     width: 100%;
-     border-radius: 50%;
-     box-shadow: 0 0 22px #3336;
-     transition: .6s;
-   }
-   .profile-card:hover img{
-     border-radius: 10px;
-   }
-   .caption{
-     text-align: center;
-     transform: translateY(-80px);
-     opacity: 0;
-     transition: .6s;
-   }
-   .profile-card:hover .caption{
-     opacity: 1;
-   }
-   .caption h3{
-     font-size: 21px;
-     font-family: sans-serif;
-   }
-   .caption p{
-     font-size: 15px;
-     color: #0c52a1;
-     font-family: sans-serif;
-     margin: 2px 0 9px 0;
-   }
-   .caption .social-links a{
-     color: #333;
-     margin-right: 15px;
-     font-size: 21px;
-     transition: .6s;
-   }
-   .social-links a:hover{
-     color: #0c52a1;
-   }
-
-  </style>
+ 
 
 </head>
 
@@ -166,8 +89,7 @@
               <h3>Tom Cruise</h3>
               <p>Full Stack Developer</p>
               <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <button class="profile-button" onclick="showProfileDetails()">View Profile<span class="arrow">→</span>
                 </button>
@@ -182,8 +104,7 @@
               <h3>Tom Cruise</h3>
               <p>Full Stack Developer</p>
               <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <button class="profile-button" onclick="showProfileDetails()">View Profile<span class="arrow">→</span>
                 </button>
@@ -198,8 +119,7 @@
               <h3>Tom Cruise</h3>
               <p>Full Stack Developer</p>
               <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <button class="profile-button" onclick="showProfileDetails()">View Profile<span class="arrow">→</span>
                 </button>
@@ -226,151 +146,10 @@
                         </p>
                         <br>
                         <div class="wrapper">
-                            <style>
-                                /* Just for the pen to look nice */
-                            @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
-                            a{
-                            text-decoration: none;
-                            }
-                            body{
-                            font-family: 'Open Sans';
-                            }
-                            /* relevant code for the icons starts here */
-
-                            .site{
-                            display:flex;
-                            flex-direction: column;
-                            align-items: baseline;
-                            justify-content: center;
-                            }
-                            .wrapper{
-                            display:flex;
-                            height: 10vh;
-                            flex-direction: row;
-                            padding: 0 10px;
-                            align-items: center;
-                            justify-content: center;
-                            }
-
-
-
-                            .fab {
-                            margin: auto;
-
-                            }
-                            .social{
-                            color: #FFF;
-                            transition: all 0.35s;
-                            transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
-                            }
-                            .social:hover {
-                                text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
-                                transition: all ease 0.5s;
-                                -moz-transition: all ease-in 0.5s;
-                                -webkit-transition: all ease-in 0.5s;
-                                -o-transition: all ease-in 0.5s;
-                            
-                            }
-
-                            .facebook {
-                            color:#4267B2;
-                            }
-
-                            .twitter {
-                            color:#1DA1F2;
-
-                            }
-                            .youtube {
-                                color:#c4302b;
-                            }
-                            .pinterest {
-                            color:#c8232c;
-                            }
-                            .instagram {
-                            color: transparent;
-                            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-                            background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-                            background-clip: text;
-                            -webkit-background-clip: text;
-
-                            }
-                            .tumblr {
-                                    color: #34526f;
-                            }
-                            .whatsapp {
-                                    color:#25D366;
-                            }
-
-                            .bg-ico {
-                            display: flex;
-                            background-color: #FFF;
-                            width: 70px;
-                            height: 70px;
-                            line-height: 90px;
-                            margin: 0 5px;
-                            text-align: center;
-                            position: left;
-                            overflow: hidden;
-                            border-radius: 28%;
-                            box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
-                            opacity: 0.99;
-                            -webkit-transition: background-color 2s ease-out;
-                            -moz-transition: background-color 2s ease-out;
-                            -o-transition: background-color 2s ease-out;
-                            transition: background-color 2s ease-out;
-                            
-                            }
-                            .bg-ico:hover{
-                                box-shadow: 0 5px 15px -5px rgba(0,0,0,0.8);
-                            }
-
-                            #facebook:hover {
-                            background-color: #4267B2;
-                            }
-
-                            #twitter:hover {
-                            background-color: #1DA1F2;
-
-                            }
-                            #youtube:hover {
-                                background-color: #c4302b;
-                            }
-                            #pinterest:hover {
-                            background-color:#c8232c;
-                            }
-                            #instagram:hover {
-                            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-                            background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-                            
-
-                            }
-                            #tumblr:hover {
-                                background-color: #34526f;
-                            }
-                            #whatsapp:hover {
-                                background-color:#25D366;
-                            }
-
-                            .facebook:hover, 
-                            .twitter:hover, 
-                            .youtube:hover, 
-                            .pinterest:hover,
-                            .instagram:hover, 
-                            .tumblr:hover,
-                            .whatsapp:hover {
-                            color:#fff;
-                            transform: scale(1.3);
-
-                            }
-                            </style>
-                            <a href="#"><div class="bg-ico" id="facebook"><i class="fab fa-facebook social  facebook fa-3x"></i></div></a>
-                            <a href="#"><div class="bg-ico" id="pinterest"><i class="fab fa-pinterest social  pinterest fa-3x"></i></div></a>
+                         
+                           
                             <a href="#"><div class="bg-ico" id="twitter"><i class="fab fa-twitter social  twitter fa-3x"></i></div></a>
-                            <a href="#"><div class="bg-ico" id="instagram"><i class="fab fa-instagram social  instagram fa-3x"></i></div></a>
-                            <a href="#"><div class="bg-ico" id="tumblr"><i class="fab fa-tumblr social  tumblr fa-3x"></i></div></a>
-                            <a href="#"><div class="bg-ico" id="whatsapp"><i class="fab fa-whatsapp social  whatsapp fa-3x"></i></div></a>
-                            <a href="#"><div class="bg-ico" id="youtube"><i class="fab fa-youtube social  youtube fa-3x"></i></div></a>
+                            <a href="#"><div class="bg-ico" id="linkedin"><i class="fab fa-linkedin social  twitter fa-3x"></i></div></a>
                             </div>
                     </div>
                 </div>
@@ -390,43 +169,7 @@
             }
           </script>
           
-          <style>
-            .profile-details-overlay {
-              display: none;
-              position: fixed;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              background-color: rgba(255, 255, 255, 0.8);
-              z-index: 999;
-              text-align: center;
-            }
-          
-            .profile-details {
-              display: inline-block;
-              max-width: 60%;
-              margin-top: 10%;
-              padding: 0px;
-              background-color: #cc9b14;
-              border-radius: 5px;
-              text-align: left;
-            }
-          
-            .close-button {
-              position: absolute;
-              top: 30px;
-              right: 30px;
-              font-size: 40px;
-              background-color: transparent;
-              border: none;
-              color: #530b0b;
-              cursor: pointer;
-            }
-            .speaker-desc{
-                color: white;
-            }
-          </style>
+        
           
     </div>
     
@@ -441,8 +184,7 @@
               <h3>Tom Cruise</h3>
               <p>Full Stack Developer</p>
               <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <button class="profile-button" onclick="showProfileDetails()">View Profile<span class="arrow">→</span>
                 </button>
@@ -457,8 +199,8 @@
               <h3>Tom Cruise</h3>
               <p>Full Stack Developer</p>
               <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+          
+                <a href="#"><i class="fab fa-linkedin"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <button class="profile-button" onclick="showProfileDetails()">View Profile<span class="arrow">→</span>
                 </button>
@@ -473,8 +215,7 @@
               <h3>Tom Cruise</h3>
               <p>Full Stack Developer</p>
               <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <button class="profile-button" onclick="showProfileDetails()">View Profile<span class="arrow">→</span>
                 </button>
@@ -720,9 +461,8 @@
 
               <h3 class="contact-person"> KQ Fahari Innovation Hub</h3>
               <p class="contact-desc">Kenya Airways <br>
-                  Mobile: +254 722 325 732 <br>
-                  Email: Martin.Kibisu@kenya-airways.com <br>
-                  Website: www.kenya-airways.com</p>
+                  Mobile: +254716851914 <br>
+                  Email: fahari.innovation@kenya-airways.com <br>
 
           </div>
 
@@ -756,7 +496,6 @@
   <div class="container">
 
       <div class="col-md-12">
-          <h3 class="contact">Quote</h3>
           <hr id="hr-1">
           <img src="./images/Plane- Black.png" alt="plane" id="plane-black-2">
           <br><br>
@@ -778,7 +517,6 @@
       <br><br>
   </div>
 </div>
-
 
 
 <!-- FOOTER -->

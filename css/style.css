@@ -63,10 +63,14 @@ p {
 /* LANDING PAGE */
 
 #agenda-section {
-    background-color: #DDDDDD;
+    background-color: #fafafa;
     margin-bottom: 25px;
 }
 
+#agenda1 {
+    clear: both;
+    
+}
 .landing-page {
 
     background-image: url(/images/Website\ banner\ 3.jpg);
@@ -232,7 +236,8 @@ border-right: 2px solid #bc9c22;
 }
 
 .venue1 {
-    margin: 20px;
+  margin-bottom: -1px;
+  color: rgb(237, 28, 36);
 }
 
 .agenda-text {
@@ -309,7 +314,7 @@ text-decoration: none;
 
 .speaker-title {
 
-    color: rgb(237, 28, 36);
+    color: rgb(203, 182, 119);
 }
 
 .speaker-position {
@@ -326,6 +331,11 @@ text-decoration: none;
 /* FEATURED SPEAKERS */
 
 /* VENUE SECTION  */
+
+#homepage-location {
+
+   margin-top: -100px;
+}
 
 #venue-section {
 
@@ -362,7 +372,8 @@ text-decoration: none;
 
 #contact-section {
 
-    background-color: #BC9C22;
+    background-color: rgb(203, 182, 119);
+    margin-top: -35px;
 }
 
 /* CONTACT SECTION */
@@ -387,7 +398,7 @@ text-decoration: none;
 
 #footer-address {
 
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 .address{
@@ -404,7 +415,7 @@ text-decoration: none;
 /* FOOTER SECTION */
 
 #footer-section {
-    background-color: #BC9C22;
+    background-color: rgb(203, 182, 119);
 }
 
 .quote {
@@ -496,6 +507,7 @@ blockquote{
   line-height:1.6;
   position: relative;
   background:#EDEDED;
+  border-radius: 10px;
 }
 
 blockquote::before{
@@ -562,7 +574,7 @@ blockquote span{
 .sponsors-carousel{
 
     padding: 30px 25px;
-    background-color: #EEEDED;
+    background-color: #fafafa;
     overflow: hidden;
     white-space: nowrap;
     position: relative;
@@ -877,3 +889,4 @@ th {
 ::-webkit-scrollbar {
   display: none;
 }
+
