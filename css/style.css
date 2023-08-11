@@ -577,7 +577,7 @@ blockquote span{
 
 .sponsors-carousel{
 
-    padding: 30px 25px;
+    padding: 0px 10px;
     background-color: #fafafa;
     overflow: hidden;
     white-space: nowrap;
@@ -1385,7 +1385,7 @@ th {
           color: rgb(237, 28, 36);
           margin: 50px;
           text-align: center;
-          font-size: 2rem;
+          font-size: 1.5rem;
         }
 
         .visa {
