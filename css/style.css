@@ -1415,5 +1415,47 @@ th {
         }
 
       /* EXHIBITION */
+      .profile-details-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+        z-index: 999;
+        text-align: center;
+      }
+    
+      .profile-details {
+        display: inline-block;
+        max-width: 60%;
+        margin-top: 10%;
+        padding: 0px;
+        background-color: #cc9b14;
+        border-radius: 5px;
+        text-align: left;
+      }
+    
+      .close-button {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        font-size: 40px;
+        background-color: transparent;
+        border: none;
+        color: #530b0b;
+        cursor: pointer;
+      }
+      .speaker-desc{
+          color: white;
+      }
+      a{
+        text-decoration: none;
+        }
+        body{
+        font-family: 'Open Sans';
+        }
+        /* relevant code for the icons starts here */
 
-       
+
