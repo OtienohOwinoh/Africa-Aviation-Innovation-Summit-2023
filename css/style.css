@@ -76,7 +76,7 @@ p {
 
     background-image: url(/images/Website\ banner\ 3.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
 }
 #main-header {
 
@@ -186,15 +186,22 @@ border-right: 2px solid #bc9c22;
 
 #conference-theme {
 
-    color: rgb(237, 28, 36);
+    color: rgb(203, 182, 119);
    
     
     
 }
 
+#conference-themes {
+
+  color: rgb(237, 28, 36);
+ 
+  
+  
+}
 .conference-decription {
 
-    
+    clear: both;
     
 }
 
@@ -607,7 +614,7 @@ blockquote span{
 .sponsors-slide img {
 
     height: 150px;
-    margin: 0 40px;
+    margin: 0 5px;
 }
 
 
@@ -1205,6 +1212,7 @@ th {
         border: none;
         color: #530b0b;
         cursor: pointer;
+        margin: 80px 180px 0 0;
       }
       .speaker-desc{
           color: black;
@@ -1408,3 +1416,4 @@ th {
 
       /* EXHIBITION */
 
+       
