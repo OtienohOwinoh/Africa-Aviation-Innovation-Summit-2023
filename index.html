@@ -287,66 +287,127 @@
 
 
 
+<!-- Profile details with "View Full Profile" button -->
 <div class="row">
-    <div class="col-xs-12 col-sm-4 col-md-3">
-        <img src="./images/Proffessional Man.jpg" alt="featured-speaker1" width="200px" id="profile-image">
-    </div>
-    <div class="col-xs-12 col-sm-4 col-md-7">
-        <h3 class="speaker-title">Robyn Brown</h3>
-        <h4 class="speaker-position">CEO KENYA TOURISM BOARD</h4>
-        <p class="speaker-description       ">
-            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-            inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-            fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-            amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.  
-           
-    </p>
+  <div class="col-xs-12 col-sm-4 col-md-3">
+      <img src="./images/Proffessional Man.jpg" alt="featured-speaker1" width="200px" id="profile-image">
+  </div>
+  <div class="col-xs-12 col-sm-4 col-md-7">
+      <h3 class="speaker-title">Allan KEn</h3>
+      <h4 class="speaker-position">CEO KENYA TOURISM BOARD</h4>
+      <p class="speaker-description">
+          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+          inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+          fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+          amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.  
+      </p>
 
-    <button type="button" class="btn btn-danger " id="profile-button"> <a href="#"> Full Profile </a> </button>
-    
+      <!-- Add event listener to call showProfileDetails() function -->
+      <button type="button" class="btn btn-danger" id="profile-button-2" onclick="showProfileDetails('profile-details-overlay-2')">Full Profile</button>
     </div>
 </div>
+
+<!-- Pop-up for profile details -->
+<div class="profile-details-overlay" id="profile-details-overlay">
+  <div class="profile-details">
+      <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4">
+              <img src="./images/Proffessional Man.jpg" alt="featured-speaker1" width="300px">
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-7">
+              <h3 class="speaker-title">Allan KE</h3>
+              <h4 class="speaker-position">CEO KENYA TOURISM BOARD</h4>
+              <hr id="hr-1">
+              <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
+              <p class="speaker-desc">
+                  "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                  inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+              </p>
+              <div class="wrapper">
+                  <a href="#"><div class="bg-ico" id="facebook"><i class="fab fa-facebook social facebook fa-3x"></i></div></a>
+                  <a href="#"><div class="bg-ico" id="twitter"><i class="fab fa-twitter social twitter fa-3x"></i></div></a>
+                  <a href="#"><div class="bg-ico" id="instagram"><i class="fab fa-instagram social instagram fa-3x"></i></div></a>
+              </div>
+          </div>
+      </div>
+      <button class="close-button" onclick="hideProfileDetails()">&#x2716;</button>
+  </div>
+</div>
+
+<script>
+  function showProfileDetails() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay');
+      profileDetailsOverlay.style.display = 'block';
+  }
+
+  function hideProfileDetails() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay');
+      profileDetailsOverlay.style.display = 'none';
+  }
+
+  const profileDetailsOverlay = document.getElementById('profile-details-overlay');
+  profileDetailsOverlay.addEventListener('click', function(event) {
+      if (event.target === profileDetailsOverlay) {
+          hideProfileDetails();
+      }
+  });
+</script>
+<hr>
+
+
+
+<!-- Profile details with "Full Profile" button - Section 1 -->
+<div class="row">
+  <div class="col-xs-12 col-sm-4 col-md-7">
+      <h3 class="speaker-title">Robyn Brown</h3>
+      <h4 class="speaker-position">CEO KENYA TOURISM BOARD</h4>
+      <p class="speaker-description">
+          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+          inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+          fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+          amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.  
+      </p>
+      <!-- Add event listener to call showProfileDetails() function -->
+      <button type="button" class="btn btn-danger" id="profile-button-1" onclick="showProfileDetails('profile-details-overlay-1')">Full Profile</button>
+  </div>
+  <div class="col-xs-12 col-sm-4 col-md-3">
+      <img src="https://media.istockphoto.com/id/1384256772/photo/portrait-of-a-smiling-african-woman-dressed-elegantly-holding.jpg?s=612x612&w=0&k=20&c=IfpG03iVSw6xgVZ9-hGZ6kynC9Vx4RBpi0jeBvc4sDQ=" alt="featured-speaker1" width="200px" id="profile-image">
+  </div>
+</div>
+
+<!-- Pop-up for profile details - Section 1 -->
+<div class="profile-details-overlay" id="profile-details-overlay-1">
+  <!-- ... Pop-up content for Section 1 ... -->
+</div>
+
 
 <hr>
 
-<div class="row">
-    
-    <div class="col-xs-12 col-sm-4 col-md-7">
-        <h3 class="speaker-title">Robyn Brown</h3>
-    <h4 class="speaker-position">CEO KENYA TOURISM BOARD</h4>
-    <p class="speaker-description">
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-         inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-          fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-           amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.  
-    </p>
-
-    <button type="button" class="btn btn-danger " id="profile-button"> <a href="#"> Full Profile </a> </button>
-   
-    </div>
-
-    <div class="col-xs-12 col-sm-4 col-md-3">
-        <img src="https://media.istockphoto.com/id/1384256772/photo/portrait-of-a-smiling-african-woman-dressed-elegantly-holding.jpg?s=612x612&w=0&k=20&c=IfpG03iVSw6xgVZ9-hGZ6kynC9Vx4RBpi0jeBvc4sDQ=" alt="featured-speaker1" width="200px" id="profile-image">
-    </div>
-</div>
-<hr><br><br>
+<!-- Profile details with "Full Profile" button - Section 2 -->
 <div class="row">
     <div class="col-xs-12 col-sm-4 col-md-3">
         <img src="https://media.istockphoto.com/id/1301253821/photo/studio-portrait-of-a-man-in-a-suit.jpg?s=612x612&w=0&k=20&c=GFyGB9ECOCM0i7jT-XZx1i9A8xUNLd5YvKUBnCuOowM=" alt="featured-speaker1" width="200px" id="profile-image">
     </div>
     <div class="col-xs-12 col-sm-4 col-md-7">
-        <h3 class="speaker-title">Robyn Brown</h3>
-    <h4 class="speaker-position">CEO KENYA TOURISM BOARD</h4>
-    <p class="speaker-description">
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-         inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-          fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-           amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.  
-    </p>
-    <button type="button" class="btn btn-danger " id="profile-button"> <a href="#"> Full Profile </a> </button>
-   
+        <h3 class="speaker-title">Mary Kimani</h3>
+        <h4 class="speaker-position">CEO KENYA TOURISM BOARD</h4>
+        <p class="speaker-description">
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+            inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+            fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+            amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.  
+        </p>
+        <!-- Add event listener to call showProfileDetails() function -->
+        <button type="button" class="btn btn-danger" id="profile-button-2" onclick="showProfileDetails('profile-details-overlay-2')">Full Profile</button>
     </div>
 </div>
+
+<!-- Pop-up for profile details - Section 2 -->
+<div class="profile-details-overlay" id="profile-details-overlay-2">
+    <!-- ... Pop-up content for Section 2 ... -->
+</div>
+<hr>
+
 <br><br><br>
 
 <button type="button" class="btn btn-danger " id="profile-button"> <a href="/speakers.html"> View All Speakers </a> </button><br>

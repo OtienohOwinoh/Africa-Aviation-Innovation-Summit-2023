@@ -1515,3 +1515,34 @@ th {
 
 
       /* our sponsors */
+
+      .speaker-title {
+        font-size: 24px;
+        margin-top: 10px;
+      }
+      .speaker-position {
+        font-size: 18px;
+        margin-top: 5px;
+      }
+      .speaker-description {
+        font-size: 16px;
+        margin-top: 15px;
+      }
+      .profile-button {
+        margin-top: 20px;
+      }
+      .profile-card {
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        padding: 20px;
+        text-align: center;
+      }
+      .profile-card img {
+        max-width: 100%;
+      }
+      .caption {
+        margin-top: 10px;
+      }
+      .social-links {
+        margin-top: 15px;
+      }
