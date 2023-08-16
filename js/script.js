@@ -33,6 +33,25 @@ const x = setInterval(function () {
 
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const profileButton = document.getElementById("profile-button");
+    const modal = document.getElementById("profile-modal");
+    const closeModal = document.getElementById("close-modal");
+
+    profileButton.addEventListener("click", function () {
+        modal.style.display = "block";
+    });
+
+    closeModal.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
 
 
 // Event Timer
