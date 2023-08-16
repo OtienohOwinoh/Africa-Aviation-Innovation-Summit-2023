@@ -315,12 +315,14 @@ border-right: 2px solid #bc9c22;
 
    display: block;
    margin: 0 auto;
+   cursor: pointer;
 }
 
 #profile-button a{
 
 color: white;
 text-decoration: none;
+
 }
 
 .speaker-title {
@@ -652,6 +654,12 @@ blockquote span{
     color: #bc9c22;
 }
 
+/* #placeholders {
+
+  border: 1px solid red;
+  margin-top: 30px;
+} */
+
 #placeholders ::placeholder{
 
     color: #bc9c22;
@@ -660,10 +668,11 @@ blockquote span{
 }
 
 #registration-header {
-
-    text-align: center;
+/* 
+    text-align: center; */
     padding: 20px 0px;
     color: #BC9C22;
+  
     
 }
 
@@ -724,6 +733,7 @@ th {
     color: #BC9C22;
     font-size: 25px;
 }
+
 
 #dataEntryForm ::placeholder{
 
@@ -1515,3 +1525,10 @@ th {
 
 
     /* our clients */
+
+  
+    #gr {
+
+     
+      margin: -120px 0 20px 0 ;
+    }
