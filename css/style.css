@@ -194,7 +194,7 @@ border-right: 2px solid #bc9c22;
 
 #conference-themes {
 
-  color: rgb(237, 28, 36);
+  color: rgb(237, 28, 36);  
  
   
   
@@ -364,6 +364,7 @@ text-decoration: none;
 }
 
 .venue-description{
+  clear: both;
 
     /* padding: 10px 20px; */
 }
@@ -1558,5 +1559,46 @@ th {
       }
 
       /* our clients */
+  #profile-card-container-allan{
+    margin: 0 auto;
+  }
   
-  
+
+
+  .containerK {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+
+  }
+  .containerK p {
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .containerK p span.typed-text {
+    font-weight: normal;
+    color: #dd7732;
+  }
+  .containerK p span.cursor {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .containerK p span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
