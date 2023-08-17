@@ -109,11 +109,9 @@
                     </div>
                   </div>
 
-                        
-                
-        
-
-                <div class="row" id="registration-boxes">
+                  <br>
+                  <br>
+                  <div class="row" id="registration-boxes">
                     <div class="col-xs-12 col-sm-4 col-md-12">
                         <h3 id="registration-header">Individual Registration</h3>
                         <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque reiciendis, inventore, 
@@ -144,19 +142,16 @@
                                       
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="phone-number"> Phone Number</label>
-                                        <input name="Contacts" type="number" class="form-control" placeholder="Enter Your Phone Number" aria-label="Last name" required>
-                                      
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <label for="country"> Country</label>
-                                        <select class="form-select" id="country">
-                                        <span class="error-message" id="countryError"></span>
-
-                                        </select>  
-                                    </div>
-
+                                      <label for="phone-number"> Phone Number</label>
+                                      <input name="Contacts" type="number" class="form-control" placeholder="Enter Your Phone Number" aria-label="Last name" required>
+                                    
+                                  </div>
+                                  <div class="col-md-6">
+                                    <label for="first-name"> Country</label>
+                                    <input name="Country" type="text" class="form-control" placeholder="Enter Your Country" aria-label="Last name" required>
+                                  
+                                </div>
+                                    
                                     <div class="col-md-6">
                                         <label for="boothReserve"> Reserve a Booth(Yes/No)</label>
                                         <input name="Booth-Reservation" type="text" class="form-control" placeholder="Enter 'Yes' to Reserve and 'No' for otherwise" aria-label="Last name" required>
@@ -174,254 +169,11 @@
                 </div>
         </div>
     </form>
-
-<!-- webapp html action attribute https://script.google.com/macros/s/AKfycby1c9-6f5y9BgovTDmK4s-3up_mjXfgYAcKoh92zUHCblf7yA1kN8tllTrspUQDlNzJ/exec -->
-
-<!-- deploymwnt id AKfycby1c9-6f5y9BgovTDmK4s-3up_mjXfgYAcKoh92zUHCblf7yA1kN8tllTrspUQDlNzJ -->
-
         <!-- INDIVIDUAL REGISTRATION -->
            
                     
 
 
-            <!-- GROUP REGISTRATION -->
-
-            <div class="kq-section" id="gr">
-                <div class="container">
-                    <div class="col-xs-12 col-sm-4 col-md-12">
-
-                        <h3 id="registration-header"> Group Registration</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam in, repellendus 
-                            placeat enim corporis soluta porro officiis cum praesentium adipisci, voluptatem aliquam sit.
-                             Doloremque deserunt laboriosam accusamus molestiae maxime? Laudantium? lorem2</p>
-
-                           
-                            <form class="row g-3" id="dataEntryForm">
-
-
-                                <div class="col-md-6">
-                                    <label for="name"> Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Enter Your Full Name" aria-label="name" required>
-                                    <span class="error-message" id="nameError"></span>
-                                 </div>
-
-                                 <div class="col-md-6">
-                                    <label for="email" > Email</label>
-                                    <input type="email" id="email" class="form-control" placeholder="another@example.com"  aria-label="email" required>
-                                    <span class="error-message" id="emailError"></span>
-                                 </div>
-
-
-                                 <div class="col-md-6">
-                                    <label for="phoneNumber" class="form-label">Phone Number</label>
-                                    <input type="number" class="form-control" id="phoneNumber" placeholder="Enter your phone number" required>
-                                    <span class="error-message" id="phoneNumberError"></span>
-                                  </div>
-
-                                  <div class="col-md-6">
-                                    <label for="organisation" class="form-label">Organisation/Company</label>
-                                    <input type="text" class="form-control" id="organization" placeholder="Enter name of your organisation" required>
-                                    <span class="error-message" id="organizationError"></span>
-                                  </div>
-
-                                <div class="col-md-6">
-                                  <label for="country">Country</label>
-                                  <select class="form-select" id="countries">
-                                    <span class="error-message" id="countryError"></span>
-                                  </select>  
-                                </div>
-                                
-                                <script>
-                                  // Function to fetch the list of countries from the REST Countries API
-                                  function fetchCountries() {
-                                    const apiUrl = 'https://restcountries.com/v3/all'; // REST Countries API endpoint
-                                
-                                    // Fetch the data from the API
-                                    fetch(apiUrl)
-                                      .then((response) => response.json())
-                                      .then((data) => {
-                                        // Sort the countries alphabetically by name
-                                        data.sort((a, b) => a.name.common.localeCompare(b.name.common));
-                                
-                                        // Get the select element
-                                        const countriesSelect = document.getElementById('countries');
-                                
-                                        // Clear any previous options
-                                        countriesSelect.innerHTML = '';
-                                
-                                        // Add each country as an option in the select element
-                                        data.forEach((country) => {
-                                          const option = document.createElement('option');
-                                          option.text = country.name.common;
-                                          option.value = country.alpha3Code; // Using alpha3Code as the value, but you can use any other country code you prefer
-                                          countriesSelect.appendChild(option);
-                                        });
-                                      })
-                                      .catch((error) => {
-                                        // If there's an error fetching data, display an error message
-                                        const countryError = document.getElementById('countryError');
-                                        countryError.textContent = 'Error loading countries. Please try again later.';
-                                      });
-                                  }
-                                
-                                  // Call the function to populate the countries select when the page loads
-                                  fetchCountries();
-                                
-                                  // If you want to refresh the country list when the user clicks the select element, you can use the following code:
-                                  const countriesSelect = document.getElementById('countries');
-                                  countriesSelect.addEventListener('click', () => {
-                                    fetchCountries();
-                                  });
-                                </script>
-                                
-
-                                <div class="col-md-6">
-                                    <label for="reserveBooth" class="form-label">Reserve a booth?</label>
-                                    <select id="reserveBooth" class="form-select">
-                                        <option value="" disabled selected>Select an option</option>
-                                        <option value="Yes">Yes</option>
-                                        <option value="No">No</option>
-                                      </select>
-                                      <span class="error-message" id="reserveBoothError"></span>
-                                    </select>
-                                  </div>
-
-                                <button type="button" class="btn btn-secondary" onclick="submitForm()">Add Individual</button>
-                              </form>
-
-                                      <div class="notification" id="successNotification"></div>
-
-                                      <div id="output">
-                                        <h2 id="addedIndividuals">Added Individuals</h2>
-                                        <table>
-                                          <thead>
-                                            <tr>
-                                              <th>No.</th>
-                                              <th>Name</th>
-                                              <th>Country</th>
-                                              <th>Organization</th>
-                                              <th>Phone Number</th>
-                                              <th>Email</th>
-                                              <th>Reserve Booth</th>
-                                            </tr>
-                                          </thead>
-                                          <tbody id="dataList"></tbody>
-                                        </table>
-                                      </div>
-
-                                      <div class="text-center">
-                                        <div class="col-12">
-                                            <button type="submit" class="btn btn-danger" id="group-submit">Submit</button>
-                                          </div>
-                                    </div>
-
-                            <script>
-                              let entryCount = 1;
-
-                              // Function to fetch the list of countries and populate the dropdown
-                              function fetchCountries() {
-                                const countryDropdown = document.getElementById("country");
-                                fetch("https://restcountries.com/v3.1/all")
-                                  .then((response) => response.json())
-                                  .then((data) => {
-                                    data.sort((a, b) => {
-                                      // Sort countries alphabetically by name
-                                      return a.name.common.localeCompare(b.name.common);
-                                    });
-
-                                    data.forEach((country) => {
-                                      const option = document.createElement("option");
-                                      option.value = country.name.common;
-                                      option.textContent = country.name.common;
-                                      countryDropdown.appendChild(option);
-                                    });
-                                  })
-                                  .catch((error) => {
-                                    console.log("Error fetching countries:", error);
-                                  });
-                              }
-
-                              // Call the fetchCountries function to populate the dropdown on page load
-                              fetchCountries();
-
-                              function submitForm() {
-                                if (!document.getElementById("dataEntryForm").checkValidity()) {
-                                  // Show error messages for required fields
-                                  showErrorMessage("name");
-                                  showErrorMessage("country");
-                                  showErrorMessage("organization");
-                                  showErrorMessage("phoneNumber");
-                                  showErrorMessage("email");
-                                  showErrorMessage("reserveBooth");
-                                  return;
-                                }
-
-                                const name = document.getElementById("name").value;
-                                const country = document.getElementById("country").value;
-                                const organization = document.getElementById("organization").value;
-                                const phoneNumber = document.getElementById("phoneNumber").value;
-                                const email = document.getElementById("email").value;
-                                const reserveBooth = document.getElementById("reserveBooth").value;
-
-                                const dataEntry = {
-                                  name: name,
-                                  country: country,
-                                  organization: organization,
-                                  phoneNumber: phoneNumber,
-                                  email: email,
-                                  reserveBooth: reserveBooth
-                                };
-
-                                displayData(dataEntry);
-                                showSuccessNotification(name);
-                                clearForm();
-                              }
-
-                              function displayData(data) {
-                                const dataList = document.getElementById("dataList");
-                                const row = document.createElement("tr");
-                                row.innerHTML = `<td>${entryCount}</td>
-                                                <td>${data.name}</td>
-                                                <td>${data.country}</td>
-                                                <td>${data.organization}</td>
-                                                <td>${data.phoneNumber}</td>
-                                                <td>${data.email}</td>
-                                                <td>${data.reserveBooth}</td>`;
-
-                                dataList.appendChild(row);
-                                entryCount++;
-                              }
-
-                              function showSuccessNotification(name) {
-                                const notification = document.getElementById("successNotification");
-                                notification.textContent = `${name} successfully added to the group.`;
-                                notification.style.display = "block";
-                                setTimeout(() => {
-                                  notification.style.display = "none";
-                                }, 7000); // Hide the notification after 3 seconds
-                              }
-
-                              function clearForm() {
-                                document.getElementById("dataEntryForm").reset();
-                              }
-
-                              function showErrorMessage(fieldName) {
-                                const errorElement = document.getElementById(`${fieldName}Error`);
-                                const inputElement = document.getElementById(fieldName);
-                                if (!inputElement.checkValidity()) {
-                                  errorElement.textContent = inputElement.validationMessage;
-                                } else {
-                                  errorElement.textContent = "";
-                                }
-                              }
-                            </script>
-
-                             
-                        
-                    </div>
-                </div>
-            </div>
-<!-- GROUP REGISTRATION -->
 
 
 <!-- footer -->
