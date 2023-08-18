@@ -1583,7 +1583,7 @@ th {
   }
   .containerK p span.typed-text {
     font-weight: normal;
-    color: #dd7732;
+    color: rgb(203, 182, 119);
   }
   .containerK p span.cursor {
     display: inline-block;
