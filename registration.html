@@ -161,7 +161,10 @@
                                   </div>
                                   <script>
                                     document.addEventListener("DOMContentLoaded", function() {
-                                        document.querySelector("form").addEventListener("submit", function(event) {
+                                        const form = document.querySelector("form");
+                                        const successMessage = document.getElementById("success-message");
+                                        
+                                        form.addEventListener("submit", function(event) {
                                             event.preventDefault(); // Prevent the form from submitting normally
                                             
                                             fetch("https://script.google.com/macros/s/AKfycbxoMxe_I57mC4a1BmHuZlr3_pWSISWpnf98cNME853BU34lkEMEhwE4I7N_oEKg7j9vXA/exec", {
@@ -172,7 +175,10 @@
                                             .then(data => {
                                                 if (data.result === "success") {
                                                     // Show the success message
-                                                    document.getElementById("success-message").style.display = "block";
+                                                    successMessage.style.display = "block";
+                                                    
+                                                    // Clear/reset the form fields
+                                                    form.reset();
                                                 } else {
                                                     // Handle error if needed
                                                 }
@@ -183,6 +189,7 @@
                                         });
                                     });
                                 </script>
+                                
                                 
                                   
                                     </form>
