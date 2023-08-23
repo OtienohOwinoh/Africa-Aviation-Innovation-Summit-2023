@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/Screenshot from 2023-07-18 09-03.png">
+    <!-- Additional CSS Files -->
+    <script src="https://kit.fontawesome.com/fdeda492d2.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/AAIS Avatar Resize.png">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <title>AAIS 2023</title>
+    <style>
+    /* Styling for the section containing the map */
+    section {
+      padding: 20px;
+    }
+    /* Styling for the map container */
+    #map-container {
+      width: 100%;
+      height: 400px;
+      border-radius: 8px;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+
+      <nav class="navbar navbar-expand-lg bg-secondary navbar-secondary" id="nav-bar">  
+
+        
+        <div>
+
+            <a href="/index.html" class="navbar-brand"> <img src="./images/Asset 5.png"  alt="logo" width="200px"> </a>
+
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ms-auto">
+
+
+            <li class="nav-item"><a href="index.html" class="nav-link" style="color: rgb(255, 255, 255);">Home</a></li>
+            <li class="nav-item"><a href="agenda.html" class="nav-link" style="color: rgb(255, 255, 255);">Agenda</a></li>
+        <li class="nav-item"><a href="/speakers.html" class="nav-link" style="color: rgb(255, 255, 255);">Speakers</a></li>
+        <li class="nav-item"  ><a href="/location.html"class="nav-link" style="color: rgb(255, 255, 255);">Location & Travel Info</a></li>
+        <li class="nav-item"><a href="/exhibition.html" class="nav-link" style="color: rgb(255, 255, 255);">Exhibition</a></li>
+        <button type="button" class="btn btn-danger " id="profile-button"> <a href="./registration.html"> Register </a> </button>
+        <li class="nav-item"  ><a href="#"class="nav-link" style="color: red;"></a></li>
+        <li class="nav-item"  ><a href="#"class="nav-link" style="color: red;"></a></li>
+        <li class="nav-item"  ><a href="#"class="nav-link" style="color: red;"></a></li>
+        <li class="nav-item"  ><a href="#"class="nav-link" style="color: red;"></a></li>
+        <li class="nav-item"  ><a href="#"class="nav-link" style="color: red;"></a></li>
+        <li class="nav-item"  ><a href="#"class="nav-link" style="color: red;"></a></li>
+    </ul>
+
+    </div>
+        
+</nav>
+<br>
+<br>
+<br>
+
+<!-- agenda section starts -->
+<div class="kq-section">
+
+    <div class="container">
+        <h2 class="venue1 "> The Venue</h2>
+<hr id="hr-1">
+<img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
+<p id="agenda1"> ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </p>
+</div>
+</div>
+
+<!-- THE VENUE -->
+
+      
+  <div class="kq-section" id="main-venue-sect">   
+    <div class="container">
+  <div class="col-xs-12 col-sm-4 col-md-12">
+    <h4 class="speaker-title">The Main Summit Venue</h4>
+  
+    <hr>
+
+        <p class="speaker-desc">
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+            inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+        </p>
+    <br>
+
+    <div class="pixgrid">
+      <img src="https://media.istockphoto.com/id/1307773280/photo/aerial-photo-of-cape-town-stadium-and-cbd-with-table-mountain-in-the-background.webp?b=1&s=170667a&w=0&k=20&c=NcHBkxsZa-EyjrXfSSRbubSZsBHQBRXGb2xwykI2ocA=" class="wide">
+      <img src="https://media.istockphoto.com/id/1391562105/photo/spectacular-twilight-view-of-table-mountain-cape-town-south-africa-across-table-bay-with-the.webp?b=1&s=170667a&w=0&k=20&c=yoH_5xLurqkmTW9pU602ojjWh7y4QiGi0iFAN45xw4E=">
+      <img src="https://media.istockphoto.com/id/1371326431/photo/sky-hotel-in-cape-town-south-africa.jpg?s=612x612&w=0&k=20&c=Emm981dmfeJpL03VsAccbGHs-1DMhO161vXrcXlVPWY=" class="tall">
+      <img src="https://media.istockphoto.com/id/527466337/photo/aerial-view-of-cape-town-from-signal-hill-after-sunset.jpg?s=612x612&w=0&k=20&c=7Rwz4Ug9yfaOWZAh4Ub75l6OszfrGbABX43Qc7IK4sA=" class="wide">
+      <img src="https://media.istockphoto.com/id/652320390/photo/lightbulb-with-a-glowing-wire-in-the-shape-of-africa.jpg?s=612x612&w=0&k=20&c=b3E2ECExZLklul27ebiHLI9veth2GjKIcpLB2HL_pnM=">
+      <img src="https://media.istockphoto.com/id/1132482709/photo/the-view-is-best-from-up-here.jpg?s=612x612&w=0&k=20&c=zdcADnpAgIppVKoQo3hc7uwTqZmXn2V7pfVYlF8am2o=">
+      <img src="https://media.istockphoto.com/id/670686326/photo/up-up-and-away.jpg?s=612x612&w=0&k=20&c=vhId6-xJqKgUo0SDIgn51H6AzOptvnzApJ_WAJxHJ-Q=">
+      
+    </div>
+
+  </div>
+
+  <div class="text-center">
+
+    <button type="button" class="btn btn-danger " id="register-button"> <a href="#"> Visit Website </a> </button>
+
+</div>
+</div>
+
+
+</div>
+       
+
+
+<div class="kq-section">
+<div class="container">
+  <div class="col-xs-12 col-sm-12 col-md-12">
+    <h3 class="accomodation">Accomodation Venues</h3>
+    <hr id="hr-1">
+    <br>
+        <p class="accomodation-desc">
+          We have obtained a special daily rate (inclusive of breakfast) at the <strong> Hotels Displayed Below </strong>  - click to book a room, or contact our Official Travel Agent: SA Events - quoting Africa Aviation Innovation Summit 2023. 
+
+         <br>
+          
+          You are welcomed to discuss alternative local hotels with SA Events, they will be happy to cover all options available to you.
+        </p>
+    <br>
+
+    <div class="box">
+      <img src="https://img.freepik.com/free-photo/waiter-carries-plate-with-tasty-snacks_8353-1263.jpg?w=1380&t=st=1690379992~exp=1690380592~hmac=c25750a61aea525702aee05f0fcd39465cedca1394abc3f8a9d255b4bbd0c4d8">
+      <div class="content">
+          <div class="wrap">
+              <h1>Best Hotel S.A</h1>
+              <p>
+                  Lorem Ipsum is simply dummy text
+                  <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link" id="top-hotels">View</a><br>
+                  <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link" id="top-hotels">Book Hotel</a>
+          </div>
+              </p>
+              
+      </div>
+  </div>
+ 
+  <div class="box">
+    <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGhvdGVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60">
+    <div class="content">
+        <div class="wrap">
+            <h1>Best Hotel S.A</h1>
+            <p>
+                Lorem Ipsum is simply dummy text
+                <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link" id="top-hotels">View</a><br>
+                <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link" id="top-hotels">Book Hotel</a>
+        </div>
+            </p>
+            
+    </div>
+</div>
+<div class="box">
+  <img src="https://images.unsplash.com/photo-1578774204375-826dc5d996ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODR8fGhvdGVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60">
+  <div class="content">
+      <div class="wrap">
+          <h1>Best Hotel S.A</h1>
+          <p>
+              Lorem Ipsum is simply dummy 
+              <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link" id="top-hotels">View</a><br>
+              <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link" id="top-hotels">Book Hotel</a>
+      </div>
+          </p>
+          
+  </div>
+</div>
+
+  </div>
+ 
+</div>
+</div>
+
+<div class="kq-section">
+
+  <div class="container">
+      <h2 class="venue1 "> Travel Information</h2>
+<hr id="hr-1">
+<img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
+<p id="travel-info"> ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </p>
+</div>
+</div>
+
+<div class="kq-section">
+  <div class="container">
+    <h3 class="visa">Transportation</h3>
+    <hr id="hr-1">
+    <br>
+    <p class="accomodation-desc">
+      Transportation from the airport to your chosen hotel will be provided by the Department of State Security - your flight details/arrival times will be requested closer to the show start date.
+
+    </p>
+
+
+    <h3 class="visa"> Visa Requirements</h3>
+    <hr>
+
+    <p class="accomodation-desc">
+      Please note that citizens of the countries that <strong> DO NOT  </strong>require Visas to travel to South Africa if the visit does not exceed 30 days are listed on the South African Government website:  
+      <a href="http://www.dha.gov.za/index.php/immigration-services/exempt-countries"> click here</a>
+    </p>
+
+    <h3 class="visa"> Letters of Invitation for Visa Application</h3>
+    <hr>
+
+    <p class="accomodation-desc">
+      If you require a Visa to travel to South Africa, please let us know immediately by email to enable us to provide you with the relevant letter of invitation to assist with your Visa application.
+    </p>
+
+    <h3 class="visa"> Passport Entry Requirements</h3>
+    <hr>
+
+    <p class="accomodation-desc">
+      South African law requires travellers to have two (2) blank (unstamped) visa pages in their passport to enter the country; one for the South African temporary residence permit sticker that is issued upon entry to the country, and an additional page to allow for entry and exit stamps for South Africa and other countries to be visited en route to South Africa or elsewhere in the region.
+      <br>
+
+      Passports should also be valid for a minimum period of 30 days from the date of exit from South Africa.
+    </p>
+
+
+    <h3 class="visa"> Covid 19</h3>
+    <hr>
+
+    <p class="accomodation-desc">
+      International passenger flights to and from South Africa are currently permitted, and no restrictions are in place.
+    </p>
+
+    <h3 class="visa"> Yellow Fever Requirements for South Africa</h3>
+    <hr>
+
+    <p class="accomodation-desc">
+      Please note that a vaccination certificate against yellow fever, issued at least 10 days before arrival in South Africa for travellers from a <a href="https://www.who.int/ith/2015-ith-annex1.pdf?ua=1">country with yellow fever</a>, or for those who have transited more than 12 hours through the airport of a country with risk of yellow fever transmission. This includes when entry is solely to transit through a South African airport. Please check the following link for the Countries concerned: 
+      <a href="https://www.who.int/ith/2015-ith-annex1.pdf?ua=1"> Click Here  (World Health Organisation).</a>
+    </p>
+    
+    
+  </div>
+</div>
+
+
+<!-- location navigation -->
+
+<div class="kq-section">
+  <div class="container">
+  
+
+    <h2 class="summit-venue-nav"> Summit Venue Navigation </h2>
+    <hr id="hr-1">
+    <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
+    <p id="agenda1"> Dut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </p>
+    
+    <section>
+      <div id="map-container"></div>
+    </section>
+
+  </div>
+</div>
+
+
+<!-- location navigation -->
+  
+    <!-- Leaflet.js library -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  
+
+    <script>
+      // Leaflet Map initialization
+      var map = L.map('map-container').setView([-30.5595, 22.9375], 6); // You can change the coordinates and zoom level here
+  
+      // Add the tile layer (the map style)
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+  
+      // Function to open Google Maps URL
+      function openGoogleMaps(coords) {
+        var latitude = coords[0];
+        var longitude = coords[1];
+        var url = 'https://www.google.com/maps?q=' + latitude + ',' + longitude;
+        window.open(url, '_blank');
+      }
+  
+      // Add markers for locations in South Africa
+      var locations = [
+        {
+          name: "Cape Town",
+          coordinates: [-33.918861, 18.423300]
+        },
+        {
+          name: "Johannesburg",
+          coordinates: [-26.2041028, 28.0473051]
+        },
+        {
+          name: "Durban",
+          coordinates: [-29.8586804, 31.0218404]
+        },
+        // Add more locations here
+      ];
+  
+      locations.forEach(location => {
+        var marker = L.marker(location.coordinates).addTo(map);
+        marker.bindPopup(location.name);
+  
+        // Add a click event listener to the marker
+        marker.on('click', function() {
+          openGoogleMaps(location.coordinates);
+        });
+      });
+    </script>
+
+<!-- agenda section ends -->
+<div class="kq-section" id="contact-section">
+  <div class="container">
+
+      
+      <div class="row">
+          <div class="col-md-12">
+              <h3 class="contact">Contact Information</h3>
+              <p class="contact"> For more information about this workshop please contact</p>
+
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-6">
+
+              <h3 class="contact-person"> KQ Fahari Innovation Hub</h3>
+              <p class="contact-desc">Kenya Airways <br>
+                  Mobile: +254716851914 <br>
+                  Email: fahari.innovation@kenya-airways.com <br>
+
+          </div>
+
+          <div class="col-xs-12 col-sm-4 col-md-6" id="footer-address">
+
+              <p class="address"><i class="fa-solid fa-calendar-check" id="add-icon"></i> &nbsp;&nbsp;&nbsp;October 17th - 18th (GMT +3)</p>
+
+              <p class="address"> <i class="fa fa-location-dot" id="add-icon"></i> &nbsp;&nbsp;&nbsp;Cape Town, South Africa</p>
+
+          </div>
+
+
+
+      </div>
+      
+    
+
+
+         
+
+  </div>
+</div>
+
+
+
+<!-- CONTACT INFORMATION -->
+
+<!-- FOOTER -->
+
+<div class="kq-section" id="footer-section">
+  <div class="container">
+
+      <div class="col-md-12">
+          <hr id="hr-1">
+          <img src="./images/Plane- Black.png" alt="plane" id="plane-black-2">
+          <br><br>
+            <blockquote>
+              "You got to start with a customer experience and work backwards to the technology"
+
+              <span style="font-style: italic;">Steve Jobs</span>
+            </blockquote>
+      </div>
+           
+
+
+      <div class="text-center">
+
+          <button type="button" class="btn btn-danger " id="register-button"> <a href="/registration.html"> Register Now </a> </button>
+      
+      </div>
+
+      <br><br>
+  </div>
+</div>
+
+
+
+<!-- FOOTER -->
+
+
+
+
+<!-- FOOTER -->
+
+
+
+</body>
+</html>
