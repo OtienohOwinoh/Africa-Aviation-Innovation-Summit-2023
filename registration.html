@@ -156,6 +156,35 @@
                                           </div>
                                         
                                     </div>
+                                    <div id="success-message" style="display: none; color: green; text-align: center;">
+                                      You have successfully registered to the Africa Aviation Innovation Summit. More information will be sent to your email.
+                                  </div>
+                                  <script>
+                                    document.addEventListener("DOMContentLoaded", function() {
+                                        document.querySelector("form").addEventListener("submit", function(event) {
+                                            event.preventDefault(); // Prevent the form from submitting normally
+                                            
+                                            fetch("https://script.google.com/macros/s/AKfycbxoMxe_I57mC4a1BmHuZlr3_pWSISWpnf98cNME853BU34lkEMEhwE4I7N_oEKg7j9vXA/exec", {
+                                                method: "POST",
+                                                body: new FormData(event.target)
+                                            })
+                                            .then(response => response.json())
+                                            .then(data => {
+                                                if (data.result === "success") {
+                                                    // Show the success message
+                                                    document.getElementById("success-message").style.display = "block";
+                                                } else {
+                                                    // Handle error if needed
+                                                }
+                                            })
+                                            .catch(error => {
+                                                // Handle error if needed
+                                            });
+                                        });
+                                    });
+                                </script>
+                                
+                                  
                                     </form>
                                  </div>
                           </div>
