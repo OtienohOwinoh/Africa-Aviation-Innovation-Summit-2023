@@ -74,9 +74,9 @@ p {
 }
 .landing-page {
 
-    background-image: url(/images/Website\ banner\ 3.jpg);
+    background-image: url(/images/AAIS\ Homepage\ banner\ \(4167\ x\ 2007\ px\)\ \(3\).png);
     background-position: center;
-    background-size: contain;
+    background-size:cover;
 }
 #main-header {
 
