@@ -1227,6 +1227,7 @@ th {
       }
       .speaker-description{
           color: black;
+        
       }
 
 
@@ -1460,6 +1461,7 @@ th {
       }
       .speaker-desc{
           color: black;
+          font-size: 0.9rem;
       }
       a{
         text-decoration: none;
