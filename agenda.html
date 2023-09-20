@@ -75,12 +75,46 @@
         <br>
         <h2 class="agenda"> Agenda</h2>
 <hr id="hr-1">
-
 <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
 <br>
 <p class="agenda-text">The Africa Aviation Innovation Summit is an upcoming event designed to unite leaders, innovators, policymakers, and stakeholders in the aviation sector, focusing on the theme of "Customer Obsession in Aviation" for its 2023 edition. With the African aviation industry playing a pivotal role in the continent's economy by supporting millions of jobs and substantial economic activity, the summit aims to address the evolving needs of customers in the dynamic industry, especially in the wake of the pandemic. By facilitating discussions, networking, and fostering a competitive business environment, the summit strives to enhance the aviation innovation landscape in Africa, encouraging participants to adapt to industry shifts and exploit business opportunities for mutual growth in the region.</p>
 <br>
+<!-- the start of the agenda section -->
+<div id="wrap">
+    <div>
+        <a href="#" class="btn-slide">
+            <span class="circle"><i class="fa fa-rocket"></i></span>
+            <span class="title">Demo</span>
+            <span class="title-hover">Click here</span>
+        </a>
+        <a href="#" class="btn-slide2" id="downloadButton"> <!-- Add an ID to the Download link -->
+            <span class="circle2"><i class="fa fa-download"></i></span>
+            <span class="title2">Download</span>
+            <span class="title-hover2">Click here</span>
+        </a>
+    </div>
+</div>
+<script>
+    //this is the end  of the agenda 
 
+    document.getElementById('downloadButton').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default behavior of the link
+
+    // Create an anchor element
+    var downloadLink = document.createElement('a');
+    downloadLink.href = 'agenda/AAIS agenda Design.pdf'; // Replace with the actual path to your PDF file
+    downloadLink.download = 'Agenda-Africa Aviation Summit 2023.pdf'; // Replace with the desired file name
+    downloadLink.style.display = 'none';
+
+    // Append the anchor element to the body and trigger the click event
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+
+    // Clean up
+    document.body.removeChild(downloadLink);
+});
+
+</script>
 <section>
     <div>
         <div class="card1">
@@ -265,6 +299,7 @@
 <!-- FOOTER -->
 
 
+<script src="https://cdn.jsdelivr.net/npm/qrcode-generator/qrcode.js"></script>
 
 </body>
 </html>
