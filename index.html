@@ -205,13 +205,41 @@
 
 <p class="agenda-text">The schedule begins with an opening session, welcome address, keynote speech, and panel discussions. The first evening includes a gala dinner and networking. The second day starts with a panel, leading to a recognition and awards closing ceremony. Kindly see the full agenda below:</p>
 
- <div class="text-center">
-
-    <button type="button" class="btn btn-danger " id="view-agenda"> <a href="/agenda.html"> View Full Agenda </a> </button>
-    <br><br>
-<br><br>
-
+<div id="wrap">
+  <div>
+      <a href="agenda.html" class="btn-slide">
+          <span class="circle"><i class="fa fa-rocket"></i></span>
+          <span class="title">View Full Agenda</span>
+          <span class="title-hover">Click here</span>
+      </a>
+      <a href="#" class="btn-slide2" id="downloadButton"> <!-- Add an ID to the Download link -->
+          <span class="circle2"><i class="fa fa-download"></i></span>
+          <span class="title2">Download Agenda</span>
+          <span class="title-hover2">Click here</span>
+      </a>
+  </div>
 </div>
+<script>
+  //this is the end  of the agenda 
+
+  document.getElementById('downloadButton').addEventListener('click', function(event) {
+  event.preventDefault(); // Prevent the default behavior of the link
+
+  // Create an anchor element
+  var downloadLink = document.createElement('a');
+  downloadLink.href = 'agenda/AAIS agenda Design.pdf'; // Replace with the actual path to your PDF file
+  downloadLink.download = 'Agenda-Africa Aviation Summit 2023.pdf'; // Replace with the desired file name
+  downloadLink.style.display = 'none';
+
+  // Append the anchor element to the body and trigger the click event
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
+
+  // Clean up
+  document.body.removeChild(downloadLink);
+});
+
+</script>
 </div>
 </div>
 
