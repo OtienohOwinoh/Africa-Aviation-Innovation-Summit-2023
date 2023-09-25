@@ -119,35 +119,35 @@
 
                                     <div class="col-md-6">
                                         <label for="fullName"> Full Names</label>
-                                        <input name="Name" type="text" class="form-control" placeholder="Enter Your full names" aria-label="First name" required>
+                                        <input name="name" type="text" class="form-control" placeholder="Enter Your full names" aria-label="First name" required>
                                       
                                     </div>
 
                                     <div class="col-md-6">
                                      
                                         <label for="inputEmail4" class="form-label">Email Address</label>
-                                        <input name="Email" for="inputEmail4" type="email" class="form-control" id="inputEmail4" placeholder="another@example.com" required>
+                                        <input name="email" for="inputEmail4" type="email" class="form-control" id="inputEmail4" placeholder="another@example.com" required>
                                     </div>
 
                                     <div class="col-md-6">
                                         <label for="company"> Organisation/Company</label>
-                                        <input name="Company" type="text" class="form-control" placeholder="Enter the name of your Organisation/Company" aria-label="Last name" required>
+                                        <input name="company" type="text" class="form-control" placeholder="Enter the name of your Organisation/Company" aria-label="Last name" required>
                                       
                                     </div>
                                     <div class="col-md-6">
                                       <label for="phone-number"> Phone Number</label>
-                                      <input name="Contacts" type="number" class="form-control" placeholder="Enter Your Phone Number" aria-label="Last name" required>
+                                      <input name="contacts" type="number" class="form-control" placeholder="Enter Your Phone Number" aria-label="Last name" required>
                                     
                                   </div>
                                   <div class="col-md-6">
                                     <label for="first-name"> Country</label>
-                                    <input name="Country" type="text" class="form-control" placeholder="Enter Your Country" aria-label="Last name" required>
+                                    <input name="country" type="text" class="form-control" placeholder="Enter Your Country" aria-label="Last name" required>
                                   
                                 </div>
                                     
                                     <div class="col-md-6">
                                         <label for="boothReserve"> Reserve a Booth(Yes/No)</label>
-                                        <input name="Booth-Reservation" type="text" class="form-control" placeholder="Enter 'Yes' to Reserve and 'No' for otherwise" aria-label="Last name" required>
+                                        <input name="boothReservation" type="text" class="form-control" placeholder="Enter 'Yes' to Reserve and 'No' for otherwise" aria-label="Last name" required>
                                       
                                     </div>
                                       <div class="text-center">
@@ -170,7 +170,7 @@
                                         // Show the success message immediately
                                         successMessage.style.display = "block";
                                   
-                                        fetch("https://script.google.com/macros/s/AKfycbxoMxe_I57mC4a1BmHuZlr3_pWSISWpnf98cNME853BU34lkEMEhwE4I7N_oEKg7j9vXA/exec", {
+                                        fetch("https://registeraais.kenya-airways.com/v1/register", {
                                           method: "POST",
                                           body: new FormData(event.target)
                                         })
