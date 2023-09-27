@@ -129,14 +129,14 @@
     <!-- End Speaker 2 -->
 
     <!-- start speaker 3 -->
-    <div class="profile-card" id="profile-card-container-elvis">
+    <div class="profile-card" id="profile-card-container-mark">
       <div class="img">
         <img src="images/speakers/aais speakers potrait.png">
       </div>
       <div class="caption">
         <h3> Mark Muita</h3>
         <p>First officer, KQ
-          <button class="profile-button" onclick="showProfileDetailsElvis()">View Profile<span class="arrow">→</span></button>
+          <button class="profile-button" onclick="showProfileDetailsmark()">View Profile<span class="arrow">→</span></button>
         </p>
       </div>
     </div>
@@ -167,7 +167,7 @@
             </div> -->
           </div>
         </div>
-        <button class="close-button" onclick="hideProfileDetailsElvis()">&#x2716;</button>
+        <button class="close-button" onclick="hideProfileDetailsmark()">&#x2716;</button>
       </div>
     </div>
     <!-- end speaker 3 -->
@@ -186,6 +186,15 @@
   
     function hideProfileDetails() {
       const profileDetailsOverlay = document.getElementById('profile-details-overlay');
+      profileDetailsOverlay.style.display = 'none';
+    }
+    function showProfileDetailsmark() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay-mark');
+      profileDetailsOverlay.style.display = 'block';
+    }
+  
+    function hideProfileDetailsmark() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay-mark');
       profileDetailsOverlay.style.display = 'none';
     }
   
@@ -286,6 +295,60 @@
   
     function hideProfileDetailsroux() {
       const profileDetailsOverlay = document.getElementById('profile-details-overlay-roux');
+      profileDetailsOverlay.style.display = 'none';
+    }
+
+
+
+    function showProfileDetailsGrace() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay-grace');
+      profileDetailsOverlay.style.display = 'block';
+    }
+
+    function hideProfileDetailsGrace() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay-grace');
+      profileDetailsOverlay.style.display = 'none';
+    }
+
+    function showProfileDetailsAlex() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay-alex');
+      profileDetailsOverlay.style.display = 'block';
+    }
+
+    function hideProfileDetailsAlex() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay-alex');
+      profileDetailsOverlay.style.display = 'none';
+    }
+
+
+    function showProfileDetailsvicto() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay-victo');
+      profileDetailsOverlay.style.display = 'block';
+    }
+
+    function hideProfileDetailsvicto() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay-victo');
+      profileDetailsOverlay.style.display = 'none';
+    }
+
+    function showProfileDetailskingsley() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay-kingsley');
+      profileDetailsOverlay.style.display = 'block';
+    }
+
+    function hideProfileDetailskingsley() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay-kingsley');
+      profileDetailsOverlay.style.display = 'none';
+    }
+
+
+    function showProfileDetailsJulius() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay-Julius');
+      profileDetailsOverlay.style.display = 'block';
+    }
+
+    function hideProfileDetailsJulius() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay-Julius');
       profileDetailsOverlay.style.display = 'none';
     }
   </script>
@@ -413,7 +476,7 @@
         </div>
       </div>
       <div>
-        <div class="profile-card" id="profile-card-container-gerold">
+        <div class="profile-card" id="profile-card-container-Julius">
           <div class="img">
             <img src="images/Julius Thairu.png">
           </div>
@@ -507,10 +570,10 @@
     <div>
       <div class="profile-card" id="profile-card-container-alex">
         <div class="img">
-          <img src="images/Alex Chamwada.png ">
+          <img src="images/Chamwada Speaker  New.png ">
         </div>
         <div class="caption">
-          <h3> Alex Chamwada</h3>
+          <h3> Alex Chamwada (OGW, MBS)</h3>
           <p>CEO Chams Media LTD
             <button class="profile-button" onclick="showProfileDetailsAlex()">View Profile<span class="arrow">→</span></button>
           </p>
@@ -520,21 +583,23 @@
         <div class="profile-details">
           <div class="row">
             <div class="col-xs-12 col-sm-4 col-md-4">
-              <img src="images/Allan-Kilavuka-Bio.png" alt="featured-speaker1" width="300px">
+              <img src="images/Chamwada- Main-New.png" alt="featured-speaker1" width="300px">
             </div>
             <br><br>
             <div class="col-xs-12 col-sm-4 col-md-7"><br><br>
-              <h3 style="color: white;" class="speaker-title">Alex Chamwada</h3>
+              <h3 style="color: white;" class="speaker-title">Alex Chamwada (OGW, MBS)</h3>
               <h4 class="speaker-position">Media Consultant & CEO – Chams Media Ltd.</h4>
               <hr id="hr-1">
               <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
               <br><br>
               <p class="speaker-desc">
-                Alex Chamwada
+                Alex Chamwada is a prominent figure in the media industry, serving as the founder and CEO of Chams Media Ltd, a communication consultancy firm based in Nairobi. With over 25 years of experience in broadcast media and a solid educational background, including a Master's Degree in Politics and Mass Media, he has left a lasting impact on the field. His expertise spans TV content creation, documentary production, advertising, digital media marketing, and media buying.
+
+Chamwada is best known for his acclaimed TV series "Daring Abroad," which delves into the stories of Kenyans living and working overseas, airing on NTV. His extensive career includes stints at various media outlets like KTN, Citizen TV, and KBC. Beyond the national scope, he has contributed to international networks like CNN, Voice of America, and the BBC. Throughout his career, he has conducted interviews with numerous African leaders, making valuable contributions to discussions on politics and development. His exceptional work has garnered recognition, including awards like Environmental Journalist of the Year in 2016 from the Media Council of Kenya and Social Media Personality of the Year in the same year at the OLX Social Media Awards. Born on August 16, 1971, Alex Chamwada is a family man, married to Caroline Chamwada, and a proud father of three.
               <br>
             </div>
           </div>
-          <button class="close-button" onclick="hideProfileDetailsAllan()">&#x2716;</button>
+          <button class="close-button" onclick="hideProfileDetailsAlex()">&#x2716;</button>
         </div>
       </div>
     </div>
@@ -547,7 +612,7 @@
         <div class="caption">
           <h3>Victo Nalule</h3>
           <p>Exec. Director, Tunaweza Foundation
-            <button class="profile-button" onclick="showProfileDetailsGerold()">View Profile<span class="arrow">→</span></button>
+            <button class="profile-button" onclick="showProfileDetailsvicto()">View Profile<span class="arrow">→</span></button>
           </p>
         </div>
       </div>
@@ -555,7 +620,7 @@
         <div class="profile-details">
           <div class="row">
             <div class="col-xs-12 col-sm-4 col-md-4">
-              <img src="images/Gerold Tumulka.png" alt="featured-speaker1" width="300px">
+              <img src="images/Victo Nalule Main.png" alt="featured-speaker1" width="300px">
             </div>
             <br><br>
             <div class="col-xs-12 col-sm-4 col-md-7"><br><br>
@@ -566,12 +631,14 @@
               <br><br>
               <p class="speaker-desc">
 
-                Victo Nalule
+                Victo Nalule is a remarkable individual who has overcome adversity to become a driving force for positive change in her community. Armed with a solid educational background, including a Bachelor's degree in HRM and a postgraduate diploma in HRM from the University of Nebraska-Lincoln, she currently serves as the ESG Administrator at Umeme Limited. In this role, she leads critical projects and represents the company at the National Occupational Safety and Health Committee. Beyond her corporate career, Victo's passion for inclusivity and empowerment led her to establish the TUNAWEZA FOUNDATION, a beacon of hope for youth and women with disabilities. She collaborates with renowned organizations like PEPFAR and Amref Health Africa in Uganda to advocate for health equity among individuals with disabilities.
+
+Her dedication to societal development extends to her involvement in organizations such as Lion Club International, where she plays an active role in the Kampala Host Lion's Club. Victo's notable achievements have earned her recognition in prestigious publications like Full Woman and African Woman Magazines. Furthermore, her international experiences as a YALI East Africa 2018 alumnus and a 2019 Mandela Washington Fellow have allowed her to champion inclusivity for Persons with Disabilities (PWDs) on a global scale.
                              </p>
               <br>
             </div>
           </div>
-          <button class="close-button" onclick="hideProfileDetailsGerold()">&#x2716;</button>
+          <button class="close-button" onclick="hideProfileDetailsvicto()">&#x2716;</button>
         </div>
       </div>
     </div>
@@ -579,7 +646,7 @@
     
       <div class="profile-card" id="profile-card-container-Edward">
         <div class="img">
-          <img src="images/Edward Mwangi.png">
+          <img src="images/Edward Mungai.png">
         </div>
         <div class="caption">
           <h3>Edward Mungai</h3>
@@ -603,11 +670,13 @@
               <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
               <br><br>
               <p class="speaker-desc">
-                Edward Mungai is a highly influential leader in personal growth and leadership in Africa. He is the founder of Inspire Leadership, which focuses on unlocking people's potential. Edward is also a published author. In 2019, he was recognized by The Daily Nation as one of the most inspirational CEOs. He was voted as a top 40 under 40 leader at the age of 34 due to his exceptional impact in Africa.
-                <br><br>
-                Edward is an Eisenhower fellow, a prestigious recognition that provides him with a transformative experience and lifelong engagement in a global network. He is also a Danida Fellow, committed to building leaders from the developing world to contribute to global betterment.
-                <br>
-                Furthermore, Edward holds the role of a Certified ScrumMaster®, helping Scrum Teams in organizations improve their efficiency. Additionally, he is an accomplished Abbot six-star marathon finisher, having completed all six Marathon Major marathons in London, New York, Boston, Chicago, Berlin, and Tokyo.
+                Dr Edward Mungai is a global thought leader in sustainability. An author, researcher, advisor, entrepreneur, and authority on corporate responsibility and sustainable development, he is acclaimed for championing environmental excellence, sustainable consumerism and production, and the triple bottom line.
+
+Currently, Edward is Partner and Lead Consultant at Impact Africa Consulting Limited, a consultancy and think tank helping clients to integrate sustainability into their businesses and also founder of Inspire leadership that helps people unlock their potential.
+
+He has authored several books, the latest being Impact Investing in Africa: A guide to Sustainability for Investors, Institutions, and Entrepreneurs. He teaches Corporate Sustainability strategies and innovation to executives and MBA programs at Strathmore Business School and sits on several boards.
+
+Edward holds a PhD in Sustainability from Strathmore University Business School; MBA from Scandinavian International Management Institute (SIMI) in Copenhagen, Denmark and undergraduate degree in business management from Moi University, Kenya.
               </div>
           </div>
           <button class="close-button" onclick="hideProfileDetailsEdward()">&#x2716;</button>
@@ -832,7 +901,7 @@ He holds BSC and MSc Degrees in Electrical Engineering from Addis Ababa Universi
        <div>
         <div class="profile-card" id="profile-card-container-kingsley">
           <div class="img">
-            <img src="images/PH - MALE.png">
+            <img src="images/Kingsley Kalusha Speaker.png">
           </div>
           <div class="caption">
             <h3>Kingsley Kalusha</h3>
@@ -845,7 +914,7 @@ He holds BSC and MSc Degrees in Electrical Engineering from Addis Ababa Universi
           <div class="profile-details">
             <div class="row">
               <div class="col-xs-12 col-sm-4 col-md-4">
-                <img src="images/Fred Kitunga Full Image.png" alt="featured-speaker1" width="300px">
+                <img src="images/Kingsley Main.png" alt="featured-speaker1" width="300px">
               </div>
               <br><br>
               <div class="col-xs-12 col-sm-4 col-md-7"><br><br>
@@ -856,6 +925,14 @@ He holds BSC and MSc Degrees in Electrical Engineering from Addis Ababa Universi
                 <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
                 <br><br>
                 <p class="speaker-desc">
+
+                  Kingsley Kalusha’s involvement in sustainable development for both public and private bodies spanning over 13 years, has involved, policy formulation, investment, technology transfer, promotion of clean and green technology adoption, and deployment and scaling up of sustainable initiatives and technology.
+
+A native of Zambia, Kingsley is fluent in English and Mandarin (Chinese) and holds a Master of Economics and Public Finance Degree and Bachelor (Honors) Degree in Accounting.
+
+He has broad ESG, financial and investment experience in project management, investment, technology transfer, business advisory and planning. Has direct experience with energy, agriculture, water and waste management and environment and climate change sectors, having served as a consultant/business specialist in the UN.
+
+In the recent past, Kingsley has worked in various fields, including, energy access and transition, sustainable development, corporate social responsibility and poverty alleviation among others. He has also been involved in developing and building of online and offline marketplaces to promote development of clean technology, initiatives and skills exchange among developing countries.
                   
                  
   </p>         
@@ -1400,7 +1477,12 @@ He holds BSC and MSc Degrees in Electrical Engineering from Addis Ababa Universi
                   <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
                   <br><br>
                   <p class="speaker-desc">
-                    Fahari Innovation Hub Lead, KQ Business Development and Strategy            </p>
+                    Grace is a business strategist and innovator obsessed about organizational success. She is passionate about Leadership and Organizational Development. 
+                    Grace has more than 12 years of corporate experience delivering excellence in Strategy, Innovation and Sustainability. Grace is currently the Head of 
+                    Innovation and Sustainability at Kenya Airways and has held previous roles in Transformation, Strategy, Operational Excellence and Engineering. In 2020, 
+                    Grace co-founded and established the first aviation innovation hub in Africa, the Kenya Airways Fahari Innovation Hub, a center for innovation excellence 
+                    that offers incubation and acceleration services. Grace is the recipient of the CIO Africa Award for Women in Tech Leadership and the SOMA Awards recognition
+                     for Top 25 Women in Digital.          </p>
                   <br>
                 </div>
               </div>
@@ -1412,7 +1494,7 @@ He holds BSC and MSc Degrees in Electrical Engineering from Addis Ababa Universi
         <div>
           <div class="profile-card" id="profile-card-container-Maureen">
             <div class="img">
-              <img src="images/Maureen Kahonge.png ">
+              <img src="images/Maureen Kahonge Speaker.png ">
             </div>
             <div class="caption">
               <h3> Maureen Kahonge</h3>
@@ -1425,7 +1507,7 @@ He holds BSC and MSc Degrees in Electrical Engineering from Addis Ababa Universi
             <div class="profile-details">
               <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-4">
-                  <img src="images/Kahonge-M.png" alt="featured-speaker1" width="300px">
+                  <img src="images/Kahonge-Main.png" alt="featured-speaker1" width="300px">
                 </div>
                 <br><br>
                 <div class="col-xs-12 col-sm-4 col-md-7"><br><br>
@@ -1435,7 +1517,13 @@ He holds BSC and MSc Degrees in Electrical Engineering from Addis Ababa Universi
                   <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
                   <br><br>
                   <p class="speaker-desc">
-                    Maureen Kahonge is the Senior Manager of Business Development & Communications at AFRAA, leveraging 11 years of aviation experience to foster collaboration among African airlines. With a Master's in Business Administration and a background in French and English, she manages relationships, marketing, events, and communications to address market needs effectively.            </p>
+                    Maureen Kahonge is the Senior Manager Business Development & Communications at AFRAA, a position she has held since in February 2016. Prior to her appointment, she held the position of Business Development Manager at the Association.
+
+Maureen is an aviation enthusiast with 12 years’ aviation experience at the African Airlines Association – AFRAA, the leading trade Association of African airlines. She has coordinated various initiatives that facilitate beneficial cooperation among African airlines and with the view to adopt and implement cost-effective common solutions to address market needs.
+
+An analytical thinker with commercial orientation and strong customer focus, Maureen is well-versed on air transport industry trends and dynamics. Her role at AFRAA covers the development and management of beneficial working relationships with member airlines and partners, marketing, events, PR & Communications.
+
+She is a holder of a Bachelor of Education (Arts) degree in Business Administration and French from Kenyatta University and a Masters in Business Administration Strategic Management and Finance at the United States International University, Kenya. She is a Member of the Marketing Society of Kenya (MSK), a Kenyan in nationality and is fluent in French and English.
                   <br>
                 
                 </div>
