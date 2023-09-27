@@ -92,37 +92,73 @@
 <br>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" />
 <a id="popuplink" href="#inline" style="display:none;"></a>
-<div id="inline" style="display:none; text-align:center; padding: 1px; background-color: #fff;  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);">
-    <img src="images/Dinner invite AAIS 2023.png" alt="Dinner Invite" id="invite-image" style="max-width: 100%; max-height: calc(100vh - 10px);">
-    <p><a href="javascript:;" onclick="jQuery.fancybox.close();" style="background-color:#333; padding:5px 10px; color:#fff; border-radius:5px; text-decoration:none;">Close</a></p>
+<div id="inline" style="display:none; text-align:center;">
+    <img id="invite-image" style="max-width: 100%; border-radius: 1px; border: 2px; box-shadow: 0 0 1px rgba(164, 33, 33, 0.5);">
+    <p><a href="javascript:;" onclick="jQuery.fancybox.close();" style="background-color:#997C3B; padding:10px 20px; color:#fff; border-radius:5px; text-decoration:none;">Close</a></p>
 </div>
+<!-- Close button outside of Fancybox -->
+<a href="javascript:;" class="close-button" onclick="jQuery.fancybox.close();" style="position: absolute; top: 10px; right: 10px; font-size: 24px; color: #fff; text-decoration: none; display: none;">&times;</a>
 <style>
     /* Custom CSS to style the popup */
     #inline {
-        max-width: 90%;
-        margin: 0 auto;
+        width: auto;
+        height: auto;
+        margin: 1px;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+    }
+    .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        color: #fff;
+        text-decoration: none;
     }
 </style>
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 <script>
     jQuery(document).ready(function () {
+        var images = [
+            'images/AAIS-QR-Poster.png',
+            'images/Book-a-Booth.png',
+            'images/Dinner invite AAIS 2023.png'
+        ];
+
+        // Function to get a random image URL
+        function getRandomImage() {
+            var randomIndex = Math.floor(Math.random() * images.length);
+            return images[randomIndex];
+        }
+
+        // Function to open fancybox with a random image
         function openFancybox() {
+            var randomImage = getRandomImage();
+            jQuery('#invite-image').attr('src', randomImage);
             setTimeout(function () {
                 jQuery('#popuplink').trigger('click');
             }, 500);
         };
+
         openFancybox(); // Always launch fancybox on page load
         jQuery("#popuplink").fancybox({
             modal: true,
-            maxWidth: 400,
-            overlay: {
-                closeClick: true
-            }
+            maxWidth: 800,
+            maxHeight: 600,
+            fitToView: false,
+            autoSize: false,
+            closeClick: true,
+            openEffect: 'fade',
+            closeEffect: 'fade'
+        });
+        
+        // Show the close button outside of Fancybox when Fancybox opens
+        jQuery("#popuplink").on("click", function() {
+            jQuery(".close-button").show();
         });
     });
 </script>
-
 <section id="about-section">
 <div class="kq-section" id="agenda-section">
     <div class="container">
