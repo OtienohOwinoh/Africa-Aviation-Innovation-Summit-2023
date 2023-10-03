@@ -90,12 +90,12 @@
 
 <!-- Conference Theme -->
 <br>
-<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" />
 <a id="popuplink" href="#inline" style="display:none;"></a>
 <div id="inline" style="display:none; text-align:center;">
     <img id="invite-image" style="max-width: 100%; border-radius: 1px; border: 2px; box-shadow: 0 0 1px rgba(164, 33, 33, 0.5);">
     <p><a href="javascript:;" onclick="jQuery.fancybox.close();" style="background-color:#997C3B; padding:10px 20px; color:#fff; border-radius:5px; text-decoration:none;">Close</a></p>
-</div> -->
+</div>
 <!-- Close button outside of Fancybox -->
 <a href="javascript:;" class="close-button" onclick="jQuery.fancybox.close();" style="position: absolute; top: 10px; right: 10px; font-size: 24px; color: #fff; text-decoration: none; display: none;">&times;</a>
 <style>
@@ -114,16 +114,29 @@
         font-size: 24px;
         color: #fff;
         text-decoration: none;
+      
     }
+    
+      .fancybox-skin{
+        
+    background: #f9f9f900;
+
+      }
+      element.style {
+        padding: 15px;
+        width: 1px;
+}
+      
+    
 </style>
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 <script>
     jQuery(document).ready(function () {
         var images = [
-            'images/AAIS-QR-Poster.png',
-            'images/Book-a-Booth.png',
-            'images/Dinner invite AAIS 2023.png'
+            'images/popup/1.png',
+            'images/popup/2.png',
+            'images/popup/3.png'
         ];
 
         // Function to get a random image URL
@@ -136,29 +149,28 @@
         function openFancybox() {
             var randomImage = getRandomImage();
             jQuery('#invite-image').attr('src', randomImage);
-            setTimeout(function () {
-                jQuery('#popuplink').trigger('click');
-            }, 500);
+            jQuery("#popuplink").fancybox({
+                modal: true,
+                maxWidth: 500,
+                maxHeight: 315,
+                fitToView: false,
+                autoSize: false,
+                closeClick: true,
+                openEffect: 'fade',
+                closeEffect: 'fade'
+            });
+            // Show the close button outside of Fancybox when Fancybox opens
+            jQuery("#popuplink").on("click", function() {
+                jQuery(".close-button").show();
+            });
+            jQuery('#popuplink').trigger('click');
         };
 
-        openFancybox(); // Always launch fancybox on page load
-        jQuery("#popuplink").fancybox({
-            modal: true,
-            maxWidth: 800,
-            maxHeight: 600,
-            fitToView: false,
-            autoSize: false,
-            closeClick: true,
-            openEffect: 'fade',
-            closeEffect: 'fade'
-        });
-        
-        // Show the close button outside of Fancybox when Fancybox opens
-        jQuery("#popuplink").on("click", function() {
-            jQuery(".close-button").show();
-        });
+        // Delay the pop-up by 5 seconds
+        setTimeout(openFancybox, 5000);
     });
 </script>
+
 <section id="about-section">
 <div class="kq-section" id="agenda-section">
     <div class="container">
@@ -247,127 +259,62 @@
 </div>
 </div>
 </section>
-
-<!-- Confrence Theme -->
-
-
-
-<!-- SPONSORS CAROUSEL -->
-<!-- 
-<hr>
-<div class="kq-section">
-    <div class="container">
-
-        <div class="container">
-            <h3 class="our-sponsors"> Our Sponsors </h3>
-            <p class="leading-experts">LEADING THE INDUSTRY</p>
-        </div>
-    
-    
-    <div class="sponsors-carousel">
-        <div class="sponsors-slide">
-            
-            <img src="./images/Aviation Summit-Lg.png" alt="AAIS logo">
-            <img src="./images/KQ LOGO.png" alt="kq-logo">
-            <img src="./images/boeing-logo.png" alt="boeing">
-            <img src="./images/enterprise-ireland logo.png" alt="enterpriseireland">
-            <img src="./images/Afraa Logo.png" alt="afraa-logo">
-            <img src="./images/aws-partner.png" alt="kq-logo">
-           
-          
-        </div>
-        <div class="sponsors-slide">
-            
-            <img src="./images/Aviation Summit-Lg.png" alt="AAIS logo">
-            <img src="./images/KQ LOGO.png" alt="kq-logo">
-            <img src="./images/enterprise-ireland logo.png" alt="enterpriseireland">
-            <img src="./images/Afraa Logo.png" alt="afraa-logo">
-            <img src="./images/boeing-logo.png" alt="boeing">
-            <img src="./images/aws-partner.png" alt="kq-logo">
-          
-            
-          
-        </div>
-    </div>
-    
-
-    </div>
-</div> -->
-
-    <!-- SPONSORS CAROUSEL -->
-
-
     <hr>
-
-
 <br>
 
 <!-- FEATURED SPEAKERS -->
-<!-- <div class="kq-section">
+<div class="kq-section">
 
     <div class="container">
 
         <div id="featured-title">
         <h2 class="featured-speakers">Featured Speakers</h2>
     </div>
-
-    
-    <div id="industry-experts">
-         <p>Featured Industry Experts</p>
-    </div>
-
-
+    <hr id="hr-1">
+    <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
     <p class="featured-bio">
     We have brought together key players in the aviation ecosystem to begin reimagining the future of aviation and travel in Africa, 
     as a key enabler for economic growth and development.
-</p>
-
-
-
+</p><br><br>
 <div class="row">
   <div class="col-xs-12 col-sm-4 col-md-3">
-      <img src="./images/Proffessional Man.jpg" alt="featured-speaker1" width="200px" id="profile-image">
+      <img src="images/aais featured speakers/1.png" alt="featured-speaker1" width="200px" id="profile-image">
   </div>
   <div class="col-xs-12 col-sm-4 col-md-7">
-      <h3 class="speaker-title">Allan KEn</h3>
-      <h4 class="speaker-position">CEO KENYA TOURISM BOARD</h4>
+      <h3 class="speaker-title">Kipchumba Murkomen</h3>
+      <h4 class="speaker-position">CS, Transport - Kenya</h4>
       <p class="speaker-description">
-          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-          inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-          fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-          amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.  
+        Onesimus Kipchumba Murkomen is a Kenyan lawyer. He is the Cabinet Secretary for Roads, Transport, and Public Works in Kenya. He served as the senator for Elgeyo-Marakwet County from 2013 to 2022.
+        In the year 2000 Murkomen joined the University of Nairobi, Parkland Campus and graduated with a Bachelor of Laws in 2004. While studying, he was elected chairman of Fellowship of Christian Unions’ National Students Executive Council. He was later awarded a scholarship to study a master’s in law at the University of Pretoria, South Africa. He further studied at the American University Washington College of Law in United States
       </p>
-
       <button type="button" class="btn btn-danger" id="profile-button-2" onclick="showProfileDetails('profile-details-overlay-2')">Full Profile</button>
     </div>
 </div>
-
+<!-- pop up -->
 <div class="profile-details-overlay" id="profile-details-overlay">
   <div class="profile-details">
       <div class="row">
           <div class="col-xs-12 col-sm-4 col-md-4">
-              <img src="./images/Proffessional Man.jpg" alt="featured-speaker1" width="300px">
+              <img src="images/aais featured speakers/1.png" alt="featured-speaker1" width="300px">
           </div>
           <div class="col-xs-12 col-sm-4 col-md-7">
-              <h3 class="speaker-title">Allan KE</h3>
-              <h4 class="speaker-position">CEO KENYA TOURISM BOARD</h4>
+              <h3 class="speaker-title">Kipchumba Murkomen
+              </h3>
+              <h4 class="speaker-position">CS, Transport - Kenya
+                </h4>
               <hr id="hr-1">
               <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
               <p class="speaker-desc">
-                  "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                  inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                Onesimus Kipchumba Murkomen is a Kenyan lawyer. He is the Cabinet Secretary for Roads, Transport, and Public Works in Kenya. He served as the senator for Elgeyo-Marakwet County from 2013 to 2022. In the year 2000 Murkomen joined the University of Nairobi, Parkland Campus and graduated with a Bachelor of Laws in 2004. While studying, he was elected chairman of Fellowship of Christian Unions’ National Students Executive Council. He was later awarded a scholarship to study a master’s in law at the University of Pretoria, South Africa. He further studied at the American University Washington College of Law in United States.
+                Murkomen was first elected as Senator for Elgeyo-Marakwet County in 2013 on a United Republican Party (URP) ticket.[3][4] He vied for the same seat during the 2017 elections, this time on a Jubilee party ticket and was re-elected to a second term. Murkomen was elected majority senate leader in 2013, but he was later replaced by West Pokot Senator Samuel Poghisio as the Senate Majority Leader. in 2020.
               </p>
-              <div class="wrapper">
-                  <a href="#"><div class="bg-ico" id="facebook"><i class="fab fa-facebook social facebook fa-3x"></i></div></a>
-                  <a href="#"><div class="bg-ico" id="twitter"><i class="fab fa-twitter social twitter fa-3x"></i></div></a>
-                  <a href="#"><div class="bg-ico" id="instagram"><i class="fab fa-instagram social instagram fa-3x"></i></div></a>
-              </div>
+
           </div>
       </div>
       <button class="close-button" onclick="hideProfileDetails()">&#x2716;</button>
   </div>
 </div>
-
+<!-- script -->
 <script>
   function showProfileDetails() {
       const profileDetailsOverlay = document.getElementById('profile-details-overlay');
@@ -379,113 +326,159 @@
       profileDetailsOverlay.style.display = 'none';
   }
 
-  const profileDetailsOverlay = document.getElementById('profile-details-overlay');
-  profileDetailsOverlay.addEventListener('click', function(event) {
-      if (event.target === profileDetailsOverlay) {
-          hideProfileDetails();
-      }
-  });
 </script>
-<hr>
-
+<br><br><br>
 
 
 <div class="row">
   <div class="col-xs-12 col-sm-4 col-md-7">
-      <h3 class="speaker-title">Robyn Brown</h3>
-      <h4 class="speaker-position">CEO KENYA TOURISM BOARD</h4>
+      <h3 class="speaker-title">Ald Geordin Hill-Lewis</h3>
+      <h4 class="speaker-position">Exec. Mayor – Cape Town</h4>
       <p class="speaker-description">
-          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-          inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-          fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-          amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.  
+        Mr Hill-Lewis is the Mayor of the City of Cape Town
+
+        He was elected to Parliament in 2011 at the age of 24, at the time the youngest MP to be elected. He served as the DA’s shadow minister for Finance and shadow minister for Trade and Industry.
+        
+        He served for five years as chief of staff to the then Leader of the Democratic Alliance and Premier of the Western Cape, Helen Zille.
+        
+        Mr Hill-Lewis began his involvement in politics in the arena of student politics at the University of Cape Town, launching the DA’s first student branch and eventually winning student elections on that campus.
+        
+        He has a Master’s degree in Finance from the University of London.
       </p>
-      <button type="button" class="btn btn-danger" id="profile-button-1" onclick="showProfileDetails('profile-details-overlay-1')">Full Profile</button>
+      <button type="button" class="btn btn-danger" id="profile-button-1" onclick="showProfileDetails3('profile-details-overlay-1')">Full Profile</button>
   </div>
   <div class="col-xs-12 col-sm-4 col-md-3">
-      <img src="https://media.istockphoto.com/id/1384256772/photo/portrait-of-a-smiling-african-woman-dressed-elegantly-holding.jpg?s=612x612&w=0&k=20&c=IfpG03iVSw6xgVZ9-hGZ6kynC9Vx4RBpi0jeBvc4sDQ=" alt="featured-speaker1" width="200px" id="profile-image">
+      <img src="images/aais featured speakers/2.png" alt="featured-speaker1" width="200px" id="profile-image">
   </div>
 </div>
+<!-- ald pop up -->
+<div class="profile-details-overlay" id="profile-details-overlay3">
+  <div class="profile-details">
+      <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4">
+              <img src="images/aais featured speakers/2.png" alt="featured-speaker1" width="300px">
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-7"><br>
+              <h3 class="speaker-title">Ald Geordin Hill-Lewis
+              </h3>
+              <h4 class="speaker-position">Exec. Mayor – Cape Town
+                </h4>
+              <hr id="hr-1">
+              <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
+              <p class="speaker-desc"><br><br><br>
+                Mr Hill-Lewis is the Mayor of the City of Cape Town
 
-<div class="profile-details-overlay" id="profile-details-overlay-1">
+                He was elected to Parliament in 2011 at the age of 24, at the time the youngest MP to be elected. He served as the DA’s shadow minister for Finance and shadow minister for Trade and Industry.
+                
+                He served for five years as chief of staff to the then Leader of the Democratic Alliance and Premier of the Western Cape, Helen Zille.
+                
+                Mr Hill-Lewis began his involvement in politics in the arena of student politics at the University of Cape Town, launching the DA’s first student branch and eventually winning student elections on that campus.
+                
+                He has a Master’s degree in Finance from the University of London.
+      </p>
+
+          </div>
+      </div>
+      <button class="close-button" onclick="hideProfileDetails3()">&#x2716;</button>
+  </div>
 </div>
+<!-- script -->
+<script>
+  function showProfileDetails3() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay3');
+      profileDetailsOverlay.style.display = 'block';
+  }
 
+  function hideProfileDetails3() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay3');
+      profileDetailsOverlay.style.display = 'none';
+  }
+</script>
+<br><br>
+<br><br>
 
-<hr>
 <div class="row">
     <div class="col-xs-12 col-sm-4 col-md-3">
-        <img src="https://media.istockphoto.com/id/1301253821/photo/studio-portrait-of-a-man-in-a-suit.jpg?s=612x612&w=0&k=20&c=GFyGB9ECOCM0i7jT-XZx1i9A8xUNLd5YvKUBnCuOowM=" alt="featured-speaker1" width="200px" id="profile-image">
+        <img src="images/aais featured speakers/3.png" alt="featured-speaker1" width="200px" id="profile-image">
     </div>
     <div class="col-xs-12 col-sm-4 col-md-7">
-        <h3 class="speaker-title">Mary Kimani</h3>
-        <h4 class="speaker-position">CEO KENYA TOURISM BOARD</h4>
+        <h3 class="speaker-title">Julian Kyula</h3>
+        <h4 class="speaker-position">CEO and Founder – EdomX</h4>
         <p class="speaker-description">
-            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-            inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-            fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-            amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.  
+          Julian Kyula is a highly sought after, accomplished and well-recognized entrepreneur and thought leader both on a Pan-African and Global scale. In 2010 he founded the MODE Group; a highly successful multi-million dollar international fintech company that went on to become a global leader in cashless microservices with a presence in over 14 African countries and 26 countries globally.
+
+          Julian is now the Chairman of (amongst other companies) Beulah City Ltd. A group he founded to develop housing projects across Africa. Beulah’s unique value positioning, in an industry already saturated with developers, is providing high-end housing solutions at prices that do not discriminate against the emerging middle class and within what is considered upscale in location.  
         </p>
-        <button type="button" class="btn btn-danger" id="profile-button-2" onclick="showProfileDetails('profile-details-overlay-2')">Full Profile</button>
+        <button type="button" class="btn btn-danger" id="profile-button-2" onclick="showProfileDetails4('profile-details-overlay-4')">Full Profile</button>
     </div>
 </div>
+<div class="profile-details-overlay" id="profile-details-overlay4">
+  <div class="profile-details">
+      <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4">
+              <img src="images/aais featured speakers/3.png" alt="featured-speaker1" width="300px">
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-7"><br>
+              <h3 class="speaker-title">Julian Kyula
 
-<div class="profile-details-overlay" id="profile-details-overlay-2">
+              </h3>
+              <h4 class="speaker-position">CEO and Founder – EdomX
+
+                </h4>
+              <hr id="hr-1">
+              <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
+              <p class="speaker-desc"><br><br><br>
+                In 2019, Julian played a key role in negotiating the agreement signed at the United Nations General Assembly in New York, where the government of Kenya and UNOPS agreed to deliver 100,000 affordable houses under Kenya’s Big 4 Initiative. 
+                He is a sought after speaker and has received invitations to various platforms across the world including Oxford University, events in Silicon Valley, SIBOS in Singapore and the Global Entrepreneurship Summit in Nairobi, Kenya; during the visit of former US president Barack Obama. He sits on several boards across the world and continues to interact with global leaders in various sectors towards the development of his business ventures and the African continent as a whole. He is also the Founder of EDOMx, a fintech company dedicated to providing modern solutions to current consumer challenges.
+      </p>
+          </div>
+      </div>
+      <button class="close-button" onclick="hideProfileDetails4()">&#x2716;</button>
+  </div>
 </div>
-<br><br><br>
+<script>
+  function showProfileDetails4() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay4');
+      profileDetailsOverlay.style.display = 'block';
+  }
 
+  function hideProfileDetails4() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay4');
+      profileDetailsOverlay.style.display = 'none';
+  }
+
+</script>
+
+<br><br><br>
 <button type="button" class="btn btn-danger " id="profile-button"> <a href="/speakers.html"> View All Speakers </a> </button><br>
 <br>
-
 <hr>
 <br>
     </div>
-</div> -->
-<!-- FEATURED SPEAKERS -->
-
+</div>
 <br><br><br>
 
 <!-- FEATURED SPEAKERS -->
 
+
 <!-- THE VENUE -->
-
-
 <div class="kq-section" id="homepage-location" >
     <br>
-
     <div class="container">
-
         <div class="row">
             <div class="col-xs-12 col-sm-4 col-md-6">
-
                 <img src="images/The venue web banner (25 × 25 cm) (4).png" alt="hotel-venue" width="100%">
-                
             </div>
             <div class="col-xs-12 col-sm-4 col-md-6" id="venue-section">
-
                 <h2 class="venue"> The Venue</h2>
                 <hr id="hr-2">
-
                 <img src="./images/Plane- Black.png" alt="plane-black" width="50px"   id="plane-black">
-
             <p class="venue-description"><br>
-              The Africa Aviation Innovation Summit will take place at the esteemed Southern Sun Waterfront in Cape Town, South Africa. Nestled within the vibrant Waterfront precinct, this modern and luxurious venue offers a captivating backdrop of the ocean and Table Mountain. Its convenient location, sophisticated facilities, and stunning views provide an ideal setting for attendees to engage in insightful discussions, network with industry peers, and immerse themselves in the future of aviation innovation within the African continent.
-
-
-
-
-
-            <!-- <button type="button" class="btn btn-danger " id="profile-button"> <a href="/location.html"> Explore More </a> </button> -->
-                                
+              The Africa Aviation Innovation Summit will take place at the esteemed Southern Sun Waterfront in Cape Town, South Africa. Nestled within the vibrant Waterfront precinct, this modern and luxurious venue offers a captivating backdrop of the ocean and Table Mountain. Its convenient location, sophisticated facilities, and stunning views provide an ideal setting for attendees to engage in insightful discussions, network with industry peers, and immerse themselves in the future of aviation innovation within the African continent.        
             </div>
         </div>
-
-       
-
     </div>
 </div>
-
-
-
 <br><br>
 <section>
     <div class="kq-section">
@@ -499,15 +492,8 @@
     </div>
     </div>
 </section>
-
 <section id="clients1" class="section-bg1">
-
     <div class="container">
-      <!-- <div class="section-header2">
-        <h3>Our Sponsors</h3>
-        <p>      Elevating Partnerships & Empowering African Skies: Recognizing Our Sponsors' Vital Role in Elevating Aviation and Innovation at the Africa Aviation and Innovation Summit 2023.
-        </p>
-      </div> -->
       <div class="row no-gutters clients-wrap clearfix wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
 
         <div class="col-lg-3 col-md-4 col-xs-6">
@@ -567,15 +553,33 @@
     <p class="agenda-text">When hosting a summit in Cape Town, South Africa, there are several frequently asked questions (FAQs) that you should consider addressing. Here's a list of potential FAQs</p>
     <br>
     <div class='faq'>
-        <input id='faq-a' type='checkbox'>
-        <label for='faq-a'>
-          <p class="faq-heading">Transportation for Attendees:
-        </p>
-          <div class='faq-arrow'></div>
-            <p class="faq-text">To facilitate transportation from the airport to the summit venue and hotels, we recommend arranging shuttle services or collaborating with local transportation providers. Ensure attendees are informed about these arrangements well in advance.
-    
-            </p>
-        </label>
+      <input id='faq-q' type='checkbox'>
+      <label for='faq-q'>
+        <p class="faq-heading">Is the event free?
+      </p>
+        <div class='faq-arrow'></div>
+          <p class="faq-text">Registration to the event is free of charge, with each delegate responsible for arrangements and related costs, including flight, visa, food and accommodation.
+  
+          </p>
+      </label>
+      <input id='faq-s' type='checkbox'>
+      <label for='faq-s'>
+        <p class="faq-heading">Safety and Security: Tips and precautions for staying safe in the hotel.
+      </p>
+        <div class='faq-arrow'></div>
+          <p class="faq-text">SA is a beautiful country with a lot to offer. It is important to be aware of your surroundings and take precautions. Stay safe in SA by avoiding high crime areas, using trusted transportation, secure your valuables and staying vigilant all the time.
+  
+          </p>
+      </label>
+      <input id='faq-a' type='checkbox'>
+      <label for='faq-a'>
+        <p class="faq-heading">Transportation for Attendees:
+      </p>
+        <div class='faq-arrow'></div>
+          <p class="faq-text">To facilitate transportation from the airport to the summit venue and hotels, we recommend arranging shuttle services or collaborating with local transportation providers. Ensure attendees are informed about these arrangements well in advance.
+  
+          </p>
+      </label>
         <input id='faq-e' type='checkbox'>
         <label for='faq-e'>
           <p class="faq-heading">Visa Requirements for International Attendees:
@@ -639,43 +643,24 @@
     
             </p>
         </label>
-        <!-- <input id='faq-c' type='checkbox'>
-        <label for='faq-c'>
-          <p class="faq-heading">Transportation to Venue:
-        </p>
-          <div class='faq-arrow'></div>
-            <p class="faq-text">Share comprehensive transportation information encompassing directions, parking options, and public transit guidance to assist attendees in navigating to and from the summit venue.
-    
-            </p>
-        </label> -->
         <input id='faq-d' type='checkbox'>
         <label for='faq-d'>
           <p class="faq-heading">Networking Opportunities:
         </p>
           <div class='faq-arrow'></div>
             <p class="faq-text">The summit will offer dedicated networking sessions, social gatherings, and opportunities for attendees to connect with peers and professionals in the field.
-    
+
             </p>
         </label>
-    
-          
+
          </div>
-         
-    
-    
     </div>
     </div>
 </section>
 
-
-
-
 <!-- CONTACT INFORMATION -->
-
 <div class="kq-section" id="contact-section">
     <div class="container">
-
-        
         <div class="row">
             <div class="col-md-12">
                 <h3 class="contact">Contact Information</h3>
@@ -707,10 +692,8 @@
 
 
 <!-- FOOTER -->
-
 <div class="kq-section" id="footer-section">
     <div class="container">
-
         <div class="col-md-12">
             <hr id="hr-1">
             <img src="./images/Plane- Black.png" alt="plane" id="plane-black-2">
@@ -721,15 +704,12 @@
                 <span style="font-style: italic;">Steve Jobs</span>
               </blockquote>
         </div>
-             
-
 
         <div class="text-center">
 
             <button type="button" class="btn btn-danger " id="register-button"> <a href="/registration.html"> Register Now </a> </button>
-        
-        </div>
 
+        </div>
         <br><br>
     </div>
 </div>
@@ -752,3 +732,5 @@
 
 </body>
 </html>
+
+
