@@ -135,12 +135,12 @@
       </div>
       <div class="caption">
         <h3> Mark Muita</h3>
-        <p>First officer, KQ
+        <p>Pilot, KQ
           <button class="profile-button" onclick="showProfileDetailsMark()">View Profile<span class="arrow">→</span></button>
         </p>
       </div>
     </div>
-    <div class="profile-details-overlay" id="">
+    <div class="profile-details-overlay" id="profile-details-overlay-mark">
       <div class="profile-details">
         <div class="row">
           <div class="col-xs-12 col-sm-4 col-md-4">
@@ -149,35 +149,23 @@
           <br><br>
           <div class="col-xs-12 col-sm-4 col-md-7"><br><br>
             <h3 style="color: white;" class="speaker-title"> Mark Muita</h3>
-            <h4 class="speaker-position">First officer, KQ</h4>
+            <h4 class="speaker-position">Pilot, KQ</h4>
             <hr id="hr-1">
             <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
             <br><br>
             <p class="speaker-desc">
               I am Mark, a versatile individual who seamlessly merges my diverse background with an unwavering passion for aviation, customer service, and technology. With a Commercial Pilot's License and a degree in Computer Networks and Security, I am not just a consumer of technological innovations but also an advocate for exploring their potential synergy with the world of aviation.
-
             </p>
             <br>
-
-            
-            <!-- <div class="wrapper">
-              <a href="#"><div class="bg-ico" id="facebook"><i class="fab fa-facebook social  facebook fa-3x"></i></div></a>
-              <a href="#"><div class="bg-ico" id="twitter"><i class="fab fa-twitter social  twitter fa-3x"></i></div></a>
-              <a href="#"><div class="bg-ico" id="instagram"><i class="fab fa-instagram social  instagram fa-3x"></i></div></a>
-            </div> -->
           </div>
         </div>
-        <button class="close-button" onclick="hideProfileDetailsmark()">&#x2716;</button>
+        <button class="close-button" onclick="hideProfileDetailsMark()">&#x2716;</button>
       </div>
     </div>
     <!-- end speaker 3 -->
   </div>
   <br>
   <br>
-
-
-
-
   <script>
     function showProfileDetails() {
       const profileDetailsOverlay = document.getElementById('profile-details-overlay');
@@ -185,15 +173,102 @@
     }
   
     function hideProfileDetails() {
-      const profileDetailsOverlay = document.getElementById('profile-details-overlay');
+      const profileDetailsOverlay = document.getElementById('profile-details-overlayAllan1');
       profileDetailsOverlay.style.display = 'none';
     }
-    function showProfileDetailsmark() {
+    function showProfileDetailsEve() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlayEve');
+      profileDetailsOverlay.style.display = 'block';
+    }
+  
+    function hideProfileDetailsLaila() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay-Laila');
+      profileDetailsOverlay.style.display = 'none';
+    }
+    function showProfileDetailsLaila() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay-Laila');
+      profileDetailsOverlay.style.display = 'block';
+    }
+  
+    function hideProfileDetailsEve() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlayEve');
+      profileDetailsOverlay.style.display = 'none';
+    }
+    function showProfileDetailsPatricia() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlayPatricia');
+      profileDetailsOverlay.style.display = 'block';
+    }
+  
+    function hideProfileDetailsPatricia() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlayPatricia');
+      profileDetailsOverlay.style.display = 'none';
+    }
+
+    function showProfileDetailsGosher() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlayGosher');
+      profileDetailsOverlay.style.display = 'block';
+    }
+  
+    function hideProfileDetailsGosher() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlayGosher');
+      profileDetailsOverlay.style.display = 'none';
+    }
+
+    function showProfileDetailsGerold() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlayGerold');
+      profileDetailsOverlay.style.display = 'block';
+    }
+  
+    function hideProfileDetailsGerold() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlayGerold');
+      profileDetailsOverlay.style.display = 'none';
+    }
+
+    function showProfileDetailsFelix() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlayFelix');
+      profileDetailsOverlay.style.display = 'block';
+    }
+  
+    function hideProfileDetailsFelix() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlayFelix');
+      profileDetailsOverlay.style.display = 'none';
+    }
+
+
+    function showProfileDetailsKyula() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlayKyula');
+      profileDetailsOverlay.style.display = 'block';
+    }
+  
+    function hideProfileDetailsKyula() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlayKyula');
+      profileDetailsOverlay.style.display = 'none';
+    }
+
+    function showProfileDetailsLewis() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay-Lewis');
+      profileDetailsOverlay.style.display = 'block';
+    }
+  
+    function hideProfileDetailsLewis() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay-Lewis');
+      profileDetailsOverlay.style.display = 'none';
+    }
+    function showProfileDetailsMurkomen() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay-Murkomen');
+      profileDetailsOverlay.style.display = 'block';
+    }
+  
+    function hideProfileDetailsMurkomen() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay-Murkomen');
+      profileDetailsOverlay.style.display = 'none';
+    }
+    function showProfileDetailsMark() {
       const profileDetailsOverlay = document.getElementById('profile-details-overlay-mark');
       profileDetailsOverlay.style.display = 'block';
     }
   
-    function hideProfileDetailsmark() {
+    function hideProfileDetailsMark() {
       const profileDetailsOverlay = document.getElementById('profile-details-overlay-mark');
       profileDetailsOverlay.style.display = 'none';
     }
@@ -218,13 +293,13 @@
       profileDetailsOverlay.style.display = 'none';
     }
 
-    function showProfileDetailsAllan() {
-      const profileDetailsOverlay = document.getElementById('profile-details-overlay-allan');
+    function showProfileDetailsAllan1() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay-allan1');
       profileDetailsOverlay.style.display = 'block';
     }
   
-    function hideProfileDetailsAllan() {
-      const profileDetailsOverlay = document.getElementById('profile-details-overlay-allan');
+    function hideProfileDetailsAllan1() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay-allan1');
       profileDetailsOverlay.style.display = 'none';
     }
 
@@ -451,43 +526,6 @@ She is a holder of a Bachelor of Education (Arts) degree in Business Administrat
           </div>
         </div>
       </div>
-
-
-      <div>
-        <div class="profile-card" id="profile-card-container-ronald">
-          <div class="img">
-            <img src="images/Ronald Okumu.png ">
-          </div>
-          <div class="caption">
-            <h3> Ronald Okumu</h3>
-            <p>
-              <button class="profile-button" onclick="showProfileDetailsronald()">View Profile<span class="arrow">→</span></button>
-            </p>
-          </div>
-        </div>
-        <div class="profile-details-overlay" id="profile-details-overlay-ronald">
-          <div class="profile-details">
-            <div class="row">
-              <div class="col-xs-12 col-sm-4 col-md-4">
-                <img src="images/" alt="featured-speaker1" width="300px">
-              </div>
-              <br><br>
-              <div class="col-xs-12 col-sm-4 col-md-7"><br><br>
-                <h3 style="color: white;" class="speaker-title">Ronald Okumu</h3>
-                <h4 class="speaker-position"></h4>
-                <hr id="hr-1">
-                <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
-                <br><br>
-                <p class="speaker-desc">
-                         </p>
-                <br>
-              
-              </div>
-            </div>
-            <button class="close-button" onclick="hideProfileDetailsronald()">&#x2716;</button>
-          </div>
-        </div>
-      </div>
     </div>
     <!-- end speaker 3 -->
 
@@ -509,7 +547,7 @@ She is a holder of a Bachelor of Education (Arts) degree in Business Administrat
       <!-- start speaker 3 -->
       <div class="main">
         <div>
-          <div class="profile-card" id="profile-card-container-lewis">
+          <div class="profile-card" id="profile-card-container-Lewis">
             <div class="img">
               <img src="images/Geordin Hill.png">
             </div>
@@ -520,11 +558,11 @@ She is a holder of a Bachelor of Education (Arts) degree in Business Administrat
               </p>
             </div>
           </div>
-          <div class="profile-details-overlay" id="profile-details-overlay-allan">
+          <div class="profile-details-overlay" id="profile-details-overlay-Lewis">
             <div class="profile-details">
               <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-4">
-                  <img src="images/Allan-Kilavuka-Bio.png" alt="featured-speaker1" width="300px">
+                  <img src="images/aais featured speakers/2.png" alt="featured-speaker1" width="300px">
                 </div>
                 <br><br>
                 <div class="col-xs-12 col-sm-4 col-md-7"><br><br>
@@ -534,12 +572,14 @@ She is a holder of a Bachelor of Education (Arts) degree in Business Administrat
                   <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
                   <br><br>
                   <p class="speaker-desc">
-                    Executive Mayor – Cape Town
+                    Mr Hill-Lewis is the Mayor of the City of Cape Town He was elected to Parliament in 2011 at the age of 24, at the time the youngest MP to be elected. He served as the DA’s shadow minister for Finance and shadow minister for Trade and Industry. He served for five years as chief of staff to the then Leader of the Democratic Alliance and Premier of the Western Cape, Helen Zille. Mr Hill-Lewis began his involvement in politics in the arena of student politics at the University of Cape Town, launching the DA’s first student branch and eventually winning student elections on that campus. He has a Master’s degree in Finance from the University of London.
+
+
                   </p>
                   <br>
                 </div>
               </div>
-              <button class="close-button" onclick="hideProfileDetailslewis()">&#x2716;</button>
+              <button class="close-button" onclick="hideProfileDetailsLewis()">&#x2716;</button>
             </div>
           </div>
         </div>
@@ -550,16 +590,16 @@ She is a holder of a Bachelor of Education (Arts) degree in Business Administrat
             </div>
             <div class="caption">
               <h3>Hon. Kipchumba Murkomen</h3>
-              <p>CS Roads & Transport, KE
-                <button class="profile-button" onclick="showProfileDetailsGerold()">View Profile<span class="arrow">→</span></button>
+              <p>CS Transport, KE
+                <button class="profile-button" onclick="showProfileDetailsMurkomen()">View Profile<span class="arrow">→</span></button>
               </p>
             </div>
           </div>
-          <div class="profile-details-overlay" id="profile-details-overlay-gerold">
+          <div class="profile-details-overlay" id="profile-details-overlay-Murkomen">
             <div class="profile-details">
               <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-4">
-                  <img src="images/Gerold Tumulka.png" alt="featured-speaker1" width="300px">
+                  <img src="images/aais featured speakers/1.png" alt="featured-speaker1" width="300px">
                 </div>
                 <br><br>
                 <div class="col-xs-12 col-sm-4 col-md-7"><br><br>
@@ -569,31 +609,33 @@ She is a holder of a Bachelor of Education (Arts) degree in Business Administrat
                   <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
                   <br><br>
                   <p class="speaker-desc">
-                    Cabinet Secretary - Road and Transport, Kenya              </p>
+                    Onesimus Kipchumba Murkomen is a Kenyan lawyer. He is the Cabinet Secretary for Roads, Transport, and Public Works in Kenya. He served as the senator for Elgeyo-Marakwet County from 2013 to 2022. In the year 2000 Murkomen joined the University of Nairobi, Parkland Campus and graduated with a Bachelor of Laws in 2004. While studying, he was elected chairman of Fellowship of Christian Unions’ National Students Executive Council. He was later awarded a scholarship to study a master’s in law at the University of Pretoria, South Africa. He further studied at the American University Washington College of Law in United States
+
+             </p>
                   <br>
                 </div>
               </div>
-              <button class="close-button" onclick="hideProfileDetailsGerold()">&#x2716;</button>
+              <button class="close-button" onclick="hideProfileDetailsMurkomen()">&#x2716;</button>
             </div>
           </div>
         </div>
         <div>
-          <div class="profile-card" id="profile-card-container-julian">
+          <div class="profile-card" id="profile-card-containerKyula">
             <div class="img">
               <img src="images/Julian Kyula.png">
             </div>
             <div class="caption">
               <h3>Julian Kyula</h3>
               <p>CEO and Founder – EdomX
-                <button class="profile-button" onclick="showProfileDetailsJulian()">View Profile<span class="arrow">→</span></button>
+                <button class="profile-button" onclick="showProfileDetailsKyula()">View Profile<span class="arrow">→</span></button>
               </p>
             </div>
           </div>
-          <div class="profile-details-overlay" id="profile-details-overlay-Julian">
+          <div class="profile-details-overlay" id="profile-details-overlayKyula">
             <div class="profile-details">
               <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-4">
-                  <img src="images/.png" alt="featured-speaker1" width="300px">
+                  <img src="images/aais featured speakers/3.png" alt="featured-speaker1" width="300px">
                 </div>
                 <br><br>
                 <div class="col-xs-12 col-sm-4 col-md-7"><br><br>
@@ -604,15 +646,17 @@ She is a holder of a Bachelor of Education (Arts) degree in Business Administrat
                   <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
                   <br><br>
                   <p class="speaker-desc">
-                    CEO and Founder – EdomX             <br>
+                    Julian Kyula is a highly sought after, accomplished and well-recognized entrepreneur and thought leader both on a Pan-African and Global scale. In 2010 he founded the MODE Group; a highly successful multi-million dollar international fintech company that went on to become a global leader in cashless microservices with a presence in over 14 African countries and 26 countries globally. Julian is now the Chairman of (amongst other companies) Beulah City Ltd. A group he founded to develop housing projects across Africa. Beulah’s unique value positioning, in an industry already saturated with developers, is providing high-end housing solutions at prices that do not discriminate against the emerging middle class and within what is considered upscale in location.
+
+ <br>
                 </div>
               </div>
-              <button class="close-button" onclick="hideProfileDetailsJulian()">&#x2716;</button>
+              <button class="close-button" onclick="hideProfileDetailsKyula()">&#x2716;</button>
             </div>
           </div>
         </div>
         <div>
-          <div class="profile-card" id="profile-card-container-gosher">
+          <div class="profile-card" id="profile-card-container-Felix">
             <div class="img">
               <img src="images/Matt Twilley.png">
             </div>
@@ -620,50 +664,50 @@ She is a holder of a Bachelor of Education (Arts) degree in Business Administrat
               <h3>Matt Twilley</h3>
 
               <p>Digital Innovation Senior Manager MEA – AWS 
-                <button class="profile-button" onclick="showProfileDetailsgosher()">View Profile<span class="arrow">→</span></button>
+                <button class="profile-button" onclick="showProfileDetailsFelix()">View Profile<span class="arrow">→</span></button>
               </p>
             </div>
           </div>
-          <div class="profile-details-overlay" id="profile-details-overlay-gosher">
+          <div class="profile-details-overlay" id="profile-details-overlayFelix">
             <div class="profile-details">
               <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-4">
-                  <img src="images/JT.png" alt="featured-speaker1" width="300px">
+                  <img src="images/Twilley.png" alt="featured-speaker1" width="300px">
                 </div>
                 <br><br>
                 <div class="col-xs-12 col-sm-4 col-md-7"><br><br>
-                  <h3 style="color: white;" class="speaker-title">Felix Gosher</h3>
-                  <h4 class="speaker-position">Felix Gosher
+                  <h3 style="color: white;" class="speaker-title">Matt Twilley</h3>
+                  <h4 class="speaker-position">Digital Innovation Senior Manager MEA – AWS 
                   </h4>
                   <hr id="hr-1">
                   <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
                   <br><br>
                   <p class="speaker-desc">
-                   Felix Gosher
-                  </div>
+                    As the Digital Innovation Lead for EMEA Emerging Markets in AWS, I’m interested in having discussions with C-Suite leaders across the sectors on where technology could help to resolve customer challenges or ambitions. Experienced in the Middle East and Africa region with multiple enterprise customers, I am to support and help unlock the next steps on the journey.
+                    I am also privileged to be a Fellow in IARAN.                   </div>
               </div>
-              <button class="close-button" onclick="hideProfileDetailsJulius()">&#x2716;</button>
+              <button class="close-button" onclick="hideProfileDetailsFelix()">&#x2716;</button>
             </div>
           </div>
         </div> 
   
         <div>
-          <div class="profile-card" id="profile-card-container-patricia">
+          <div class="profile-card" id="profile-card-containerPatricia">
             <div class="img">
               <img src="images/Patricia de Lille Speaker.png">
             </div>
             <div class="caption">
               <h3>Patricia de Lille</h3>
               <p> Minister - Ministry of Tourism SA
-                <button class="profile-button" onclick="showProfileDetailspatricia()">View Profile<span class="arrow">→</span></button>
+                <button class="profile-button" onclick="showProfileDetailsPatricia()">View Profile<span class="arrow">→</span></button>
               </p>
             </div>
           </div>
-          <div class="profile-details-overlay" id="profile-details-overlay-patricia">
+          <div class="profile-details-overlay" id="profile-details-overlayPatricia">
             <div class="profile-details">
               <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-4">
-                  <img src="images/Hawkins Main.png" alt="featured-speaker1" width="300px">
+                  <img src="images/Patricia.png" alt="featured-speaker1" width="300px">
                 </div>
                 <br><br>
                 <div class="col-xs-12 col-sm-4 col-md-7"><br><br>
@@ -674,221 +718,18 @@ She is a holder of a Bachelor of Education (Arts) degree in Business Administrat
                   <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
                   <br><br>
                   <p class="speaker-desc">
-                    
-  
+                    Patricia de Lille (née Lindt; born 17 February 1951) is a South African politician who is the current Minister of Tourism and leader of the political party Good. She served as Minister of Public Works and Infrastructure from 2019 to 2023.
+                    Consequently, she formed Good in December 2018, and was announced as the party's Western Cape Premier candidate in February 2019.[7][8] She was elected to Parliament in May 2019 and took office as a Member on 22 May 2019. On 29 May 2019, De Lille was appointed by President Cyril Ramaphosa as Minister of Public Works and Infrastructure. In March 2023, she became the Minister of Tourism.
+
+
                     </p>
                     <br>
               </div>
             </div>
-              <button class="close-button" onclick="hideProfileDetailspatricia()">&#x2716;</button>
+              <button class="close-button" onclick="hideProfileDetailsPatricia()">&#x2716;</button>
             </div>
           </div>
         </div>
-        
-      <!-- </div>
-      <br>
-    <br>
-    <br>
-    <br>
-
-      <div class="main"> -->
-
-        <!-- <div>
-          <div class="profile-card" id="profile-card-container-roux">
-            <div class="img">
-              <img src="images/Patrick Roux Speaker.png ">
-            </div>
-            <div class="caption">
-              <h3> Patrick Roux </h3>
-              <p>Chief Executive Officer – SkyTeam
-                <button class="profile-button" onclick="showProfileDetailsroux()">View Profile<span class="arrow">→</span></button>
-              </p>
-            </div>
-          </div>
-          <div class="profile-details-overlay" id="profile-details-overlay-roux">
-            <div class="profile-details">
-              <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                  <img src="images/Patrick Roux Main.png" alt="featured-speaker1" width="300px">
-                </div>
-                <br><br>
-                <div class="col-xs-12 col-sm-4 col-md-7"><br><br>
-                  <h3 style="color: white;" class="speaker-title">Patrick Roux</h3>
-                  <h4 class="speaker-position">Chief Executive Officer – SkyTeam.</h4>
-                  <hr id="hr-1">
-                  <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
-                  <br><br>
-                  <p class="speaker-desc">
-                    Patrick Roux is the Chief Executive Officer of Sky Team, effective 1 October 2022. He is an industry veteran with more than 30 years of experience. 
-                    He joined SkyTeam from Air France, where he spent the last 15 years working at the executive level across key roles covering strategic and operational 
-                    leadership, most recently as Senior Vice President-Alliances. His key achievements included overseeing Air France-KLM‘s strategic partnership activities
-                     to maximize the group’s profitability and commercial offering in different markets through more than 80 
-                    Joint Venture or codeshare agreements. Patrick holds a degree in engineering from the Ecole Nationale Supérieure des Telecommunications in Paris. 
-                    
-                  <br>
-                </div>
-              </div>
-              <button class="close-button" onclick="hideProfileDetailsroux()">&#x2716;</button>
-            </div>
-          </div>
-        </div>
-        
-        <div> -->
-          <!-- <div class="profile-card" id="profile-card-container-eve">
-            <div class="img">
-              <img src="images/Eve Kibare Speaker.png">
-            </div>
-            <div class="caption">
-              <h3>Eve Kibare</h3>
-              <p>Executive Producer – Blind Girl Experience 
-                <button class="profile-button" onclick="showProfileDetailseve()">View Profile<span class="arrow">→</span></button>
-              </p>
-            </div>
-          </div>
-          <div class="profile-details-overlay" id="profile-details-overlay-eve">
-            <div class="profile-details">
-              <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                  <img src="images/Gerold Tumulka.png" alt="featured-speaker1" width="300px">
-                </div>
-                <br><br>
-                <div class="col-xs-12 col-sm-4 col-md-7"><br><br>
-                  <h3 style="color: white;" class="speaker-title">Eve Kibare</h3>
-                  <h4 class="speaker-position">Executive Producer – Blind Girl Experience </h4>
-                  <hr id="hr-1">
-                  <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
-                  <br><br>
-                  <p class="speaker-desc">
-    
-                    Eve Kibare
-                                 </p>
-                  <br>
-                </div>
-              </div>
-              <button class="close-button" onclick="hideProfileDetailseve()">&#x2716;</button>
-            </div>
-          </div>
-        </div>
-        <div>
-        
-          <div class="profile-card" id="profile-card-container-sandra">
-            <div class="img">
-              <img src="images/PH- FEMALE.png">
-            </div>
-            <div class="caption">
-              <h3>Sandra Dryers</h3>
-              <p> 
-                <button class="profile-button" onclick="showProfileDetailssandra()">View Profile<span class="arrow">→</span></button>
-              </p>
-            </div>
-          </div>
-          <div class="profile-details-overlay" id="profile-details-overlay-sandra">
-            <div class="profile-details">
-              <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                  <img src="images/Edward Main Profile.png" alt="featured-speaker1" width="300px">
-                </div>
-                <br><br>
-                <div class="col-xs-12 col-sm-4 col-md-7"><br><br>
-                  <h3 style="color: white;" class="speaker-title">Sandra Dryers</h3>
-                  <h4 class="speaker-position"> Position
-                  </h4>
-                  <hr id="hr-1">
-                  <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
-                  <br><br>
-                  <p class="speaker-desc">
-                   Sandra Dryers
-                  </div>
-              </div>
-              <button class="close-button" onclick="hideProfileDetailssandra()">&#x2716;</button>
-            </div>
-          </div>
-        </div>
-        
-          NEWW 
-    
-         <div>
-          <div class="profile-card" id="profile-card-container-kingsley">
-            <div class="img">
-              <img src="images/PH - MALE.png">
-            </div>
-            <div class="caption">
-              <h3>Kingsley Kalusha</h3>
-              <p>
-                <button class="profile-button" onclick="showProfileDetailskingsley()">View Profile<span class="arrow">→</span></button>
-              </p>
-            </div>
-          </div>
-          <div class="profile-details-overlay" id="profile-details-overlay-kingsley">
-            <div class="profile-details">
-              <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                  <img src="images/Fred Kitunga Full Image.png" alt="featured-speaker1" width="300px">
-                </div>
-                <br><br>
-                <div class="col-xs-12 col-sm-4 col-md-7"><br><br>
-                  <h3 style="color: white;" class="speaker-title">Kingsley Kalusha</h3>
-                  <h4 class="speaker-position">
-                  </h4>
-                  <hr id="hr-1">
-                  <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
-                  <br><br>
-                  <p class="speaker-desc">
-                    
-                   
-    </p> 
-    <br>         
-    </div>
-    </div>
-              <button class="close-button" onclick="hideProfileDetailskingsley()">&#x2716;</button>
-            </div>
-          </div>
-          </div> -->
-           <!-- ADDITION -->
-    
-           <!-- <div>
-           <div class="profile-card" id="profile-card-container-mesfin">
-            <div class="img">
-              <img src="images/CEO Ethiopian.png">
-            </div>
-            <div class="caption">
-              <h3</h3>
-              <h3>Mr. Mesfin Tasew</h3>
-              <p>Group Chief Executive Officer – Ethiopian Airlines
-                <button class="profile-button" onclick="showProfileDetailsMesfin()">View Profile<span class="arrow">→</span></button>
-              </p>
-            </div>
-          </div>
-          <div class="profile-details-overlay" id="profile-details-overlay-Mesfin">
-            <div class="profile-details">
-              <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                  <img src="images/CEO Ethiopian Main.png" alt="featured-speaker1" width="300px">
-                </div>
-                <br><br>
-                <div class="col-xs-12 col-sm-4 col-md-7"><br><br>
-                  <h3 style="color: white;" class="speaker-title"> Mr. Mesfin Tasew</h3>
-                  <h4 class="speaker-position">Group Chief Executive Officer – Ethiopian Airlines
-                  </h4>
-                  <hr id="hr-1">
-                  <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
-                  <br><br>
-                  <p class="speaker-desc">
-                    Mr. Mesfin Tasew was appointed as Group Chief Executive Officer of Ethiopian Airlines in March 2022.
-    
-    He joined Ethiopian in 1984 as Associate Engineer and progressed through the ladder and served in supervisorial and managerial positions in the Aircraft Maintenance and Engineering areas. In 1997 and 1999, he was appointed as Director Operations & Technical Systems Support and Chief Information Officer, respectively.
-    
-    In 2006, he was appointed as Vice President of Maintenance and Engineering. Mr. Mesfin also served as Chief Operating Officer of Ethiopian Airlines from 2010 – 2021, and Chief Executive Officer of ASKY Airlines from April 2021 to March 2022.
-    
-    Mr. Mesfin also serves as a member of the International Air Transport Association (IATA) Board of Governors.
-    
-    He holds BSC and MSc Degrees in Electrical Engineering from Addis Ababa University. He also holds Master’s in Business Administration (MBA) from Open University in the UK.            <br>
-                </div>
-              </div>
-              <button class="close-button" onclick="hideProfileDetailsMesfin()">&#x2716;</button>
-            </div>
-          </div>
-        </div>       -->
         </div>
   
   
@@ -924,18 +765,18 @@ She is a holder of a Bachelor of Education (Arts) degree in Business Administrat
     <!-- start speaker 3 -->
     <div class="main">
       <div>
-        <div class="profile-card" id="profile-card-container-allan">
+        <div class="profile-card" id="profile-card-container-allan1">
           <div class="img">
             <img src="images/Allan-Kilavuka.png ">
           </div>
           <div class="caption">
             <h3> Allan Kilavuka</h3>
             <p>Group Man. Director & CEO, Kenya Airways
-              <button class="profile-button" onclick="showProfileDetailsAllan()">View Profile<span class="arrow">→</span></button>
+              <button class="profile-button" onclick="showProfileDetailsAllan1()">View Profile<span class="arrow">→</span></button>
             </p>
           </div>
         </div>
-        <div class="profile-details-overlay" id="profile-details-overlay-allan">
+        <div class="profile-details-overlay" id="profile-details-overlay-allan1">
           <div class="profile-details">
             <div class="row">
               <div class="col-xs-12 col-sm-4 col-md-4">
@@ -956,7 +797,7 @@ She is a holder of a Bachelor of Education (Arts) degree in Business Administrat
                 <br>
               </div>
             </div>
-            <button class="close-button" onclick="hideProfileDetailsAllan()">&#x2716;</button>
+            <button class="close-button" onclick="hideProfileDetailsAllan1()">&#x2716;</button>
           </div>
         </div>
       </div>
@@ -972,7 +813,7 @@ She is a holder of a Bachelor of Education (Arts) degree in Business Administrat
             </p>
           </div>
         </div>
-        <div class="profile-details-overlay" id="profile-details-overlay-gerold">
+        <div class="profile-details-overlay" id="profile-details-overlayGerold">
           <div class="profile-details">
             <div class="row">
               <div class="col-xs-12 col-sm-4 col-md-4">
@@ -986,7 +827,7 @@ She is a holder of a Bachelor of Education (Arts) degree in Business Administrat
                 <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
                 <br><br>
                 <p class="speaker-desc">
-                  Gerad Tumulka is the current Chief strategist and innovations officer, Kenya Airways                </p>
+                  Gerad Tumulka is the current Chief strategist and innovations officer, Kenya Airways. Energetic and driven C-level executive with comprehensive accomplishments leading airport and airline services, growth, cost control, flight and ground operations, fleet management, safety, regulatory compliance, operational turnaround, and matrix cross-functional teams to achieve goals. Innovative thinker with strong Middle East (13 years), Asia, Africa, and European airline and airport industry acumen. Demonstrated success in developing and executing plans in complex, fast-paced, highly regulated environments. Manage air transportation from all angles. Develops and implements impactful strategies by analyzing details to understand competitors, emerging trends, and board and stakeholder relationships. Organized, creative problem-solver who excels at guiding teams through challenging, agile projects. Lead €130M budgets, 47M passenger airports, operating at C-level Executive and Board of Directors.         </p>
                 <br>
               </div>
             </div>
@@ -1235,11 +1076,11 @@ He holds BSC and MSc Degrees in Electrical Engineering from Addis Ababa Universi
               <p class="speaker-desc">
                 Dr Edward Mungai is a global thought leader in sustainability. An author, researcher, advisor, entrepreneur, and authority on corporate responsibility and sustainable development, he is acclaimed for championing environmental excellence, sustainable consumerism and production, and the triple bottom line.
 
-Currently, Edward is Partner and Lead Consultant at Impact Africa Consulting Limited, a consultancy and think tank helping clients to integrate sustainability into their businesses and also founder of Inspire leadership that helps people unlock their potential.
+                Currently, Edward is Partner and Lead Consultant at Impact Africa Consulting Limited, a consultancy and think tank helping clients to integrate sustainability into their businesses and also founder of Inspire leadership that helps people unlock their potential.
 
-He has authored several books, the latest being Impact Investing in Africa: A guide to Sustainability for Investors, Institutions, and Entrepreneurs. He teaches Corporate Sustainability strategies and innovation to executives and MBA programs at Strathmore Business School and sits on several boards.
+                He has authored several books, the latest being Impact Investing in Africa: A guide to Sustainability for Investors, Institutions, and Entrepreneurs. He teaches Corporate Sustainability strategies and innovation to executives and MBA programs at Strathmore Business School and sits on several boards.
 
-Edward holds a PhD in Sustainability from Strathmore University Business School; MBA from Scandinavian International Management Institute (SIMI) in Copenhagen, Denmark and undergraduate degree in business management from Moi University, Kenya.
+                Edward holds a PhD in Sustainability from Strathmore University Business School; MBA from Scandinavian International Management Institute (SIMI) in Copenhagen, Denmark and undergraduate degree in business management from Moi University, Kenya.
               </div>
           </div>
           <button class="close-button" onclick="hideProfileDetailsEdward()">&#x2716;</button>
@@ -1383,38 +1224,44 @@ Edward holds a PhD in Sustainability from Strathmore University Business School;
       </div>
       
       <div>
-        <div class="profile-card" id="profile-card-container-eve">
+        <div class="profile-card" id="profile-card-containerEve">
           <div class="img">
             <img src="images/Eve Kibare Speaker.png">
           </div>
           <div class="caption">
             <h3>Eve Kibare</h3>
             <p>Executive Producer – Blind Girl Experience 
-              <button class="profile-button" onclick="showProfileDetailseve()">View Profile<span class="arrow">→</span></button>
+              <button class="profile-button" onclick="showProfileDetailsEve()">View Profile<span class="arrow">→</span></button>
             </p>
           </div>
         </div>
-        <div class="profile-details-overlay" id="profile-details-overlay-eve">
+        <div class="profile-details-overlay" id="profile-details-overlayEve">
           <div class="profile-details">
             <div class="row">
               <div class="col-xs-12 col-sm-4 col-md-4">
-                <img src="images/Gerold Tumulka.png" alt="featured-speaker1" width="300px">
+                <img src="images/Eve Kibare Speaker.png" alt="featured-speaker1" width="300px">
               </div>
               <br><br>
               <div class="col-xs-12 col-sm-4 col-md-7"><br><br>
                 <h3 style="color: white;" class="speaker-title">Eve Kibare</h3>
-                <h4 class="speaker-position">Executive Producer – Blind Girl Experience </h4>
+                <h4 class="speaker-position">Executive Producer – Blind Girl Experience.  </h4>
+
                 <hr id="hr-1">
                 <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
                 <br><br>
                 <p class="speaker-desc">
   
-                  Eve Kibare
-                               </p>
+                  I believe in the need to make communication a way of life and executing quality videos that are appealing to both the client and audience.
+
+                    I also run the Blind Girl Experience, with a focus on empowering inclusivity to embrace humanity. 
+                    
+                    Link : https://www.youtube.com/channel/UCY1XJscum865snRueXLICJQ
+                    
+                    Blind girl on a mission!                            </p>
                 <br>
               </div>
             </div>
-            <button class="close-button" onclick="hideProfileDetailseve()">&#x2716;</button>
+            <button class="close-button" onclick="hideProfileDetailsEve()">&#x2716;</button>
           </div>
         </div>
       </div>
@@ -1451,13 +1298,13 @@ Edward holds a PhD in Sustainability from Strathmore University Business School;
 
                   Kingsley Kalusha’s involvement in sustainable development for both public and private bodies spanning over 13 years, has involved, policy formulation, investment, technology transfer, promotion of clean and green technology adoption, and deployment and scaling up of sustainable initiatives and technology.
 
-A native of Zambia, Kingsley is fluent in English and Mandarin (Chinese) and holds a Master of Economics and Public Finance Degree and Bachelor (Honors) Degree in Accounting.
+                  A native of Zambia, Kingsley is fluent in English and Mandarin (Chinese) and holds a Master of Economics and Public Finance Degree and Bachelor (Honors) Degree in Accounting.
 
-He has broad ESG, financial and investment experience in project management, investment, technology transfer, business advisory and planning. Has direct experience with energy, agriculture, water and waste management and environment and climate change sectors, having served as a consultant/business specialist in the UN.
+                  He has broad ESG, financial and investment experience in project management, investment, technology transfer, business advisory and planning. Has direct experience with energy, agriculture, water and waste management and environment and climate change sectors, having served as a consultant/business specialist in the UN.
 
-In the recent past, Kingsley has worked in various fields, including, energy access and transition, sustainable development, corporate social responsibility and poverty alleviation among others. He has also been involved in developing and building of online and offline marketplaces to promote development of clean technology, initiatives and skills exchange among developing countries.
-                  
-                 
+                  In the recent past, Kingsley has worked in various fields, including, energy access and transition, sustainable development, corporate social responsibility and poverty alleviation among others. He has also been involved in developing and building of online and offline marketplaces to promote development of clean technology, initiatives and skills exchange among developing countries.
+                                    
+                                  
   </p>         
   </div>
   </div>
@@ -1468,36 +1315,45 @@ In the recent past, Kingsley has worked in various fields, including, energy acc
 
 
       <div>
-        <div class="profile-card" id="profile-card-container-sandra">
+        <div class="profile-card" id="profile-card-containerGosher">
           <div class="img">
-            <img src="images/PH- FEMALE.png">
+            <img src="images/Gosher.png">
           </div>
           <div class="caption">
-            <h3>Sandra Dryers</h3>
-            <p> 
-              <button class="profile-button" onclick="showProfileDetailssandra()">View Profile<span class="arrow">→</span></button>
+            <h3>Felix Gosher</h3>
+            <p> Pilot
             </p>
+              <button class="profile-button" onclick="showProfileDetailsGosher()">View Profile<span class="arrow">→</span></button>
+
           </div>
         </div>
-        <div class="profile-details-overlay" id="profile-details-overlay-sandra">
+        <div class="profile-details-overlay" id="profile-details-overlayGosher">
           <div class="profile-details">
             <div class="row">
               <div class="col-xs-12 col-sm-4 col-md-4">
-                <img src="images/Edward Main Profile.png" alt="featured-speaker1" width="300px">
+                <img src="images/Gosher (1).png" alt="featured-speaker1" width="300px">
               </div>
               <br><br>
               <div class="col-xs-12 col-sm-4 col-md-7"><br><br>
-                <h3 style="color: white;" class="speaker-title">Sandra Dryers</h3>
-                <h4 class="speaker-position"> Position
+                <h3 style="color: white;" class="speaker-title">Felix Gosher</h3>
+                <h4 class="speaker-position"> Pilot
                 </h4>
                 <hr id="hr-1">
                 <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
                 <br><br>
                 <p class="speaker-desc">
-                 Sandra Dryers
-                </div>
+                  Born In Johannesburg in March 1982, developed a love for flying from an early age, attended Treverton Boarding School for seven years, where an airstrip was situated on the premises. Matriculated at Trinity House High School in 2000. Completed a degree in Sport Science at the University of Pretoria in 2005. Completed PPL in 2006 working as a waiter at Ocean Basket to fund it.
+
+ 
+
+                  Completed CPL in 2008 working as a Barman in the UK, Fitness Instructor in the Caribbean, Gardener/Janitor in Canada.
+                  Flew 8 years all over Southern and East Africa as a Safari Bush Pilot, until commencing contract duties for Air-Tec Global on humanitarian flying missions through out Africa.
+                  Started flying in Nelspruit 2005
+                  Flown Most of the Cessna and Piper Singles and Twins, Airvan, Islander, Baron, Sling, Cessna Grand Caravan, and LET410.
+                  6150 flying hours
+                  Achieved Airline Transport License in November 2015.                </div>
             </div>
-            <button class="close-button" onclick="hideProfileDetailssandra()">&#x2716;</button>
+            <button class="close-button" onclick="hideProfileDetailsGosher()">&#x2716;</button>
           </div>
         </div>
       </div>
@@ -1507,73 +1363,48 @@ In the recent past, Kingsley has worked in various fields, including, energy acc
        
          <!-- ADDITION -->
   
-         <!-- <div>
-         <div class="profile-card" id="profile-card-container-mesfin">
+ <div>
+         <div class="profile-card" id="profile-card-container-Laila">
           <div class="img">
-            <img src="images/CEO Ethiopian.png">
+            <img src="images/Dr Laila.png">
           </div>
           <div class="caption">
             <h3</h3>
-            <h3>Mr. Mesfin Tasew</h3>
-            <p>Group Chief Executive Officer – Ethiopian Airlines
-              <button class="profile-button" onclick="showProfileDetailsMesfin()">View Profile<span class="arrow">→</span></button>
+            <h3>Dr. Laila Bin Hareb Almheiri            </h3>
+            <p>CEO - Alive Group
+              <button class="profile-button" onclick="showProfileDetailsLaila()">View Profile<span class="arrow">→</span></button>
             </p>
           </div>
         </div>
-        <div class="profile-details-overlay" id="profile-details-overlay-Mesfin">
+        <div class="profile-details-overlay" id="profile-details-overlay-Laila">
           <div class="profile-details">
             <div class="row">
               <div class="col-xs-12 col-sm-4 col-md-4">
-                <img src="images/CEO Ethiopian Main.png" alt="featured-speaker1" width="300px">
+                <img src="images/Dr Lila.png" alt="featured-speaker1" width="300px">
               </div>
               <br><br>
               <div class="col-xs-12 col-sm-4 col-md-7"><br><br>
                 <h3 style="color: white;" class="speaker-title"> Mr. Mesfin Tasew</h3>
-                <h4 class="speaker-position">Group Chief Executive Officer – Ethiopian Airlines
+                <h4 class="speaker-position">Founder & CEO - Alive Group
                 </h4>
                 <hr id="hr-1">
                 <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
                 <br><br>
                 <p class="speaker-desc">
-                  Mr. Mesfin Tasew was appointed as Group Chief Executive Officer of Ethiopian Airlines in March 2022.
-  
-  He joined Ethiopian in 1984 as Associate Engineer and progressed through the ladder and served in supervisorial and managerial positions in the Aircraft Maintenance and Engineering areas. In 1997 and 1999, he was appointed as Director Operations & Technical Systems Support and Chief Information Officer, respectively.
-  
-  In 2006, he was appointed as Vice President of Maintenance and Engineering. Mr. Mesfin also served as Chief Operating Officer of Ethiopian Airlines from 2010 – 2021, and Chief Executive Officer of ASKY Airlines from April 2021 to March 2022.
-  
-  Mr. Mesfin also serves as a member of the International Air Transport Association (IATA) Board of Governors.
-  
-  He holds BSC and MSc Degrees in Electrical Engineering from Addis Ababa University. He also holds Master’s in Business Administration (MBA) from Open University in the UK.            <br>
-              </div>
+                  Dr. Laila Bin Hareb Almheiri is an Emirati serial entrepreneur, the founder & CEO of Alive Group, a keynote speaker, and an expert on multiple disciplines with more than three decades of experience in transforming the aviation, cybersecurity, public transportation, and holistic healthcare sectors. She used her knowledge of organic leadership, organizational transformation, and digital innovation to contribute immensely to the development of the UAE. Laila founded Alive Group driven by bringing change to society and communities based on her personal experiences. She set up innovative diagnostics (Alive Medical), education (Alive Education and Events), and cybersecurity awareness (Alive Newledge) where she spearheads and views all operations while also providing consultation services to leave a lasting positive impact on society. Simultaneously, she works as the senior advisor to Bain & Company. Laila has been honoured by the United Nations’ ICAO and IAWA as a global woman leader who has inspired generations. She has also been recognized among the Top 50 Influential Women in the Arab World by Forbes. She has been commended internationally and regionally with the World Women Leadership Awards, the US Stevie Award, and the UAE Aviation Personality of the Year for two consecutive years.
+                </div>
             </div>
-            <button class="close-button" onclick="hideProfileDetailsMesfin()">&#x2716;</button>
+            <button class="close-button" onclick="hideProfileDetailsLaila()">&#x2716;</button>
           </div>
         </div>
-      </div>       -->
+      </div>       
       </div>
-
-
-
-
-
-    <!-- row 3 panelists -->
-   
-
-
-  <!-- end speaker 3 -->
 </div>
 </div>
 
 <!-- SUMMIT SPEAKERS -->
 
 <div class="container">
-
-
-
-
-
-
-
 
 </div>
 </div>
