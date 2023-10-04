@@ -123,7 +123,7 @@
       flex: 1; /* Allow the image to expand and take available space */
     }
 
-    .close-button {
+    .close-button1 {
       align-self: flex-end; /* Align button to the right */
       margin: 5px;
       cursor: pointer;
@@ -135,7 +135,7 @@
       padding: 5px 10px; /* Increased padding for better click area */
     }
 
-    .close-button:hover {
+    .close-button1:hover {
       color: #f00; /* Change color on hover */
     }
   </style>
@@ -147,7 +147,7 @@
   <div class="popup">
     <div class="popup-content">
       <!-- Close button added here -->
-      <button class="close-button" onclick="hidePopup()">&times;</button>
+      <button class="close-button1" onclick="hidePopup()">&times;</button>
       <span class="ribbon top-left ribbon-primary"></span>
       <!-- Add your popup content here -->
       <img src="images/popup/3.png" alt="Popup Image" class="popup-image">
@@ -198,7 +198,7 @@
     <p><a href="javascript:;" onclick="jQuery.fancybox.close();" style="background-color:#997C3B; padding:10px 20px; color:#fff; border-radius:5px; text-decoration:none;">Close</a></p>
 </div>
 <!-- Close button outside of Fancybox -->
-<a href="javascript:;" class="close-button" onclick="jQuery.fancybox.close();" style="position: absolute; top: 10px; right: 10px; font-size: 24px; color: #fff; text-decoration: none; display: none;">&times;</a>
+<a href="javascript:;" class="close-button1" onclick="jQuery.fancybox.close();" style="position: absolute; top: 10px; right: 10px; font-size: 24px; color: #fff; text-decoration: none; display: none;">&times;</a>
 <style>
     /* Custom CSS to style the popup */
     #inline {
@@ -208,7 +208,7 @@
         background-color: rgb(255, 255, 255);
         position: relative;
     }
-    .close-button {
+    .close-button1 {
         position: absolute;
         top: 10px;
         right: 10px;
@@ -376,7 +376,61 @@
     <p class="featured-bio">
     We have brought together key players in the aviation ecosystem to begin reimagining the future of aviation and travel in Africa, 
     as a key enabler for economic growth and development.
-</p><br><br>
+</p><br>
+<div class="row">
+  <div class="col-xs-12 col-sm-4 col-md-7">
+      <h3 class="speaker-title">Allan Kilavuka      </h3>
+      <h4 class="speaker-position">The Managing Director & CEO, Kenya Airways</h4>
+      <p class="speaker-description">
+        Allan Kilavuka serves as the Group Managing Director and CEO of Kenya Airways Plc and holds non-executive board positions in its 
+        subsidiaries, Jambojet and Precision Air. With over 23 years of leadership and management experience, Allan is highly experienced in initiating
+         and managing organizations, facilitating change, financial planning, integration, process improvement, and ensuring regulatory compliance.
+        Before joining KQ, Allan played a pivotal role in the turnaround of GE Power Services Africa and GE Industrial Solutions, based in South Africa.
+         </p>
+      <button type="button" class="btn btn-danger" id="profile-button-1" onclick="showProfileDetails3('profile-details-overlay-1')">Full Profile</button>
+  </div>
+  <div class="col-xs-12 col-sm-4 col-md-3">
+      <img src="images/aais featured speakers/4.png" alt="featured-speaker1" width="200px" id="profile-image">
+  </div>
+</div>
+<!-- ald pop up -->
+<div class="profile-details-overlay" id="profile-details-overlay3">
+  <div class="profile-details">
+      <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4">
+              <img src="images/aais featured speakers/4.png" alt="featured-speaker1" width="300px">
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-7"><br>
+              <h3 class="speaker-title">Allan Kilavuka
+              </h3>
+              <h4 class="speaker-position">Group Man. Director & CEO, Kenya Airways
+                </h4>
+              <hr id="hr-1">
+              <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
+              <p class="speaker-desc"><br><br><br>
+                Allan Kilavuka serves as the Group Managing Director and CEO of Kenya Airways Plc and holds non-executive board positions in its subsidiaries, Jambojet and Precision Air. With over 23 years of leadership and management experience, Allan is highly experienced in initiating and managing organizations, facilitating change, financial planning, integration, process improvement, and ensuring regulatory compliance.
+                Before joining KQ, Allan played a pivotal role in the turnaround of GE Power Services Africa and GE Industrial Solutions, based in South Africa. His career began at Deloitte East Africa in Nairobi, specializing in audit, accounting, outsourcing, and custodianship. He holds a Bachelor of Commerce Degree from the University of Nairobi, a Postgraduate Certificate in Psychology from the University of Liverpool, and has received advanced training in executive leadership, advanced management, and financial planning at GE's Crotonville Leadership Institute in New York.
+      </p>
+
+          </div>
+      </div>
+      <button class="close-button" onclick="hideProfileDetails3()">&#x2716;</button>
+  </div>
+</div>
+<!-- script -->
+<script>
+  function showProfileDetails3() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay3');
+      profileDetailsOverlay.style.display = 'block';
+  }
+
+  function hideProfileDetails3() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay3');
+      profileDetailsOverlay.style.display = 'none';
+  }
+</script>
+<br>
+<br><br><br>
 <div class="row">
   <div class="col-xs-12 col-sm-4 col-md-3">
       <img src="images/aais featured speakers/1.png" alt="featured-speaker1" width="200px" id="profile-image">
@@ -433,66 +487,57 @@
 
 <div class="row">
   <div class="col-xs-12 col-sm-4 col-md-7">
-      <h3 class="speaker-title">Ald Geordin Hill-Lewis</h3>
-      <h4 class="speaker-position">Exec. Mayor – Cape Town</h4>
-      <p class="speaker-description">
-        Mr Hill-Lewis is the Mayor of the City of Cape Town
-
-        He was elected to Parliament in 2011 at the age of 24, at the time the youngest MP to be elected. He served as the DA’s shadow minister for Finance and shadow minister for Trade and Industry.
-        
-        He served for five years as chief of staff to the then Leader of the Democratic Alliance and Premier of the Western Cape, Helen Zille.
-        
-        Mr Hill-Lewis began his involvement in politics in the arena of student politics at the University of Cape Town, launching the DA’s first student branch and eventually winning student elections on that campus.
-        
-        He has a Master’s degree in Finance from the University of London.
-      </p>
-      <button type="button" class="btn btn-danger" id="profile-button-1" onclick="showProfileDetails3('profile-details-overlay-1')">Full Profile</button>
+    <h3 class="speaker-title">Ald Geordin Hill-Lewis</h3>
+    <h4 class="speaker-position">Exec. Mayor – Cape Town</h4>
+    <p class="speaker-description">
+      Mr Hill-Lewis is the Mayor of the City of Cape Town
+      He was elected to Parliament in 2011 at the age of 24, at the time the youngest MP to be elected. He served as the DA’s shadow minister for Finance and shadow minister for Trade and Industry.
+      He served for five years as chief of staff to the then Leader of the Democratic Alliance and Premier of the Western Cape, Helen Zille.
+      Mr Hill-Lewis began his involvement in politics in the arena of student politics at the University of Cape Town, launching the DA’s first student branch and eventually winning student elections on that campus.
+      He has a Master’s degree in Finance from the University of London.
+    </p>
+    <button type="button" class="btn btn-danger" id="profile-button-2" onclick="showProfileDetailsLewisHill()">Full Profile</button>
   </div>
   <div class="col-xs-12 col-sm-4 col-md-3">
-      <img src="images/aais featured speakers/2.png" alt="featured-speaker1" width="200px" id="profile-image">
+    <img src="images/aais featured speakers/2.png" alt="featured-speaker1" width="200px" id="profile-image">
   </div>
 </div>
-<!-- ald pop up -->
-<div class="profile-details-overlay" id="profile-details-overlay3">
+
+<!-- Profile Details Pop-up -->
+<div class="profile-details-overlay" id="profile-details-overlay-LewisHill" style="display: none;">
   <div class="profile-details">
-      <div class="row">
-          <div class="col-xs-12 col-sm-4 col-md-4">
-              <img src="images/aais featured speakers/2.png" alt="featured-speaker1" width="300px">
-          </div>
-          <div class="col-xs-12 col-sm-4 col-md-7"><br>
-              <h3 class="speaker-title">Ald Geordin Hill-Lewis
-              </h3>
-              <h4 class="speaker-position">Exec. Mayor – Cape Town
-                </h4>
-              <hr id="hr-1">
-              <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
-              <p class="speaker-desc"><br><br><br>
-                Mr Hill-Lewis is the Mayor of the City of Cape Town
-
-                He was elected to Parliament in 2011 at the age of 24, at the time the youngest MP to be elected. He served as the DA’s shadow minister for Finance and shadow minister for Trade and Industry.
-                
-                He served for five years as chief of staff to the then Leader of the Democratic Alliance and Premier of the Western Cape, Helen Zille.
-                
-                Mr Hill-Lewis began his involvement in politics in the arena of student politics at the University of Cape Town, launching the DA’s first student branch and eventually winning student elections on that campus.
-                
-                He has a Master’s degree in Finance from the University of London.
-      </p>
-
-          </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <img src="images/aais featured speakers/2.png" alt="featured-speaker1" width="300px">
       </div>
-      <button class="close-button" onclick="hideProfileDetails3()">&#x2716;</button>
+      <div class="col-xs-12 col-sm-4 col-md-7"><br>
+        <h3 class="speaker-title">Ald Geordin Hill-Lewis</h3>
+        <h4 class="speaker-position">Exec. Mayor – Cape Town</h4>
+        <hr id="hr-1">
+        <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
+        <p class="speaker-desc"><br><br><br>
+          Mr Hill-Lewis is the Mayor of the City of Cape Town
+          He was elected to Parliament in 2011 at the age of 24, at the time the youngest MP to be elected. He served as the DA’s shadow minister for Finance and shadow minister for Trade and Industry.
+          He served for five years as chief of staff to the then Leader of the Democratic Alliance and Premier of the Western Cape, Helen Zille.
+          Mr Hill-Lewis began his involvement in politics in the arena of student politics at the University of Cape Town, launching the DA’s first student branch and eventually winning student elections on that campus.
+          He has a Master’s degree in Finance from the University of London.
+        </p>
+      </div>
+    </div>
+    <button class="close-button" onclick="hideProfileDetailsLewisHill()">&#x2716;</button>
   </div>
 </div>
-<!-- script -->
+
+<!-- Script -->
 <script>
-  function showProfileDetails3() {
-      const profileDetailsOverlay = document.getElementById('profile-details-overlay3');
-      profileDetailsOverlay.style.display = 'block';
+  function showProfileDetailsLewisHill() {
+    const profileDetailsOverlay = document.getElementById('profile-details-overlay-LewisHill');
+    profileDetailsOverlay.style.display = 'block';
   }
 
-  function hideProfileDetails3() {
-      const profileDetailsOverlay = document.getElementById('profile-details-overlay3');
-      profileDetailsOverlay.style.display = 'none';
+  function hideProfileDetailsLewisHill() {
+    const profileDetailsOverlay = document.getElementById('profile-details-overlay-LewisHill');
+    profileDetailsOverlay.style.display = 'none';
   }
 </script>
 <br><br>
@@ -500,15 +545,13 @@
 
 <div class="row">
     <div class="col-xs-12 col-sm-4 col-md-3">
-        <img src="images/aais featured speakers/3.png" alt="featured-speaker1" width="200px" id="profile-image">
+        <img src="images/aais featured speakers/5.png" alt="featured-speaker1" width="200px" id="profile-image">
     </div>
     <div class="col-xs-12 col-sm-4 col-md-7">
-        <h3 class="speaker-title">Julian Kyula</h3>
-        <h4 class="speaker-position">CEO and Founder – EdomX</h4>
+        <h3 class="speaker-title">Abderahmane Berthé        </h3>
+        <h4 class="speaker-position">Sec. Gen, AFRAA</h4>
         <p class="speaker-description">
-          Julian Kyula is a highly sought after, accomplished and well-recognized entrepreneur and thought leader both on a Pan-African and Global scale. In 2010 he founded the MODE Group; a highly successful multi-million dollar international fintech company that went on to become a global leader in cashless microservices with a presence in over 14 African countries and 26 countries globally.
-
-          Julian is now the Chairman of (amongst other companies) Beulah City Ltd. A group he founded to develop housing projects across Africa. Beulah’s unique value positioning, in an industry already saturated with developers, is providing high-end housing solutions at prices that do not discriminate against the emerging middle class and within what is considered upscale in location.  
+          Abderahmane Berthe is the Secretary General of the African Airlines Association (AFRAA). Before joining AFRAA, he served as Chief Executive Officer for Air Mali and Air Burkina. With twenty-eight years of experience in the airline industry across Africa and Europe, he has a wealth of multi-disciplinary experience in aircraft performance, dispatch engineering, maintenance & quality operations, and ground operations.
         </p>
         <button type="button" class="btn btn-danger" id="profile-button-2" onclick="showProfileDetails4('profile-details-overlay-4')">Full Profile</button>
     </div>
@@ -517,21 +560,20 @@
   <div class="profile-details">
       <div class="row">
           <div class="col-xs-12 col-sm-4 col-md-4">
-              <img src="images/aais featured speakers/3.png" alt="featured-speaker1" width="300px">
+              <img src="images/aais featured speakers/5.png" alt="featured-speaker1" width="300px">
           </div>
           <div class="col-xs-12 col-sm-4 col-md-7"><br>
-              <h3 class="speaker-title">Julian Kyula
-
+              <h3 class="speaker-title">Abderahmane Berthé
               </h3>
-              <h4 class="speaker-position">CEO and Founder – EdomX
+              <h4 class="speaker-position">Secretary General at African Airlines Association (AFRAA) Kenya.
 
                 </h4>
               <hr id="hr-1">
               <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
               <p class="speaker-desc"><br><br><br>
-                In 2019, Julian played a key role in negotiating the agreement signed at the United Nations General Assembly in New York, where the government of Kenya and UNOPS agreed to deliver 100,000 affordable houses under Kenya’s Big 4 Initiative. 
-                He is a sought after speaker and has received invitations to various platforms across the world including Oxford University, events in Silicon Valley, SIBOS in Singapore and the Global Entrepreneurship Summit in Nairobi, Kenya; during the visit of former US president Barack Obama. He sits on several boards across the world and continues to interact with global leaders in various sectors towards the development of his business ventures and the African continent as a whole. He is also the Founder of EDOMx, a fintech company dedicated to providing modern solutions to current consumer challenges.
-      </p>
+                Abderahmane Berthe is the Secretary General of the African Airlines Association (AFRAA). Before joining AFRAA, he served as Chief Executive Officer for Air Mali and Air Burkina. With twenty-eight years of experience in the airline industry across Africa and Europe, he has a wealth of multi-disciplinary experience in aircraft performance, dispatch engineering, maintenance & quality operations, and ground operations.
+                Abderahmane received his Master’s degrees from the French Civil Aviation school in Toulouse (1987), French Aeronautical and Space School in Toulouse (1988), and the Business Institute of Toulouse (1989). He is a licensed private pilot for single engine aircrafts.
+              </p>
           </div>
       </div>
       <button class="close-button" onclick="hideProfileDetails4()">&#x2716;</button>
@@ -551,6 +593,56 @@
 </script>
 
 <br><br><br>
+
+<div class="row">
+  <div class="col-xs-12 col-sm-4 col-md-7">
+    <h3 class="speaker-title">Patricia de Lille</h3>
+    <h4 class="speaker-position">Minister - Ministry of Tourism, South Africa</h4>
+    <p class="speaker-description">
+      Patricia de Lille (née Lindt; born 17 February 1951) is a South African politician who is the current Minister of Tourism and leader of the political party Good. She served as Minister of Public Works and Infrastructure from 2019 to 2023. Consequently, she formed Good in December 2018, and was announced as the party's Western Cape Premier candidate in February 2019.[7][8] She was elected to Parliament in May 2019 and took office as a Member on 22 May 2019. On 29 May 2019, De Lille was appointed by President Cyril Ramaphosa as Minister of Public Works and Infrastructure. In March 2023, she became the Minister of Tourism.
+    </p>
+    <button type="button" class="btn btn-danger" id="profile-button-1" onclick="showProfileDetailsPatricia2()">Full Profile</button>
+  </div>
+  <div class="col-xs-12 col-sm-4 col-md-3">
+    <img src="images/aais featured speakers/6.png" alt="featured-speaker1" width="200px" id="profile-image">
+  </div>
+</div>
+
+<!-- Profile Details Pop-up -->
+<div class="profile-details-overlay" id="profile-details-overlayPatricia2" style="display: none;">
+  <div class="profile-details">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <img src="images/aais featured speakers/6.png" alt="featured-speaker1" width="300px">
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-7"><br>
+        <h3 class="speaker-title">Patricia de Lille</h3>
+        <h4 class="speaker-position">Minister - Ministry of Tourism, South Africa</h4>
+        <hr id="hr-1">
+        <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
+        <p class="speaker-desc"><br><br><br>
+          Patricia de Lille (née Lindt; born 17 February 1951) is a South African politician who is the current Minister of Tourism and leader of the political party Good. She served as Minister of Public Works and Infrastructure from 2019 to 2023. Consequently, she formed Good in December 2018, and was announced as the party's Western Cape Premier candidate in February 2019.[7][8] She was elected to Parliament in May 2019 and took office as a Member on 22 May 2019. On 29 May 2019, De Lille was appointed by President Cyril Ramaphosa as Minister of Public Works and Infrastructure. In March 2023, she became the Minister of Tourism.
+        </p>
+      </div>
+    </div>
+    <button class="close-button" onclick="hideProfileDetailsPatricia2()">&#x2716;</button>
+  </div>
+</div>
+
+<!-- Script -->
+<script>
+  function showProfileDetailsPatricia2() {
+    const profileDetailsOverlay = document.getElementById('profile-details-overlayPatricia2');
+    profileDetailsOverlay.style.display = 'block';
+  }
+
+  function hideProfileDetailsPatricia2() {
+    const profileDetailsOverlay = document.getElementById('profile-details-overlayPatricia2');
+    profileDetailsOverlay.style.display = 'none';
+  }
+</script>
+<!-- script -->
+<br><br>
 <button type="button" class="btn btn-danger " id="profile-button"> <a href="/speakers.html"> View All Speakers </a> </button><br>
 <br>
 <hr>
