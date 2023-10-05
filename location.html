@@ -270,7 +270,7 @@
     <h2 class="summit-venue-nav"> Summit Venue Navigation </h2>
     <hr id="hr-1">
     <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
-    <p id="agenda1"> Embark on an Innovation Journey: <strong>Navigate the Future of Aviation at AAIS Summit!</strong> Click the pins in the Google Maps section below to soar directly to the heart of <strong>aviation excellence</strong> at the Southern Sun Waterfront hotel in vibrant Cape Town, South Africa.</p>
+    <p id="agenda1"> Embark on an Innovation Journey: <strong>Navigate the Future of Aviation at AAIS Summit!</strong> Click the pins in the Google Maps section below to soar directly to the heart of <strong>aviation excellence</strong> at the Southern Sun Waterfront hotel in vibrant Cape Town, South Africa. <br><br><strong>Click on the pinned location below for Google Maps autodirection</strong></p>
     
     <section>
       <div id="map-container"></div>
@@ -289,20 +289,20 @@
     <script>
       // Leaflet Map initialization
       var map = L.map('map-container').setView([-30.5595, 22.9375], 6); // You can change the coordinates and zoom level here
-  
+    
       // Add the tile layer (the map style)
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       }).addTo(map);
-  
+    
       // Function to open Google Maps URL
       function openGoogleMaps(coords) {
         var latitude = coords[0];
         var longitude = coords[1];
-        var url = 'https://www.google.com/maps?q=' + latitude + ',' + longitude;
+        var url = 'https://maps.app.goo.gl/qYM5waxntEwcqVBs5';
         window.open(url, '_blank');
       }
-  
+    
       // Add markers for locations in South Africa
       var locations = [
         {
@@ -312,17 +312,18 @@
         
         // Add more locations here
       ];
-  
+    
       locations.forEach(location => {
         var marker = L.marker(location.coordinates).addTo(map);
         marker.bindPopup(location.name);
-  
+    
         // Add a click event listener to the marker
         marker.on('click', function() {
           openGoogleMaps(location.coordinates);
         });
       });
     </script>
+    
 
 <!-- agenda section ends -->
 <div class="kq-section" id="contact-section">
