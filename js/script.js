@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     
  
-const countDownDate = new Date("2023, 10, 17, 00:00:00").getTime();
+const countDownDate = new Date("2023, 10, 18, 00:00:00").getTime();
 const x = setInterval(function () {
     
     const now = new Date().getTime();
