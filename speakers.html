@@ -449,6 +449,15 @@
       const profileDetailsOverlay = document.getElementById('profile-details-overlay-Avedi');
       profileDetailsOverlay.style.display = 'none';
     }
+    function showProfileDetailsDreyer() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay-Dreyer');
+      profileDetailsOverlay.style.display = 'block';
+    }
+
+    function hideProfileDetailsDreyer() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay-Dreyer');
+      profileDetailsOverlay.style.display = 'none';
+    }
   </script>
 
 
@@ -1469,6 +1478,41 @@ enterprises in the entrepreneurship development space.
          </div>
        </div>
      </div> 
+     <div>
+      <div class="profile-card" id="profile-card-container-Avedi">
+       <div class="img">
+         <img src="images/sandra.png">
+       </div>
+       <div class="caption">
+         <h3</h3>
+         <h3>Sandra Dreyer</h3>
+         <p>Head: Training, Education & Development 
+           <button class="profile-button" onclick="showProfileDetailsDreyer()">View Profile<span class="arrow">→</span></button>
+         </p>
+       </div>
+     </div>
+     <div class="profile-details-overlay" id="profile-details-overlay-Dreyer">
+       <div class="profile-details">
+         <div class="row">
+           <div class="col-xs-12 col-sm-4 col-md-4">
+             <img src="images/Sandra Min.png" alt="featured-speaker1" width="300px">
+           </div>
+           <br><br>
+           <div class="col-xs-12 col-sm-4 col-md-7"><br><br>
+             <h3 style="color: white;" class="speaker-title"> 
+              Sandra Dreyer</h3>
+             <h4 class="speaker-position">Head: Training, Education & Development - Cape Town Society for the Blind
+             </h4>
+             <hr id="hr-1">
+             <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
+             <br><br>
+             <p class="speaker-desc">
+              Sandra Dreyer is a highly accomplished individual. She holds a Higher Diploma in Education from the University of Western Cape (UWC), along with a management degree from the University of Stellenbosch (USB). Currently, she holds the position of HOD in the Training Education & Development Department (TED) at CTSB. Sandra is a respected member of various boards and organizations, including the South African National Council for the Blind (SANCB), where she serves as a National Executive Committee (NEC) member and chairs the Western Cape Provincial Executive Committee (PEC). She is also an executive member of South African Blind Women in Action (SABWIA), a non-executive director at DEmpower Ltd., and the chairperson of the Disability Empowerment Concern Trust (DECT). Additionally, Sandra is a non-executive member of the Light & Healing Centre. Her life is dedicated to empowering individuals and fostering positive change in the field of disabilities and beyond.             </div>
+         </div>
+         <button class="close-button" onclick="hideProfileDetailsDreyer()">&#x2716;</button>
+       </div>
+     </div>
+   </div> 
       </div>
 </div>
 </div>
