@@ -478,6 +478,15 @@
       const profileDetailsOverlay = document.getElementById('profile-details-overlay-Osei');
       profileDetailsOverlay.style.display = 'none';
     }
+    function showProfileDetailsAndy() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay-Andy');
+      profileDetailsOverlay.style.display = 'block';
+    }
+
+    function hideProfileDetailsAndy() {
+      const profileDetailsOverlay = document.getElementById('profile-details-overlay-Andy');
+      profileDetailsOverlay.style.display = 'none';
+    }
 
     function showProfileDetailsSadeeq() {
       const profileDetailsOverlay = document.getElementById('profile-details-overlay-Sadeeq');
@@ -1844,6 +1853,9 @@ Within the travel & tourism space, her key focus is Customer Engagement in Afric
 
 
 
+
+
+
        <div>
         <div class="profile-card" id="profile-card-container-Rob">
          <div class="img">
@@ -2071,6 +2083,45 @@ impact, Charlenè's primary objective is to harness the power of storytelling.
             </div>
           </div>
           
+
+          <div>
+            <div class="profile-card" id="profile-card-container-Sadeeq">
+             <div class="img">
+               <img src="images/Screenshot 2023-10-17 at 17.12.36.png">
+             </div>
+             <div class="caption">
+               <h3</h3>
+               <h3>Andy Lui</h3>
+               <p>Head of Innovation at SkyTeam
+                 <button class="profile-button" onclick="showProfileDetailsAndy()">View Profile<span class="arrow">→</span></button>
+               </p>
+             </div>
+           </div>
+           <div class="profile-details-overlay" id="profile-details-overlay-Andy">
+             <div class="profile-details">
+               <div class="row">
+                 <div class="col-xs-12 col-sm-4 col-md-4">
+                   <img src="images/Screenshot 2023-10-17 at 17.13.59.png" alt="featured-speaker1" width="300px">
+                 </div>
+                 <br><br>
+                 <div class="col-xs-12 col-sm-4 col-md-7"><br><br>
+                   <h3 style="color: white;" class="speaker-title"> 
+                    Andy Lui</h3>
+                   <h4 class="speaker-position">Head of Innovation at SkyTeam
+                   </h4>
+                   <hr id="hr-1">
+                   <img src="./images/Plane- Black.png" alt="plane" id="plane-black-1">
+                   <br><br>
+                   <p class="speaker-desc">
+                    With more than 30 years’ industry experience, Andy Lui joined SkyTeam from alliance member Delta Air Lines where he served as Director of IT. In his Delta career he held various senior technology leadership positions across Operations & Customer Center, Delta Connection, Cargo, Project Management, Technical Operations, HR, Finance, Agency and Corporate Sales, and Revenue Accounting. 
+    
+    With SkyTeam focused on transversal innovation, Andy is leading the alliance’s new Innovation Team. Fostering a culture of collaboration, co-innovation and co-creation across alliance members, Andy is driving new value propositions to enhance the travel experience for customers.
+      </div>
+               </div>
+               <button class="close-button" onclick="hideProfileDetailsAndy()">&#x2716;</button>
+             </div>
+           </div>
+         </div> 
            <!-- NEWW -->
       
            
